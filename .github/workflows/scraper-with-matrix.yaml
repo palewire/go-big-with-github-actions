@@ -55,6 +55,7 @@ jobs:
 
       - name: Move
         run: |
+          mkdir data -p
           mv artifacts/**/*.csv data/
 
       - name: Commit and push
