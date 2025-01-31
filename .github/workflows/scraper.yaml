@@ -26,14 +26,8 @@ jobs:
       - name: Install scraper
         run: pip install warn-scraper
 
-      - name: Scrape Iowa
+      - name: Scrape
         run: warn-scraper ia --data-dir ./data/
-
-      - name: upload-artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: exports
-          path: ./data/
 
       - name: Commit and push
         run: |
@@ -42,3 +36,9 @@ jobs:
           git config user.email "actions@users.noreply.github.com"	
           git commit -m "Latest data"
           git push
+
+      - name: upload-artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: exports
+          path: ./data/

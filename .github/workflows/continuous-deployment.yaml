@@ -1,8 +1,8 @@
 name: Continuous deployment
 
-# on:
+on:
 #   push:
-#   workflow_dispatch:
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}

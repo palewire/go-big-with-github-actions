@@ -1,8 +1,8 @@
 name: Documentation
 
-# on:
+on:
 #   push:
-#   workflow_dispatch:
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
