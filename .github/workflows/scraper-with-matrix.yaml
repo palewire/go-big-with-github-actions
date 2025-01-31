@@ -1,4 +1,4 @@
-name: First Scraper
+name: Scraper with matrix
 
 on:
   workflow_dispatch:
