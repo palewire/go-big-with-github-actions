@@ -14,7 +14,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        state: [al, ca, ia]
+        state: [ca, ia, ny]
     steps:
       - name: Hello world
         run: echo "Hello world"
