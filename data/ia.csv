@@ -1,0 +1,759 @@
+Company,Address Line 1,City,County,St,ZIP,Notice Type,Emp #,Notice Date,Layoff Date,Local Workforce Area,Industry,,,,,,,,,,,,,,
+HyPro Incorporated,711 Enterprise Drive,Cedar Falls,Black Hawk,IA,50613,Closing,73,1/28/2020,2020-03-28 00:00:00,Northeast Iowa,Manufacturing,,,,,,,,,,,,,,
+Trinity Health Corporation,421 S. Illinois Avenue,Mason City,Cerro Gordo,IA,50401,Mass Layoff,77,1/28/2020,2020-03-31 00:00:00,Northeast Iowa,"Professional, Scientific, and Technical Services",,,,,,,,,,,,,,
+Sisters of Charity of the Blessed Virgin Mary,1100 Carmel Drive,Dubuque,Dubuque,IA,52003,Mass Layoff,203,2/3/2020,2020-04-12 00:00:00,Northeast Iowa,Health Care and Social Assistance ,,,,,,,,,,,,,,
+Misty Harbor,228 Kenyon Road,Fort Dodge,Webster,IA,50501,Closing,45,2/3/2020,2020-03-05 00:00:00,North Central Iowa,Manufacturing,,,,,,,,,,,,,,
+TCS e-Serve International Ltd,4333 Edgewood Rd. NE,Cedar Rapids,Linn,IA,52411,Amendment,1,2/3/2020,2020-04-03 00:00:00,East Central Iowa,"Professional, Scientific, and Technical Services",,,,,,,,,,,,,,
+John Deere Dubuque Works,18600 S John Deere Rd,Dubuque,Dubuque,IA,52001,Mass Layoff,105,2/6/2020,2020-04-06 00:00:00,Northeast Iowa,Manufacturing,,,,,,,,,,,,,,
+All American Hydraulics,2700 N. Broadway Street,Red Oak,Montgomery,IA,51566,Mass Layoff,56,2/10/2020,2020-04-13 00:00:00,Southwest Iowa,Manufacturing,,,,,,,,,,,,,,
+Diamond Communications Solutions,1209 31st Avenue,Council Bluffs,Pottawattamie,IA,51501,Closing,70,2/11/2020,2020-04-10 00:00:00,Western Iowa,Information,,,,,,,,,,,,,,
+"Hy-Vee, Inc. - Fulfillment Center",3303 86th Street,Des Moines,Polk,IA,50311,Closing,368,3/5/2020,2020-05-06 00:00:00,Central Iowa,Retail Trade,,,,,,,,,,,,,,
+Eaton Corporation,1600 Ariport Road,Shenandoah,Page,IA,51601,Closing,55,4/6/2020,2020-06-15 00:00:00,Western Iowa,Manufacturing,,,,,,,,,,,,,,
+Hollander Sleep Products,1204 East Summit Street,Maquoketa,Jackson,IA,52060,Closing,126,4/13/2020,2020-04-13 00:00:00,Mississippi Valley,Manufacturing,,,,,,,,,,,,,,
+Winnebago Industries,806 North Lake Street,Lake Mills ,Winnebago,IA,50450,Mass Layoff,2,4/15/2020,2020-04-15 00:00:00,Northeast Iowa,Manufacturing,,,,,,,,,,,,,,
+Winnebago Industries,605 West Crystal Lake Road,Forest City,Hancock,IA,50436,Mass Layoff,74,4/15/2020,2020-04-15 00:00:00,Northeast Iowa,Manufacturing,,,,,,,,,,,,,,
+Winnebago Industries,1100 11th Street,Charles City ,Floyd,IA,50616,Mass Layoff,3,4/15/2020,2020-04-15 00:00:00,Northeast Iowa,Manufacturing,,,,,,,,,,,,,,
+Data Dimensions,1315 19th Street,Clinton,Clinton,IA,52732,Mass Layoff,136,4/27/2020,2020-04-30 00:00:00,Mississippi Valley,Information,,,,,,,,,,,,,,
+"Flexsteel Industries, Inc.",385 Bell Street,Dubuque,Dubuque,IA,52001,Mass Layoff,208,5/4/2020,2020-06-19 00:00:00,Northeast Iowa,Manufacturing,,,,,,,,,,,,,,
+Techniplas,3201 S.E. Convenience Blvd.,Ankeny,Polk,IA,50021,Closing,120,5/7/2020,2020-07-17 00:00:00,Central Iowa,Manufacturing,,,,,,,,,,,,,,
+Doerfer Corporation - TDS Automation,1575 West Big Rock Road,Waverly,Black Hawk,IA,50677,Mass Layoff,36,5/11/2020,2020-06-12 00:00:00,Northeast Iowa,Manufacturing,,,,,,,,,,,,,,
+"POET DSM - Project LIBERTY, LLC",4724 380th Street,Emmetsburg,Palo Alto,IA,50536,Closing,36,5/13/2020,2020-07-03 00:00:00,Northwest Iowa,Manufacturing,,,,,,,,,,,,,,
+Copart,451 Blackhawk Trail Road,Eldridge,Scott,IA,52748,Closing,44,5/19/2020,2020-05-22 00:00:00,Mississippi Valley,Retail Trade,,,,,,,,,,,,,,
+Exide Technologies,913 S. 10th Street,Manchester,Delaware,IA,52057,Closing,301,5/19/2020,2020-07-21 00:00:00,Northeast Iowa,Manufacturing,,,,,,,,,,,,,,
+Dubuque Diamond Jo Casino,301 Bell Street,Duquque,Dubuque,IA,52001,Mass Layoff,176,5/22/2020,2020-07-01 00:00:00,Northeast Iowa,Accommodation and Food Services ,,,,,,,,,,,,,,
+Diamond Jo Worth Casino,777 Diamond Jo Lane,Northwood,Worth,IA,50459,Mass Layoff,132,5/22/2020,2020-07-01 00:00:00,Northeast Iowa,Accommodation and Food Services ,,,,,,,,,,,,,,
+Klein Tools,8200 6th Street SW,Cedar Rapids,Linn,IA,52404,Closing,52,6/1/2020,2020-08-01 00:00:00,East Central Iowa,Transportation and Warehousing ,,,,,,,,,,,,,,
+Sekisui Aerospace,403 14th St. S.E,Orange City,Sioux,IA,51041,Mass Layoff,47,6/2/2020,2020-06-02 00:00:00,Northwest Iowa,Management of Companies and Enterprises,,,,,,,,,,,,,,
+Wild Rose Casino,777 Wild Rose Drive,Clinton,Clinton,IA,52732,Mass Layoff,33,6/3/2020,2020-06-25 00:00:00,Mississippi Valley,Accommodation and Food Services ,,,,,,,,,,,,,,
+Wild Rose Casino,777 Wild rose Drive,Jefferson,Greene,IA,50129,Mass Layoff,53,6/3/2020,2020-06-25 00:00:00,Western Iowa,Accommodation and Food Services ,,,,,,,,,,,,,,
+Wild Rose Casino,777 Main Street,Emmetsburg,Palo Alto,IA,50536,Mass Layoff,60,6/3/2020,2020-06-25 00:00:00,Northwest Iowa,Accommodation and Food Services ,,,,,,,,,,,,,,
+"Schnuck Markets, Inc.",585 Middle Road,Bettendorf,Scott,IA,52722,Closing,81,6/12/2020,2020-08-16 00:00:00,Mississippi Valley,Retail Trade,,,,,,,,,,,,,,
+Ameristar Casino Hotel,2200 River Road,Council Bluffs,Pottawattamie,IA,51501,Mass Layoff,232,6/12/2020,2020-08-15 00:00:00,Western Iowa,Accommodation and Food Services ,,,,,,,,,,,,,,
+Nationwide,1100 Locust Street,Des Moines,Polk,IA,50391,Mass Layoff,45,6/23/2020,2020-08-28 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+"ADESA Des Moines, LLC",2900 S. E. Gateway,Grimes,Polk,IA,50111,Mass Layoff,18,6/24/2020,2020-08-01 00:00:00,Central Iowa,Wholesale Trade ,,,,,,,,,,,,,,
+"ACT, Inc.",500 ACT Drive,Iowa City,Johnson,IA,52243,Mass Layoff,37,6/25/2020,2020-08-23 00:00:00,East Central Iowa,"Professional, Scientific, and Technical Services",,,,,,,,,,,,,,
+Techniplas,3201 S.E. Convenience Blvd.,Ankeny,Polk,IA,50021,Amendment,120,6/26/2020,2020-07-30 00:00:00,Central Iowa,Manufacturing,,,,,,,,,,,,,,
+John Deere Davenport Works,P. O. Box 4198,Davenport,Scott,IA,52807,Mass Layoff,82,6/29/2020,2020-08-02 00:00:00,Mississippi Valley,Manufacturing,,,,,,,,,,,,,,
+John Deere Waterloo Works,3500 E. Donald Street,Waterloo,Black Hawk,IA,50704,Mass Layoff,35,6/29/2020,2020-08-03 00:00:00,Northeast Iowa,Manufacturing,,,,,,,,,,,,,,
+Go Daddy,1 Parsons Drive,Hiawatha,Linn,IA,52233,Mass Layoff,135,7/1/2020,2020-09-01 00:00:00,East Central Iowa,Information,,,,,,,,,,,,,,
+IBM,700 Locust Street,Dubuque,Dubuque,IA,52001,Mass Layoff,236,7/1/2020,2020-11-01 00:00:00,Northeast Iowa,"Professional, Scientific, and Technical Services",,,,,,,,,,,,,,
+Spectra Venue Mangement - Iowa Events Center,730 3rd Street,Des Moines,Polk,IA,50309,Mass Layoff,22,7/27/2020,2020-08-28 00:00:00,Central Iowa,Retail Trade,,,,,,,,,,,,,,
+Ovations Food Services,730 3rd Street,Des Moines,Polk,IA,50309,Mass Layoff,8,7/28/2020,2020-08-28 00:00:00,Central Iowa,Accommodation and Food Services ,,,,,,,,,,,,,,
+Community Development Institute - Head Start,P.O.  Box 627,Dubuque,Dubuque,IA,52004,Mass Layoff,52,7/29/2020,2020-10-01 00:00:00,Northeast Iowa,Educational Services ,,,,,,,,,,,,,,
+Rockwell Collins,400 Collins Road N.E.,Cedar Rapids,Linn,IA,52498,Mass Layoff,72,7/30/2020,2020-09-04 00:00:00,East Central Iowa,Manufacturing,,,,,,,,,,,,,,
+"ADESA Des Moines, LLC",2900 S. E. Gateway,Grimes,Polk,IA,50111,Amendment,11,8/4/2020,2020-08-01 00:00:00,Central Iowa,Wholesale Trade ,,,,,,,,,,,,,,
+Bagcraft Papercon II,2068 303rd Avenue,Fort Madison,Lee,IA,52627,Mass Layoff,104,8/6/2020,2020-10-30 00:00:00,Mississippi Valley,Manufacturing,,,,,,,,,,,,,,
+Collins Aerospace,400 Collins Road NE,Cedar Raipds ,Linn,IA ,52498,Amendment,1,8/20/2020,2020-09-25 00:00:00,East Central Iowa,Manufacturing,,,,,,,,,,,,,,
+"Geater Machining & Manufacturing, Co",901 12th St NE ,Independence ,Buchanan,IA ,50644,Mass Layoff,101,8/25/2020,2020-10-30 00:00:00,Northeast Iowa,Manufacturing,,,,,,,,,,,,,,
+Spectra Venue Mangement - Iowa Events Center,730 3rd Street,Des Moines ,Polk,IA ,50309,Mass Layoff ,28,8/25/2020,2020-09-20 00:00:00,Central Iowa,Retail Trade,,,,,,,,,,,,,,
+Great River Entertainment. LLC ,3001 Winegard Dr ,Burlington,Des Moines,IA ,52601,Mass Layoff ,117,8/26/2020,2020-08-26 00:00:00,Mississippi Valley,Accommodation and Food Services ,,,,,,,,,,,,,,
+Collins Aerospace,400 Collins Road NE ,Cedar Rapids ,Linn,IA ,52498,Amendment,3,8/27/2020,2020-09-25 00:00:00,East Central Iowa,Manufacturing,,,,,,,,,,,,,,
+"Marriott Hotel Services, Inc ",700 Grand Ave ,Des Moines ,Polk,IA ,50309,Mass Layoff,85,8/27/2020,2020-10-30 00:00:00,Central Iowa,Accommodation and Food Services ,,,,,,,,,,,,,,
+Siemens Gamesa ,2597 US-61,Fort Madison ,Lee,IA ,52627,Mass Layoff,129,9/14/2020,2020-09-14 00:00:00,Mississippi Valley,"Professional, Scientific, and Technical Services",,,,,,,,,,,,,,
+"Sorenson Communications, LLC ",4201 Westown Parkway,West Des Moines,Polk,IA ,50266,Closing ,29,9/1/8/2020,2020-10-12 00:00:00,Central Iowa,Retail Trade,,,,,,,,,,,,,,
+Mercy Hospital, 500 E. Market Street,Iowa City,Johnson,IA,52245,Mass Layoff,29,9/23/2020,2020-11-21 00:00:00,East Central Iowa,Health Care and Social Assistance ,,,,,,,,,,,,,,
+Nationwide,1100 Locust Street,Des Moines,Polk,IA,50391,Mass Layoff,58,9/25/2020,2020-10-30 00:00:00,Central Iowa,Administrative and Support and Waste Management and Remediation Services ,,,,,,,,,,,,,,
+Prairie Meadows Racetrack and Casino,1 Prairie Meadows Drive,Altoona,Polk,IA ,50009,Mass Layoff,282,9/21/2020,2020-05-03 00:00:00,Central Iowa,"Arts, Entertainment, and Recreation ",,,,,,,,,,,,,,
+Duane Arnold Energy Center ,3277 Daec Road,Palo,Linn,IA ,52324,Closing ,128,9/30/2020,2020-09-18 00:00:00,East Central Iowa,Utilities ,,,,,,,,,,,,,,
+FedEx Supply Chain,720 Alexander Way ,North Liberty ,Johnson,IA ,52317,Mass Layoff ,53,10/26/2020,2020-12-31 00:00:00,East Central Iowa,Transportation and Warehousing ,,,,,,,,,,,,,,
+Transamerican Life Insurance,6400 C Street SW ,Cedar Rapids,Linn,IA ,52499,Mass Layoff,53,10/29/2020,2020-11-29 00:00:00,East Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Sodexo ,518 West Locust St ,Davenport ,Scott,IA ,52803,Mass Layoff ,71,11/6/2020,2020-03-30 00:00:00,Mississippi Valley,Accommodation and Food Services ,,,,,,,,,,,,,,
+American Home Sheild Corp. ,1524 Hwy 30 East,Carroll,Carroll,IA,51401,Mass Layoff,35,11/12/2020,2020-11-19 00:00:00,Western Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Collins Aerospace,2464 River Rd ,Decorah ,Winneshiek,IA ,52101,Mass Layoff ,29,12/4/2020,2021-01-02 00:00:00,Northeast Iowa,Manufacturing,,,,,,,,,,,,,,
+Collins Aerospace,1500 State St ,Bellevue ,Jackson,IA ,52031,Mass Layoff ,36,12/4/2020,2021-01-02 00:00:00,Mississippi Valley,Manufacturing,,,,,,,,,,,,,,
+Ingredion Inc ,1st St SW ,Cedar Rapids ,Linn,IA ,52499,Mass Layoff ,35,1/4/2021,2021-02-04 00:00:00,East Central Iowa,"Professional, Scientific, and Technical Services",,,,,,,,,,,,,,
+Eaton Corporation,700 Luick's Lane ,Belmond,Wright,IA ,50421,Amendment,148,1/14/2021,2021-01-22 00:00:00,North Central Iowa,Manufacturing,,,,,,,,,,,,,,
+"Gannett, Inc ",400 Locust St ,Des Moines ,Polk,IA ,50309,Mass Layoff ,26,1/15/2021,2021-04-01 00:00:00,Central Iowa,Information,,,,,,,,,,,,,,
+"XPO Logistics Supply Chain, Inc ",3811 Dixon St ,Des Moines ,Polk,IA ,50309,Mass Layoff ,108,1/27/2021,2021-03-15 00:00:00,Central Iowa,"Professional, Scientific, and Technical Services",,,,,,,,,,,,,,
+Kerry Inc ,341 S Jefferson St ,Fredericksburg,Chickasaw,IA ,50630,Closing ,85,2/2/2021,2021-03-31 00:00:00,Northeast Iowa,Wholesale Trade ,,,,,,,,,,,,,,
+"Sequel Youth Services of Clarinda, LLC",1820 North 16th St ,Clarinda ,Page,IA ,51632,Closing ,92,2/3/2021,2021-03-05 00:00:00,Western Iowa,Health Care and Social Assistance ,,,,,,,,,,,,,,
+Collins Aerospace,2464 River Rd,Decorah ,Winneshiek,IA ,52101,Mass Layoff ,1,2/3/2021,2021-02-26 00:00:00,Northeast Iowa,Manufacturing,,,,,,,,,,,,,,
+"T&D Horizons, Inc ",913 15th Ave SE,Dyersville,Delaware,IA ,52040,Mass Layoff ,35,2/18/2021,2020-11-25 00:00:00,Northeast Iowa,Accommodation and Food Services ,,,,,,,,,,,,,,
+ABB Inc ,510 East Agency Road ,West Burlington,Des Moines,IA ,52655,Closing ,24,2/15/2021,2021-04-16 00:00:00,Mississippi Valley,Wholesale Trade ,,,,,,,,,,,,,,
+Eaton Corporation,1600 Airport Rd,Shenandoah,Page,IA,51601,Closing ,34,2/16/2021,2021-04-30 00:00:00,Western Iowa,Manufacturing,,,,,,,,,,,,,,
+"XPO Logistics Supply Chain, Inc ",3811 Dixon St ,Des Moines ,Polk,IA ,50309,Mass Layoff,58,3/16/2021,2021-05-17 00:00:00,Central Iowa,"Professional, Scientific, and Technical Services",,,,,,,,,,,,,,
+ABB Inc ,510 East Agency Road ,West Burlington,Des Moines,IA ,52655,Amendment,61,03/22/2021,2021-05-21 00:00:00,Mississippi Valley,Wholesale Trade ,,,,,,,,,,,,,,
+"Patriot Converting, LLC ",1503 N 13th Ave E ,Newton ,Jasper,IA,50208,Closing,20,03/30/2021,2021-04-30 00:00:00,Central Iowa,Manufacturing,,,,,,,,,,,,,,
+ABB Inc ,510 East Agency Road ,West Burlington,Des Moines,IA,52655,Amendment,103,04/5/2021,2021-06-04 00:00:00,Mississippi Valley,Wholesale Trade ,,,,,,,,,,,,,,
+ABB Inc ,510 East Agency Road,West Burlington,Des Moines,IA ,52655,Amendment,188,4/26/21,2021-06-25 00:00:00,Mississippi Valley,Wholesale Trade ,,,,,,,,,,,,,,
+Duane Arnold Energy Center ,3277 Daec Rd,Palo,Linn,IA,52324,Closing ,47,2021-04-30 00:00:00,2021-06-30 00:00:00,East Central Iowa,Utilities ,,,,,,,,,,,,,,
+"Tri-City Blacktop, Inc ",425 S Devils Glen Rd,Bettendorf,Scott,IA ,52722,Closing ,30,5/14/2021,2021-06-13 00:00:00,Mississippi Valley,Construction,,,,,,,,,,,,,,
+"Seal and Stripe, Inc ",425 S Devis Glen Rd ,Bettendorf ,Scott,IA ,52722,Closing ,10,5/14/2021,2021-06-13 00:00:00,Mississippi Valley,Construction,,,,,,,,,,,,,,
+ABB Inc,510 East Agency Road,West Burlington,Des Moines,IA ,52655,Amendment,234,6/1/2021,2021-07-30 00:00:00,Mississippi Valley,Wholesale Trade ,,,,,,,,,,,,,,
+ABB Inc,510 East Agency Road,West Burlington,Des Moines,IA ,52655,Amendment ,236,6/14/2021,2021-08-13 00:00:00,Mississippi Valley,Wholesale Trade ,,,,,,,,,,,,,,
+"Marriott Hotel Services, Inc",300 E 9th St ,Coralville,Johnson,IA ,52241,Closing ,96,6/17/2021,2021-08-17 00:00:00,East Central Iowa,Accommodation and Food Services ,,,,,,,,,,,,,,
+ABB Inc,510 East Agency Road,West Burlington,Des Moines,IA ,52655,Amendment,238,06/2/2021,2021-08-27 00:00:00,Mississippi Valley,Wholesale Trade ,,,,,,,,,,,,,,
+"Color Web Printers, Inc",4700 Bowling Street SW ,Cedar Rapids,Linn,IA,52404,Closing,43,7/9/2021,2021-08-31 00:00:00,East Central Iowa,Administrative and Support and Waste Management and Remediation Services ,,,,,,,,,,,,,,
+"Colonial Manors of Manilla Inc, DBA Manilla Mannor ",146 North 5th Street,Manilla ,Crawford,IA ,51454,Closing ,34,7/14/21,2021-07-30 00:00:00,Western Iowa,Health Care and Social Assistance ,,,,,,,,,,,,,,
+Linwood Mining and Minerals ,401 East Front Street,Davenport,Scott,IA,52804,Mass Layoff ,49,7/14/21,2021-08-13 00:00:00,Mississippi Valley,Manufacturing,,,,,,,,,,,,,,
+ABB Inc,510 East Agency Road,West Burlington,Des Moines,IA ,52655,Amendment,239,7/12/21,2021-09-10 00:00:00,Mississippi Valley,Wholesale Trade ,,,,,,,,,,,,,,
+"Arcosa Wind Towers, Inc ",801 N 19th Ave E,Newton,Jasper,IA,50208,Mass Layoff ,82,8/18/2021,2021-10-19 00:00:00,Central Iowa,Manufacturing,,,,,,,,,,,,,,
+Collins Aerospace ,400 Collins Road NE,Cedar Rapids,Linn,IA ,52498,Mass Layoff,37,9/1/2021,2021-10-01 00:00:00,East Central Iowa,Manufacturing,,,,,,,,,,,,,,
+Prinicpal Life Insurance Company ,711 High Street ,Des Moines,Polk,IA,50392,Mass Layoff,25,9/9/2021,2021-10-11 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Lutheran Services In Iowa ,1323 Notheast Ave,Ames,Story,IA,50010,Mass Layoff,26,09/23/2021,2021-10-22 00:00:00,Central Iowa,Health Care and Social Assistance ,,,,,,,,,,,,,,
+"CHEP Services, LLC ",10950 High Life Court SW,Cedar Rapids,Linn,IA,52404,Mass Layoff ,60,10/06/2021,2021-12-05 00:00:00,East Central Iowa,Real Estate adn Rental and Leasing ,,,,,,,,,,,,,,
+"Sequel Youth Services of Forest Ridge Youth Services, LLC",200 6th Street,Estherville,Emmet,IA,51334,Closing,59,10/12/2021,2021-11-05 00:00:00,Northwest Iowa,Health Care and Social Assistance ,,,,,,,,,,,,,,
+TPI Composites,2300 N 33rd E,Newton,Jasper,IA,50208,Closing ,710,10/18/2021,2021-12-31 00:00:00,Central Iowa,Other Services (except Public Administration) ,,,,,,,,,,,,,,
+ABB Inc,510 East Agency Road,West Burlington,Des Moines,IA,52655,Amendment ,247,10/18/2021,2021-12-17 00:00:00,Mississippi Valley,Wholesale Trade ,,,,,,,,,,,,,,
+Principal Life Insurance Company ,711 High Street,Des Moines ,Polk,IA ,50392,Amendment ,30,10/19/2021,2021-11-19 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Protek Medical Products,611 Southgate Ave ,Iowa City,Johnson,IA,52240,Closing,53,01/26/2022,2022-04-29 00:00:00,East Central Iowa,Wholesale Trade ,,,,,,,,,,,,,,
+Allied Global ,PO Box 458 ,Norwalk,Warren,IA,50211,Closing ,30,02/03/2022,2022-03-31 00:00:00,Central Iowa,Administrative and Support and Waste Management and Remediation Services ,,,,,,,,,,,,,,
+The Iowa Greyhoung Park ,1899 Greyhound Park Road,Dubuque,Dubuque,IA ,52001,Closing ,58,02/08/2022,2022-05-15 00:00:00,Northeast Iowa,Other Services (except Public Administration) ,,,,,,,,,,,,,,
+Siemens Gamesa Renewable Engergy Inc ,2597 US-61,Fort Madison ,Lee,IA,52627,Mass Layoff,121,02/09/2022,2022-02-09 00:00:00,Mississippi Valley,"Professional, Scientific, and Technical Services",,,,,,,,,,,,,,
+Duane Arnold Energy Center ,2377 Daec Rd ,Palo,Linn,IA,52324,Mass Layoff,61,03/07/2022,2022-05-13 00:00:00,East Central Iowa,Utilities ,,,,,,,,,,,,,,
+"Tur-Pak Foods, Inc Kustom Pak Foods, LTD, Co-Pak Inc. Pak Fabricators, LTD, United Holding Company, LLC",6201 McArthur Street,Sioux City,Woodbury,IA ,51111,Closing ,121,03/11/2022,2022-05-09 00:00:00,Western Iowa,Manufacturing,,,,,,,,,,,,,,
+"Rembrandt Enterprises, INC ",1419 480th St ,Rembrandt,Buena Vista,IA ,50576,Mass Layoff,135,04/05/2022,2022-04-05 00:00:00,Northwest Iowa,Manufacturing,,,,,,,,,,,,,,
+Jabil Inc ,400 N Harvey Rd,Mount Pleasant ,Henry,IA ,52641,Closing ,67,04/12/2022,2022-06-30 00:00:00,Mississippi Valley,Manufacturing,,,,,,,,,,,,,,
+SSB Manufacturing Company ,500 South 17th St ,Clear Lake ,Cerro Gordo,IA ,50428,Closing,86,4/20/2022,2022-06-30 00:00:00,Northeast Iowa,Manufacturing,,,,,,,,,,,,,,
+Wells Fargo,800 S Jordan Creek Pkwy,West Des Moines,Polk,IA ,50266,Mass Layoff,25,04/21/2022,2022-05-24 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Durham School Services ,2017 S.E. Oak ,Ankeny,Polk,IA ,50021,Mass Layoff,138,04/27/2022,2022-06-30 00:00:00,Central Iowa,Transportation and Warehousing ,,,,,,,,,,,,,,
+divvyDOSE,201 N. Harrison St,Davenport,Scott,IA,52801,Mass Layoff,62,04/29/2022,2022-05-29 00:00:00,Mississippi Valley,Retail Trade,,,,,,,,,,,,,,
+Toyota Financial Services ,5005 North River Boulevard NE,Cedar Rapids ,Linn,IA ,52411,Closing,322,05/02/2022,2022-07-02 00:00:00,East Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Blackhawk Services Corp,3400 Mt Pleasant St ,Burlington ,Des Moines,IA ,52601,Mass Layoff,57,05/02/2022,2022-05-14 00:00:00,Mississippi Valley,Manufacturing,,,,,,,,,,,,,,
+Wells Fargo ,800 S Jordan Creek Pkwy,West Des Moines,Polk,IA ,50266,Amendment ,3,05/05/2022,2022-07-05 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo ,206 8th St ,Des Moines ,Polk,IA ,50309,Mass Layoff ,44,05/05/2022,2022-06-21 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo ,801 Walnut St,Des Moines ,Polk,IA ,50309,Amendment ,5,05/19/2022,2022-07-19 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo,800 S Jordan Creek Pkwy,West Des Moines,Polk,IA ,50266,Amendment ,6,05/19/2022,2022-07-19 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Siemens Gamesa Renewable Engergy Inc ,2597 US-61,Fort Madison ,Lee,IA ,52627,Mass Layoff,172,05/20/2022,2022-05-20 00:00:00,Mississippi Valley,"Professional, Scientific, and Technical Services",,,,,,,,,,,,,,
+"FAAZ, LLC ",202 11th St SW Plz ,Spencer,Clay,IA,51301,Closing ,15,05/26/2022,2022-04-30 00:00:00,Northwest Iowa,Accommodation and Food Services ,,,,,,,,,,,,,,
+"FAAZ, LLC ",2209 Circle Dr W,Spirit Lake ,Dickinson,IA,51360,Closing ,6,05/26/2022,2022-04-30 00:00:00,Northwest Iowa,Accommodation and Food Services ,,,,,,,,,,,,,,
+"FAAZ, LLC ",1300 Lake Ave ,Storm Lake ,Buena Vista,IA,50588,Closing,13,05/26/2022,2022-04-30 00:00:00,Northwest Iowa,Accommodation and Food Services ,,,,,,,,,,,,,,
+"Ace International, LLC ",209 Lincoln Way ,Ames,Story,IA ,50010,Closing ,9,05/27/2022,2022-04-30 00:00:00,Central Iowa,Accommodation and Food Services ,,,,,,,,,,,,,,
+"Ace International, LLC ",2801 E 13th St ,Ames,Story,IA ,50010,Closing,6,05/27/2022,2022-04-30 00:00:00,Central Iowa,Accommodation and Food Services ,,,,,,,,,,,,,,
+"Ace International, LLC ",1720 S Story St ,Boone ,Boone,IA ,50036,Closing ,16,05/27/2022,2022-05-13 00:00:00,Central Iowa,Accommodation and Food Services ,,,,,,,,,,,,,,
+Wells Fargo ,801 Walnut St ,Des Moines,Polk,IA ,50309,Amendment,1,06/02/2022,2022-08-02 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Duane Arnold Energy Center ,2377 Daec Rd ,Palo,Linn,IA,52324,Mass Layoff ,25,06/14/2022,2022-09-16 00:00:00,East Central Iowa,Utilities ,,,,,,,,,,,,,,
+Wells Fargo ,800 S Jordan Creek Pkwy,West Des Moines,Polk,IA,50266,Amendment ,3,06/16/2022,2022-08-16 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo ,801 Walnut St ,Des Moines,Polk,IA,50309,Amendment,3,06/16/2022,2022-08-16 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Transamerica Life Insurance Co,6400 C St SW ,Cedar Rapids,Linn,IA,52499,Mass Layoff ,40,06/17/2022,2022-08-15 00:00:00,East Central Iowa,Health Care and Social Assistance,,,,,,,,,,,,,,
+Big Creek Nursing and Rehabilitation Community ,1002 W Washington Ave ,Polk City,Polk,IA ,50226,Closing ,53,06/20/2022,2022-08-20 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Morningside Care Center ,600 Morningside Street,Ida Grove,Ida,IA ,51445,Closing,23,06/20/2022,2022-08-15 00:00:00,Western Iowa,Health Care and Social Assistance,,,,,,,,,,,,,,
+"Iowa Anesthesia Associates, PC ",800 Mercy Dr ,Council Bluffs,Pottawattamie,IA ,51503,Mass Layoff,49,06/22/2022,2022-08-31 00:00:00,Western Iowa,Health Care and Social Assistance,,,,,,,,,,,,,,
+Ampcus ,5005 N River Blvd NE ,Cedar Rapids,Linn,IA ,52411,Mass Layoff ,3,06/30/2022,2022-10-31 00:00:00,East Central Iowa,"Professional, Scientific, and Technical Services",,,,,,,,,,,,,,
+Integrated Human Capital ,5005 N River Blvd NE ,Cedar Rapids,Linn,IA ,52411,Mass Layoff ,1,06/30/2022,2022-10-31 00:00:00,East Central Iowa,Administrative and Support and Waste Management and Remediation Services ,,,,,,,,,,,,,,
+Wells Fargo ,800 S Jordan Creek Pkwy,West Des Moines,Polk,IA,50266,Amendment,29,06/30/2022,2022-08-30 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo ,800 Walnut St ,Des Moines,Polk,IA,50315,Amendment ,6,06/30/2022,2022-08-30 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo ,600 Army Post Rd ,Des Moines ,Polk,IA ,50315,Amendment ,37,06/30/2022,2022-08-30 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo ,901 E 1st St ,Ankeny,Polk,IA ,50021,Mass Layoff,35,06/30/2022,2022-08-30 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+"Kaygen, Inc ",5005 N River Blvd NE ,Cedar Rapids ,Linn,IA ,52411,Mass Layoff ,7,06/30/2022,2022-10-31 00:00:00,East Central Iowa,"Professional, Scientific, and Technical Services",,,,,,,,,,,,,,
+"Conde Group, Inc",5005 N River Blvd NE ,Cedar Rapids,Linn,IA ,52411,Mass Layoff,1,06/30/2022,2022-10-31 00:00:00,East Central Iowa,Administrative and Support and Waste Management and Remediation Services ,,,,,,,,,,,,,,
+Wells Fargo ,800 S Jordan Creek Pkwy,West Des Moines,Polk,IA ,50266,Amendment ,9,07/14/2022,2022-09-14 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo ,801 Walnut St,Des Moines,Polk,IA ,50309,Amendment,3,07/14/2022,2022-09-14 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Touchstone Healthcare Community ,1800 Indian Hills Drive,Sioux City,Woodbury,IA,51104,Closing ,70,07/25/2022,2022-07-21 00:00:00,Western Iowa,Health Care and Social Assistance,,,,,,,,,,,,,,
+"APC Workforce Solutions, LLC",5005 N River Blvd NE,Cedar Rapids ,Linn,IA,52411,Mass Layoff,3,07/27/2022,2022-10-31 00:00:00,East Central Iowa,Administrative and Support and Waste Management and Remediation Services ,,,,,,,,,,,,,,
+Wells Fargo,800 S Jordan Creek Pkwy,West Des Moines,Polk,IA ,50266,Amendment,18,07/28/2022,2022-09-28 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo,901 E 1st St ,Ankeny,Polk,IA ,50021,Amendment,13,07/28/2022,2022-09-28 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo ,13733 University Ave ,Clive,Polk,IA ,50325,Mass Layoff ,29,07/28/2022,2022-09-22 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Greene Medical Center Long Term Care,1000 West Lincoln Way,Jefferson,Greene,IA ,50129,Closing,58,07/28/2022,2022-09-28 00:00:00,Western Iowa,Health Care and Social Assistance,,,,,,,,,,,,,,
+Wells Fargo,600 Army Post Rd,Des Moines,Polk,IA ,50309,Amendment,14,07/28/2022,2022-09-28 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo,800 Walnut St,Des Moines,Polk,IA,50309,Amendment ,6,07/28/2022,2022-09-28 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo,801 Walnut St ,Des Moines,Polk,IA ,50309,Amendment ,1,07/28/2022,2022-09-28 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Jack Link's ,210 N 1st St,Laurens,Pocahontas,IA,50554,Mass Layoff ,57,08/19/2022,2022-09-18 00:00:00,North Central Iowa,Wholesale Trade ,,,,,,,,,,,,,,
+Wells Fargo ,800 S Jordan Creek Pkwy,West Des Moines,Polk,IA ,50266,Amendment,59,08/25/2022,2022-10-25 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo ,801 Walnut St,Des Moines ,Polk,IA ,50309,Amendment,13,08/25/2022,2022-10-25 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo,206 8th St ,Des Moines,Polk,IA ,50309,Amendment,1,07/28/2022,2022-09-28 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo ,901 E 1st St ,Ankeny,Polk,IA,50021,Amendment,1,08/25/2022,2022-10-25 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo,13733 University Ave,Clive,Polk,IA ,50325,Amendment,2,08/25/2022,2022-10-25 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Transamerican Life Insurance,6400 C Street Sw,Cedar Rapids,Linn,IA,52499,Amendment,15,08/26/2022,2022-09-26 00:00:00,East Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+"Aegon Global Services, LLC ",6300 C Street SW ,Cedar Rapids ,Linn,IA ,52499,Mass Layoff ,55,08/26/2022,2022-12-31 00:00:00,East Central Iowa,"Professional, Scientific, and Technical Services",,,,,,,,,,,,,,
+Archer-Daniels-Midland Co ,2620 Henkel Ave ,Keokuk ,Lee,IA ,52632,Mass Layoff ,65,08/26/2022,2022-08-26 00:00:00,Mississippi Valley,Manufacturing,,,,,,,,,,,,,,
+Blessing Health Keokuk ,1600 Morgan St,Keokuk,Lee,IA ,52632,Closing ,151,09/02/2022,2022-11-04 00:00:00,Mississippi Valley,Health Care and Social Assistance,,,,,,,,,,,,,,
+HDS LTD ,8805 Chambers Blvd Ste 300-266,Johnston,Polk,IA ,50131,Closing ,35,09/03/2022,2022-10-05 00:00:00,Central Iowa,Transportation and Warehousing ,,,,,,,,,,,,,,
+Collabera Inc,5005 N River Blvd,Cedar Rapids,Linn,IA,52411,Closing,3,09/12/2022,2022-10-31 00:00:00,East Central Iowa,"Professional, Scientific, and Technical Services",,,,,,,,,,,,,,
+Sunnycrest Nursing Center,401 Crisman St,Dysart,Tama,IA ,52224,Closing ,33,09/12/2022,2022-09-19 00:00:00,South Central Iowa,Health Care and Social Assistance,,,,,,,,,,,,,,
+QHC Mitchellville,114 Carter St SW,Mitchellville,Polk,IA ,50169,Closing,8,09/12/2022,2022-10-01 00:00:00,Central Iowa,Health Care and Social Assistance,,,,,,,,,,,,,,
+GXO ,4141 Dixon St ,Des Moines ,Polk,IA ,50313,Closing,34,09/15/2022,2022-10-17 00:00:00,Central Iowa,Transportation and Warehousing ,,,,,,,,,,,,,,
+"Nordstrom, Inc",7700 18th St SW,Cedar Rapids ,Linn,IA ,52404,Mass Layoff ,222,09/20/2022,2022-10-18 00:00:00,East Central Iowa,Retail Trade,,,,,,,,,,,,,,
+Larson Manufacturing ,500 Larson Ave ,Lake Mills ,Winnebago,IA ,50450,Closing ,197,09/20/2022,2022-09-20 00:00:00,Northeast Iowa,Manufacturing,,,,,,,,,,,,,,
+Wells Fargo,800 S Jordan Creek Pkwy,West Des Moines ,Polk,IA ,50266,Amendment,17,09/22/2022,2022-11-22 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo ,800 Walnut St,Des Moines,Polk,IA,50309,Amendment ,13,09/22/2022,2022-11-22 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo ,801 Walnut St ,Des Moines ,Polk,IA ,50309,Amendment ,2,09/22/2022,2022-11-22 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo,206 8th St ,Des Moines ,Polk,IA ,50309,Amendment,1,09/22/2022,2022-11-22 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo ,600 Army Post Rd SW,Des Moines ,Polk,IA ,50309,Amendment,1,09/22/2022,2022-11-22 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo,13733 University Ave,Clive,Polk,IA ,50325,Amendment,1,09/22/2022,2022-11-22 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo ,910 E 1st St,Ankeny,Polk,IA ,50021,Amendment ,1,09/22/2022,2022-11-22 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+H.D. Hudson Manufactuing Company,1901 21st St ,Eldora,Hardin,IA,50627,Closing,44,09/28/2022,2022-10-31 00:00:00,South Central Iowa,Manufacturing ,,,,,,,,,,,,,,
+Commercial Vehicle Group,301 W Spruce St ,Monona,Clayton,IA ,52159,Closing ,45,09/29/2022,2023-02-03 00:00:00,Northeast Iowa,Manufacturing ,,,,,,,,,,,,,,
+Blackhawk Services Corp,3400 Mount Pleasant St,Burlington ,Des Moines,IA,52601,Closing ,74,09/29/2022,2022-10-28 00:00:00,Mississippi Valley,Manufacturing ,,,,,,,,,,,,,,
+"Great River Health Systems, Inc",1221 S Gear Ave,West Burlington,Des Moines,IA,52655,Mass Layoff,35,09/29/2022,2022-11-01 00:00:00,Mississippi Valley,Health Care and Social Assistance,,,,,,,,,,,,,,
+The Evangelical Lutheran Good Samaritan Society,400 Hardin Dr ,Postville,Allamakee,IA ,52162,Closing ,45,09/29/2022,2022-11-19 00:00:00,Northeast Iowa,Health Care and Social Assistance,,,,,,,,,,,,,,
+Collins Community Credit Union ,1005 Blairs Ferry Rd NE,Cedar Rapids,Linn,IA ,52402,Mass Layoff,38,10/06/2022,2022-10-06 00:00:00,East Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Masterbrand Cabinets LLC,1205 Peter Dr,Waterloo ,Black Hawk,IA ,50703,Mass Layoff,61,10/10/2022,2022-11-09 00:00:00,Northeast Iowa,Manufacturing ,,,,,,,,,,,,,,
+Wells Fargo,801 Walnut St ,Des Moines,Polk,IA,50309,Amendment,1,10/20/2022,2022-12-20 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+West Liberty Foods,2225 E Commerce Dr,Mount Pleasant,Henry,IA,52641,Closing,350,10/27/2022,2022-12-31 00:00:00,Mississippi Valley,Manufacturing ,,,,,,,,,,,,,,
+"Georgia-Pacific Corrugated, LLC",2150 Kerper Blvd,Dubuque,Dubuque,IA,52001,Closing,85,11/01/2022,2022-12-31 00:00:00,Northeast Iowa,Manufacturing ,,,,,,,,,,,,,,
+Wells Fargo,800 S Jordan Creek Pkwy,West Des Moines,Polk,IA ,50266,Amendment,10,11/03/2022,2023-01-03 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo,800 Walnut St ,Des Moines ,Polk,IA,50309,Amendment,3,11/03/2022,2023-01-03 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Country Winds Manor,21668 80th St,Cresco,Howard,IA,52136,Closing,48,11/14/2022,2023-02-05 00:00:00,Northeast Iowa,Health Care and Social Assistance,,,,,,,,,,,,,,
+Employers Mutual Casuality Company,717 Mulberry St,Des Moines,Polk,IA,50309,Mass Layoff ,65,11/22/2022,2023-01-03 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Sabre Plumbing ,808 South SW Cherry St Suite 111,Ankeny,Polk,IA,50023,Mass Layoff ,17,11/22/2022,2022-12-19 00:00:00,Central Iowa,Construction,,,,,,,,,,,,,,
+Wells Fargo,800 S Jordan Creek Pkwy,West Des Moines,Polk,IA,50266,Amendment,5,12/01/2022,2023-02-01 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo ,800 Walnut St,Des Moines,Polk,IA,50309,Amendment,2,12/01/2022,2023-02-01 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo,206 8th St ,Des Moines,Polk,IA,50309,Amendment,1,12/01/2022,2023-02-01 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Mid Continent Trucking Co,701 S 15th St ,Denison,Crawford,IA,51442,Closing,26,12/02/2022,2022-11-26 00:00:00,Western Iowa,Transportation and Warehousing ,,,,,,,,,,,,,,
+Pearson,2510 N Dodge St,Iowa City,Johnson,IA,52245,Mass Layoff,50,12/16/2022,2022-12-16 00:00:00,East Central Iowa,Information,,,,,,,,,,,,,,
+"New Moxie Solar, LLC ",323 W Cherry St ,North Liberty,Johnson,IA,52317,Closing,73,12/19/2022,2022-12-02 00:00:00,East Central Iowa ,Construction,,,,,,,,,,,,,,
+Lennox Industires ,200 S 12th Ave,Marshalltown,Marshall,IA,50158,Mass Layoff,114,12/20/2022,2023-01-16 00:00:00,South Central Iowa ,Manufacturing ,,,,,,,,,,,,,,
+Grit Delivers LLC,2500 Heinz Rd,Iowa City,Johnson,IA,52240,Closing,62,1/4/2023,2023-02-05 00:00:00,East Central Iowa ,Transportation and Warehousing ,,,,,,,,,,,,,,
+Dotdash Meredith,1716 Locust St,Des Moines,Polk,IA,50309,Mass Layoff ,45,1/26/2023,2023-02-01 00:00:00,Central Iowa ,Information,,,,,,,,,,,,,,
+GoDaddy ,1 Parsons Dr,Hiawatha,Linn,IA ,52233,Mass Layoff,35,2/09/2023,2023-05-01 00:00:00,East Central Iowa,Information,,,,,,,,,,,,,,
+Transamerica Life Insurance Co,6400 C St SW,Cedar Rapids,Linn,IA,52499,Mass Layoff ,42,02/17/2023,2023-03-21 00:00:00,East Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+"Richelieu Foods, Inc",701 A Ave ,Grundy Center ,Grundy,IA,50638,Closing,81,02/28/2023,2023-04-28 00:00:00,Northeast Iowa ,Manufacturing ,,,,,,,,,,,,,,
+Clow Valve Company,902 S 2nd St,Oskaloosa,Mahaska ,IA,52577,Mass Layoff,28,02/28/2023,2023-04-02 00:00:00,South Central Iowa,Manufacturing ,,,,,,,,,,,,,,
+Village Cottages AL ,925 Martin Luther King Dr,Fort Dodge ,Webster ,IA ,50501,Closing ,11,02/07/2023,2023-03-15 00:00:00,North Central Iowa ,Health Care and Social Assistance,,,,,,,,,,,,,,
+Webster Post Acute ,209 W Jefferson ,Winterset ,Madison ,IA ,50273,Closing ,26,02/07/2023,2023-03-15 00:00:00,Central Iowa ,Health Care and Social Assistance,,,,,,,,,,,,,,
+Webster Post Acute ,2721 Tenth Ave N ,Fort Dodge ,Webster ,IA ,50501,Closing ,51,02/07/2023,2023-03-15 00:00:00,North Central Iowa ,Health Care and Social Assistance,,,,,,,,,,,,,,
+Humboldt Wellness and Rehabilitation,1111 11th Ave N,Humboldt,Humboldt,IA ,50548,Closing ,30,02/07/2023,2023-03-15 00:00:00,North Central Iowa ,Health Care and Social Assistance,,,,,,,,,,,,,,
+Madison Wellness & Rehabilitation ,411 E Lane St ,Winterset ,Madison,IA ,50273,Closing ,43,02/07/2023,2023-03-15 00:00:00,Central Iowa ,Health Care and Social Assistance,,,,,,,,,,,,,,
+Timber City Wellness & Rehabilitation ,1015 Wesley Dr,Maquoketa,Jackson ,IA ,52060,Closing ,53,02/07/2023,2023-04-15 00:00:00,Mississippi Valley ,Health Care and Social Assistance,,,,,,,,,,,,,,
+Duraham School Services ,3640 Davenport Ave,Davenport ,Scott,IA ,52807,Mass Layoff ,129,03/29/2023,2023-06-01 00:00:00,Mississippi Valley ,Transportation and Warehousing ,,,,,,,,,,,,,,
+Iowa Wesleyan Univeristy ,601 North Main St,Mount Pleasant,Henry ,IA ,52641,Closing ,118,03/30/2023,2023-05-31 00:00:00,Mississippi Valley ,Educational Services ,,,,,,,,,,,,,,
+Durham School Services ,1601 Blackhawk St ,Waterloo,Black Hawk,IA ,50701,Mass Layoff ,97,03/31/2023,2023-06-01 00:00:00,Northeast Iowa ,Transportation and Warehousing ,,,,,,,,,,,,,,
+"Association Member Benefits Advisor, LLC ",4050 NW 114th St ,Urbandale ,Polk ,IA ,50322,Mass Layoff ,46,04/06/2023,2023-05-12 00:00:00,Central Iowa ,Finance and Insurance,,,,,,,,,,,,,,
+Mom's Meals ,810 Blakely Circle ,Grinnell,Poweshiek,IA,50112,Mass Layoff ,54,04/07/2023,2023-05-06 00:00:00,South Central Iowa ,Manufacturing ,,,,,,,,,,,,,,
+Pearson ,2510 N Dodge St,Iowa City ,Johnson ,IA ,52245,Amendment ,17,04/13/2023,2023-03-31 00:00:00,East Central Iowa ,Information ,,,,,,,,,,,,,,
+David's Bridal ,8801 Unversity Ave ,Clive,Polk,IA,50325,Mass Layoff ,29,04/14/2023,2023-06-12 00:00:00,Central Iowa ,Retail Trade ,,,,,,,,,,,,,,
+David's Bridal ,1402 Twixt Rd ,Marion ,Linn,IA,52302,Mass Layoff ,26,04/14/2023,2023-06-12 00:00:00,East Central Iowa ,Retail Trade ,,,,,,,,,,,,,,
+David's Bridal ,5001 Sergeant Rd Suite 330,Sioux City ,Woodbury ,IA,51106,Mass Layoff ,17,04/14/2023,2023-06-12 00:00:00,Western Iowa ,Retail Trade ,,,,,,,,,,,,,,
+David's Bridal ,5252 Elmore Ave Suite A ,Davenport ,Scott ,IA,52807,Mass Layoff ,22,04/14/2023,2023-06-12 00:00:00,Mississippi Valley ,Retain Trade ,,,,,,,,,,,,,,
+Wells Fargo ,800 Walnust St ,Des Moines,Polk ,IA,50309,Mass Layoff ,69,04/18/2023,2023-04-18 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo ,801 Walnut St ,Des Moines,Polk ,IA,50309,Mass Layoff ,8,04/18/2023,2023-04-18 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo ,206 8th St ,Des Moines,Polk ,IA,50309,Mass Layoff ,1,04/18/2023,2023-04-18 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+"Association Member Benefits Advisor, LLC ",4050 NW 114th St ,Urbandale ,Polk ,IA ,50322,Amendment ,1,04/20/2023,2023-06-02 00:00:00,Central Iowa ,Finance and Insurance,,,,,,,,,,,,,,
+Pearson,9200 Earnhart LN SW,Cedar Rapids ,Linn,IA ,52404,Mass Layoff,37,05/01/2023,2023-06-01 00:00:00,East Central Iowa ,Information,,,,,,,,,,,,,,
+GoDaddy ,1 Parsons Dr,Hiawatha,Linn,IA ,52233,Amendment,1,05/01/2023,2023-05-01 00:00:00,East Central Iowa ,Information,,,,,,,,,,,,,,
+"Graphic Packaging International, LLC ",117 Siegel St ,Tama,Tama,IA,52339,Closing ,85,05/02/2023,2023-06-02 00:00:00,South Central Iowa ,Manufacturing ,,,,,,,,,,,,,,
+Lutheran Service in Iowa,2255 JFK Rd,Dubuque,Dubuque,IA ,52002,Mass Layoff ,10,05/04/2023,2023-07-01 00:00:00,Northeast Iowa ,Health Care and Social Assistance,,,,,,,,,,,,,,
+Lutheran Service in Iowa,315 5th Ave S ,Clinton ,Clinton ,IA ,53732,Mass Layoff ,5,05/04/2023,2023-07-01 00:00:00,Mississippi Valley ,Health Care and Social Assistance,,,,,,,,,,,,,,
+Lutheran Service in Iowa,111 W 15th St ,Davenport,Scott,IA ,52803,Mass Layoff ,20,05/04/2023,2023-07-01 00:00:00,Mississippi Valley,Health Care and Social Assistance,,,,,,,,,,,,,,
+Lutheran Service in Iowa,514 Cedar St ,Muscatine ,Muscatine ,IA ,52761,Mass Layoff ,7,05/04/2023,2023-07-01 00:00:00,Mississippi Valley,Health Care and Social Assistance,,,,,,,,,,,,,,
+Lutheran Service in Iowa,2515 Madison Ave ,Burlington ,Des Moines ,IA ,52601,Mass Layoff ,19,05/04/2023,2023-07-01 00:00:00,Mississippi Valley,Health Care and Social Assistance,,,,,,,,,,,,,,
+Lutheran Service in Iowa,106 16th St SW ,Waverly ,Bremer ,IA ,50677,Mass Layoff ,3,05/04/2023,2023-07-01 00:00:00,Northeast Iowa ,Health Care and Social Assistance,,,,,,,,,,,,,,
+Upper Iowa University ,605 Washington St,Fayette ,Fayette,IA ,52142,Mass Layoff ,21,05/10/2023,2023-05-10 00:00:00,Northeast Iowa ,Educational Services ,,,,,,,,,,,,,,
+Upper Iowa University ,605 Washington St,Fayette ,Fayette,IA ,52142,Amendment ,1,05/11/2023,2023-05-11 00:00:00,Northeast Iowa ,Educational Services ,,,,,,,,,,,,,,
+Wells Fargo ,800 S Jordan Creek Parkway,West Des Moines ,Polk,IA ,50266,Mass Layoff ,25,05/16/2023,2023-05-15 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+"ACT, Inc ",500 ACT Drive,Iowa City,Johnson,IA ,52243,Mass Layoff ,106,05/17/2023,2023-06-19 00:00:00,East Central Iowa ,"Professional, Scientific, and Technical Services",,,,,,,,,,,,,,
+Upper Iowa University ,605 Washington St,Fayette ,Fayette,IA ,52142,Amendment ,13,05/25/2023,2023-05-24 00:00:00,Northeast Iowa ,Educational Services ,,,,,,,,,,,,,,
+Global Foods Processing Inc,1826 Chicago Ave,Sioux CIty,Woodbury,IA ,51106,Closing ,92,05/30/2023,2023-06-30 00:00:00,Western Iowa ,Manufacturing,,,,,,,,,,,,,,
+Global Atlantic Financial Company ,"215 10th St, Ste 11",Des Moines ,Polk,IA ,50309,Mass Layoff ,38,05/30/2023,2023-07-31 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+David's Bridal ,8801 Unversity Ave ,Clive,Polk,IA,50325,Amendment ,22,06/12/2023,2023-08-20 00:00:00,Central Iowa ,Retail Trade ,,,,,,,,,,,,,,
+David's Bridal ,1402 Twixt Rd ,Marion ,Linn,IA,52302,Amendment ,25,06/12/2023,2023-08-20 00:00:00,East Central Iowa ,Retail Trade ,,,,,,,,,,,,,,
+David's Bridal ,5001 Sergeant Rd Suite 330,Sioux City ,Woodbury ,IA,51106,Amendment ,20,06/12/2023,2023-08-20 00:00:00,Western Iowa ,Retail Trade ,,,,,,,,,,,,,,
+David's Bridal ,5252 Elmore Ave Suite A ,Davenport ,Scott ,IA,52807,Amendment ,26,06/12/2023,2023-08-20 00:00:00,Mississippi Valley ,Retail Trade ,,,,,,,,,,,,,,
+"Bitwise Industries, Inc ",700 Van Ness Ave ,Fresco ,Fresco ,CA ,93721,Mass Layoff ,4,06/14/2023,2023-06-14 00:00:00,Out of State ,"Professional, Scientific, and Technical Services",,,,,,,,,,,,,,
+Packers Sanitation Service Inc,420 North 10 Ave ,Marshalltown ,Marshall,IA ,50158,Mass Layoff ,125,06/27/2023,2023-08-15 00:00:00,South Central Iowa ,Administrative and Support and Waste Management and Remediation Services,,,,,,,,,,,,,,
+Countryside Health Care Center ,6120 Morningside Ave,Sioux City,Woodbury,IA ,51106,Closing ,101,07/05/2023,2023-09-05 00:00:00,Western Iowa ,Health Care and Social Assistance,,,,,,,,,,,,,,
+"Fellers, LLC",4461 121st St,Urbandale,Polk ,IA ,50323,Closing,1,06/28/2023,2023-08-31 00:00:00,Central Iowa ,Wholesale Trade,,,,,,,,,,,,,,
+"All Trego/Dugan Aviation of Grand Island, Inc",5300 Fleur Dr,Des Moines,Polk ,IA ,50321,Mass Layoff ,36,07/06/2023,2023-08-05 00:00:00,Central Iowa ,Transportation and Warehousing ,,,,,,,,,,,,,,
+WestRock Company ,3800 Dixon St,Des Moines ,Polk,IA ,50313,Closing ,29,07/13/2023,2023-09-01 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+"The RightStuff, Inc",512 NE Main St,Grimes ,Polk,IA ,50111,Mass Layoff ,29,07/30/2023,2023-08-20 00:00:00,Central Iowa ,Retail Trade ,,,,,,,,,,,,,,
+"General Mills Operations, LLC ",812 3rd St NW ,Independence ,Buchanan,IA ,50644,Closing ,211,07/31/2023,2023-10-06 00:00:00,Northeast Iowa ,Manufacturing,,,,,,,,,,,,,,
+"General Mills Operations, LLC ",812 3rd St NW ,Independence ,Buchanan,IA ,50644,Closing ,6,07/31/2023,2023-12-01 00:00:00,Northeast Iowa ,Manufacturing,,,,,,,,,,,,,,
+Wells Fargo ,800 Walnut St ,Des Moines,Polk,IA ,50309,Mass Layoff,65,08/08/2023,2023-07-11 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo ,801 Walnut St ,Des Moines ,Polk,IA ,50309,Mass Layoff ,7,08/08/2023,2023-07-11 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo,206 8th St ,Des Moines ,Polk,IA ,50309,Mass Layoff ,8,08/08/2023,2023-08-08 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+Yellow Corporation ,4800 Westown Pkwy Suite 120,West Des Moines ,Polk ,IA,50266,Closing,92,08/01/2023,2023-07-30 00:00:00,Central Iowa ,Transportation and Warehousing ,,,,,,,,,,,,,,
+Yellow Corporation ,6144 NE 22nd St,Des Moines,Polk,IA ,50313,Closing,49,08/01/2023,2023-07-30 00:00:00,Central Iowa ,Transportation and Warehousing ,,,,,,,,,,,,,,
+Yellow Corporation ,2425 Bridgeport Dr,Sioux City ,Woodbury,IA ,51111,Closing,7,08/01/2023,2023-07-30 00:00:00,Iowa Plains ,Transportation and Warehousing ,,,,,,,,,,,,,,
+Yellow Corporation ,1514 S Pierce,Mason City ,Cerro Gordo,IA,50401,Closing ,4,08/01/2023,2023-07-30 00:00:00,Northeast Iowa ,Transportation and Warehousing ,,,,,,,,,,,,,,
+Yellow Corporation ,18806 Kapp Dr,Peosta,Dubuque ,IA ,52068,Closing ,1,08/01/2023,2023-07-30 00:00:00,Northeast Iowa ,Transportation and Warehousing ,,,,,,,,,,,,,,
+Yellow Corporation ,3219 Nebraska Ave,Council Bluffs,Pottawatame,IA ,51501,Closing ,30,08/01/2023,2023-07-30 00:00:00,Iowa Plains ,Transportation and Warehousing ,,,,,,,,,,,,,,
+Yellow Corporation ,4601 J Street Sw,Cedar Rapids,Linn,IA ,52404,Closing ,1,08/01/2023,2023-07-30 00:00:00,East Central Iowa ,Transportation and Warehousing ,,,,,,,,,,,,,,
+Naeve Family Beef Inc ,1902 7th Ave ,Camanche ,Clinton,IA ,52730,Mass Layoff ,46,08/16/2023,2023-08-16 00:00:00,Mississippi Valley ,Manufacturing,,,,,,,,,,,,,,
+Wells Fargo,206 8th St,Des Moines,Polk,IA,50309,Amendment ,1,08/22/2023,2023-08-22 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+Jack Link's ,210 North 1St St ,Laurens,Pocahontas,IA ,50554,Mass Layoff ,46,09/7/2023,2023-09-07 00:00:00,Iowa Plains ,Wholesale Trade ,,,,,,,,,,,,,,
+The Indigo Road Hospitality Group,15 W State St ,Mason City ,Cerro Gordo ,IA ,50401,Mass Layoff ,38,9/16/2023,2023-10-18 00:00:00,Northeast Iowa ,Accommodation and Food Service ,,,,,,,,,,,,,,
+IR Labs,"4350 Westown Parkway, Suite 300",West Des Moins,Polk,IA ,52066,Mass Layoff ,155,09/19/2023,2023-10-19 00:00:00,Central Iowa ,"Professional, Scientific, and Technical Services",,,,,,,,,,,,,,
+CommUnity Crisis Center ,1121 Gilbert Ct,Iowa City ,Johnson,IA,52240,Mass Layoff,100,09/22/2023,2023-09-29 00:00:00,East Central Iowa ,Health Care and Social Assistance,,,,,,,,,,,,,,
+Collins Aerospace,400 Collins Rd NE,Cedar Rapids ,Linn,IA ,52498,Mass Layoff ,68,09/12/2023,2023-10-13 00:00:00,East Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+Sivyer Steel Castings ,225 33rd St ,Bettendorf,Scott,IA ,52722,Mass Layoff ,123,09/28/2023,2023-09-28 00:00:00,Mississippi Valley ,Manufacturing,,,,,,,,,,,,,,
+Masonite,2510 19th St Southwest,Mason City,Cerro Gordo,IA,50401,Mass Layoff ,43,10/02/2023,2023-09-22 00:00:00,Northeast Iowa,Manufacturing,,,,,,,,,,,,,,
+Wells Fargo,801 Walnut St ,Des Moines,Polk,IA,50309,Amendment,1,10/3/2023,2023-12-03 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo ,800 S Jordan Creek Parkway,West Des Moines ,Polk,IA ,50265,Mass Layoff ,34,10/3/2023,2023-12-03 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo ,800 Walnut St ,Des Moines ,Polk,IA,50309,Amendment,4,10/17/2023,2023-12-17 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo ,206 8th St ,Des Moines,Polk,IA ,50309,Amendment,1,10/17/2023,2023-12-17 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo,800 S Jordan Creek Parkway,Des Moines,Polk,IA ,50265,Amendment,6,10/17/2023,2023-12-17 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+UFG Insurance ,118 Second AVE SE,Cedar Rapids ,Linn,IA ,52407,Mass Layoff ,40,10/24/2023,2023-10-24 00:00:00,East Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+CDS Global ,1901 Bell Ave,Des Moines,Polk,IA,50315,Mass Layoff,27,11/7/2023,2023-11-07 00:00:00,Central Iowa ,Information ,,,,,,,,,,,,,,
+Wells Fargo ,800 S Jordan Creek Parkway,West Des Moines,Polk,IA ,50265,Amendment,1,11/14/2023,2024-01-14 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+GuideOne Insurance ,1111 Ashworth Rd,West Des Moines,Polk,IA ,50265,Mass Layoff ,43,11/15/2023,2023-12-15 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+"Cygnus Home Services, LLC d/b/a Yelloh ",3105 West 18th St ,Spencer,Clay,IA ,51301,Mass Layoff ,5,11/28/2023,2024-01-27 00:00:00,Iowa Plains,Retail Trade ,,,,,,,,,,,,,,
+Wells Fargo ,800 S Jordan Creek Parkway,West Des Moines,Polk,IA ,50265,Amendment,8,11/28/2023,2024-01-28 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+"Cygnus Home Services, LLC d/b/a Yelloh ",917 N 4th Ave ,Marshalltown ,Marshall,IA ,50158,Closing ,1,12/11/2023,2024-02-09 00:00:00,South Central Iowa ,Retail Trade ,,,,,,,,,,,,,,
+Wells Fargo ,800 S Jordan Creek Parkway,West Des Moines,Polk,IA,50266,Amendment,1,12/12/2023,2023-02-12 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+Southeast Iowa Reginoal Medical Center,1221 S Gear Ave ,West Burlington,Des Moines,IA,52655,Mass Layoff,45,12/19/2023,2024-02-23 00:00:00,Mississippi Valley,Health Care and Social Assistance,,,,,,,,,,,,,,
+Southeast Iowa Reginoal Medical Center,1307 S Gear Ave ,West Burlington,Des Moines,IA,52655,Mass Layoff,11,12/19/2023,2024-02-23 00:00:00,Mississippi Valley,Health Care and Social Assistance,,,,,,,,,,,,,,
+Southeast Iowa Reginoal Medical Center,5445 Ave O ,Fort Madision,Lee,IA ,52627,Mass Layoff,11,12/19/2023,2024-02-23 00:00:00,Mississippi Valley,Health Care and Social Assistance,,,,,,,,,,,,,,
+Oberg Freight Company ,22153 Old Highway 169,Fort Dodge,Webster,IA ,50501,Closing ,85,12/27/2023,2024-01-31 00:00:00,Iowa Plains ,Transportation and Warehousing ,,,,,,,,,,,,,,
+"Jerome W. Vittetoe Pork, Ltd ",2504 Quince Ave,Washington,Washington,IA,52353,Closing ,65,12/29/2023,2024-01-01 00:00:00,East Central Iowa ,"Agriculture, Forestry, Fishing and Hunting ",,,,,,,,,,,,,,
+"GXO Warehouse Company, Inc",3311 East Lincoln Way ,Ames,Story,IA ,50010,Closing ,46,1/19/2024,2024-02-21 00:00:00,Central Iowa ,Transportation and Warehousing ,,,,,,,,,,,,,,
+BDC Group Inc,925 Boyson Ct,Hiawatha ,Linn ,IA ,52233,Closing ,35,01/30/2024,2024-01-25 00:00:00,East Central Iowa ,Construction ,,,,,,,,,,,,,,
+"Grand River Medical Group, P.C. ",1515 Delhi St Suite 100,Dubuque,Dubuque ,IA ,52001,Mass Layoff ,52,02/01/2024,2024-02-01 00:00:00,Northeast Iowa ,Health Care and Social Assistance,,,,,,,,,,,,,,
+"IR Labs DE, LLC ","4350 Westown Parkway, Suite 300",West Des Moines ,Polk ,IA ,50266,Mass Layoff ,66,02/02/2024,2024-02-02 00:00:00,Central Iowa ,"Professional, Scientific, and Technical Services",,,,,,,,,,,,,,
+Zachry Industiral ,2500 Wiggins Rd,Muscatine,Muscatine,IA,52761,Mass Layoff ,46,02/13/2024,2024-03-13 00:00:00,Mississippi Valley ,Construction ,,,,,,,,,,,,,,
+Wells Fargo,800 S Jordan Creek Parkway,West Des Moines,Polk,IA ,50266,Mass Layoff ,6,02/20/2024,2024-01-23 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo,800 S Jordan Creek Parkway,West Des Moines,Polk,IA ,50266,Mass Layoff ,5,02/20/2024,2024-02-06 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+Wells Fargo ,800 S Jordan Creek Parkway,West Des Moines,Polk,IA ,50266,Mass Layoff ,25,02/20/2024,2024-02-20 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+"IR Labs DE, LLC ",4350 Westown Parkway Ste 300,West Des Moines,Polk,IA,50266,Mass Layoff ,44,02/22/2024,2024-02-22 00:00:00,Central Iowa,"Professional, Scientific, and Technical Services",,,,,,,,,,,,,,
+"Cygnus Home Services, LLC d/b/a Yelloh",215 Town Line Rd ,Osceola,Clarke,IA ,50213,Mass Layoff ,5,03/04/2024,2024-05-03 00:00:00,Iowa Plains,Retail Trade ,,,,,,,,,,,,,,
+Wells Fargo,800 S Jordan Creek Parkway,West Des Moines,Polk,IA ,50266,Mass Layoff ,22,03/05/2024,2024-03-05 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+Tyson Foods ,13500 I Court,Perry ,Dallas,IA ,50220,Closing ,1276,03/11/2024,2024-06-28 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+John Deere Des Moines Works ,825 SW Irvinedale Drive,Ankeny,Polk,IA ,50023,Mass Layoff ,30,03/12/2024,2024-04-08 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+John Deere Des Moines Works ,825 SW Irvinedale Drive,Ankeny,Polk,IA ,50023,Mass Layoff ,30,03/12/2024,2024-04-15 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+John Deere Des Moines Works ,825 SW Irvinedale Drive,Ankeny,Polk,IA ,50023,Mass Layoff ,30,03/12/2024,2024-04-29 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+John Deere Des Moines Works ,825 SW Irvinedale Drive,Ankeny,Polk,IA ,50023,Mass Layoff ,30,03/12/2024,2024-05-06 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+John Deere Des Moines Works ,825 SW Irvinedale Drive,Ankeny,Polk,IA ,50023,Mass Layoff ,30,03/12/2024,2024-05-20 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+"Faircast, Inc",905 West Depot Ave ,Fairfield ,Jefferson,IA,52556,Closing ,46,03/12/2024,2024-04-13 00:00:00,South Central Iowa,Manufacturing,,,,,,,,,,,,,,
+Wells Fargo ,800 S Jordan Creek Parkway,West Des Moines,Polk,IA ,50266,Amendment ,13,03/19/2024,2024-03-19 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+John Deere Waterloo Works ,3500 East Donald St ,Waterloo ,Black Hawk,IA ,50704,Mass Layoff ,308,3/26/2024,2024-04-26 00:00:00,Northeast Iowa ,Manufacturing,,,,,,,,,,,,,,
+PSSI ,13500 I Court ,Perry ,Dallas,IA ,50220,Mass Layoff ,76,03/27/2024,2024-06-28 00:00:00,Central Iowa ,Administrative and Support and Waste Management and Remediation Services,,,,,,,,,,,,,,
+West Liberty Foods ,270 West 2nd St,West Liberty,Muscatine ,IA,52776,Mass Layoff,24,03/28/2024,2024-05-06 00:00:00,Mississippi Valley ,Manufacturing,,,,,,,,,,,,,,
+Bayer CropScience LP ,2500 Wiggins Road,Muscatine,Muscatine,IA ,52761,Mass Layoff,28,03/28/2024,2024-05-22 00:00:00,Mississippi Valley ,Wholesale Trade ,,,,,,,,,,,,,,
+Wells Fargo,800 S Jordan Creek Parkway,West Des Moines,Polk ,IA ,50266,Amendment ,5,04/02/2024,2024-04-02 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+"DTG2Go, LLC ",1628 N Lake Ave,Storm Lake ,Buena Vista ,IA ,50588,Closing ,14,04/03/2024,2024-05-03 00:00:00,Iowa Plains ,Manufacturing,,,,,,,,,,,,,,
+"DTG2Go, LLC ",1628 N Lake Ave,Storm Lake ,Buena Vista ,IA ,50588,Closing ,5,04/03/2024,2024-06-30 00:00:00,Iowa Plains ,Manufacturing,,,,,,,,,,,,,,
+"Aramark Campus, LLC ",1000 N 4th St ,Fairfield ,Jefferson,IA ,52557,Mass Layoff ,30,04/04/2024,2024-04-05 00:00:00,South Central Iowa ,Accommodation and Food Services,,,,,,,,,,,,,,
+Monroe Care Center,120 N 13th St,Albia,Monroe,IA,52531,Closing,35,04/04/2024,2024-06-01 00:00:00,South Central Iowa ,Health Care and Social Assistance,,,,,,,,,,,,,,
+"Blue Monde, LLC",311 21st St ,Camanche,Clinton,IA,52730,Closing,69,04/15/2024,2024-05-31 00:00:00,Mississippi Valley ,"Professional, Scientific, and Technical Services",,,,,,,,,,,,,,
+Wells Fargo ,800 S Jordan Creek Parkway,West Des Moines,Polk,IA ,50266,Amendment ,7,04/16/2024,2024-06-16 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+Lutheran Services In Iowa,106 16th St SW,Waverly,Bremer,IA ,50677,Mass Layoff ,31,04/24/2024,2024-05-16 00:00:00,Northeast Iowa ,Health Care and Social Assistance,,,,,,,,,,,,,,
+Lutheran Services In Iowa,106 16th St SW,Waverly,Bremer,IA ,50677,Mass Layoff ,12,04/24/2024,2024-05-31 00:00:00,Northeast Iowa ,Health Care and Social Assistance,,,,,,,,,,,,,,
+Glenwood Resource Center,104 Lacey St,Glenwood ,Mills ,IA,51534,Closing ,235,04/29/2024,2024-06-30 00:00:00,Iowa Plains ,Health Care and Social Assistance,,,,,,,,,,,,,,
+West Liberty Foods ,270 West 2nd St,West Liberty,Muscatine ,IA,52776,Mass Layoff,39,04/30/2024,2024-06-03 00:00:00,Mississippi Valley ,Manufacturing,,,,,,,,,,,,,,
+Wells Fargo,800 S Jordan Creek Parkway,West Des Moines,Polk ,IA,50266,Mass Layoff,40,04/30/2024,2024-06-30 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+Amcor,1500 Aurora Ave,Des Moines,Polk,IA ,50313,Mass Layoff,9,05/01/2024,2024-06-01 00:00:00,Central Iowa ,Wholesale Trade,,,,,,,,,,,,,,
+Amcor,1500 Aurora Ave,Des Moines,Polk,IA ,50313,Mass Layoff,10,05/01/2024,2024-07-01 00:00:00,Central Iowa ,Wholesale Trade,,,,,,,,,,,,,,
+Amcor,1500 Aurora Ave,Des Moines,Polk,IA ,50313,Mass Layoff,1,05/01/2024,2024-08-01 00:00:00,Central Iowa ,Wholesale Trade,,,,,,,,,,,,,,
+Amcor,1500 Aurora Ave,Des Moines,Polk,IA ,50313,Mass Layoff,9,05/01/2024,2024-09-01 00:00:00,Central Iowa ,Wholesale Trade,,,,,,,,,,,,,,
+Family Resources Inc,1414 W Lombard St ,Davenport,Scott,IA,52804,Mass Layoff,26,04/25/2024,2024-06-30 00:00:00,Mississippi Valley,Health Care and Social Assistance,,,,,,,,,,,,,,
+Dauntless Delivery,7200 Chavenelle Rd,Dubuque,Dubuque,IA,52002,Closing ,45,05/02/2024,2024-06-11 00:00:00,Northeast Iowa,Transportation and Warehousing ,,,,,,,,,,,,,,
+On With Life,714 Lacey St #100 ,Glenwood,Mills,IA,51534,Mass Layoff ,31,05/08/2024,2024-06-17 00:00:00,Iowa Plains ,Health Care and Social Assistance,,,,,,,,,,,,,,
+Wells Fargo,800 S Jordan Creek Parkway,West Des Moines,Polk,IA,50266,Amendment ,24,05/14/2024,2024-07-14 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+John Deere Waterloo Works ,3500 East Donald St ,Waterloo ,Black Hawk,IA,50704,Mass Layoff ,192,05/20/2024,2024-06-21 00:00:00,Northeast Iowa,Manufacturing,,,,,,,,,,,,,,
+"Cygnus Home Services, LLC d/b/a Yelloh ",422 Performance Dr,Cedar Falls ,Black Hawk,IA ,50613,Mass Layoff,8,05/28/2024,2024-07-27 00:00:00,Northeast Iowa ,Retail Trade ,,,,,,,,,,,,,,
+"Cygnus Home Services, LLC d/b/a Yelloh ",318 Industrial Dr,DeWitt,Clinton,IA,52742,Mass Layoff ,5,05/28/2024,2024-07-27 00:00:00,Mississippi Valley,Retail Trade ,,,,,,,,,,,,,,
+"Cygnus Home Services, LLC d/b/a Yelloh ",4397 E 50th St ,Des Moines ,Polk,IA ,50317,Mass Layoff ,16,05/28/2024,2024-07-27 00:00:00,Central Iowa ,Retail Trade ,,,,,,,,,,,,,,
+"Cygnus Home Services, LLC d/b/a Yelloh ",1420 N 11th St ,Humboldt ,Humboldt ,IA,50548,Mass Layoff ,5,05/28/2024,2024-07-27 00:00:00,Iowa Plains ,Retail Trade ,,,,,,,,,,,,,,
+John Deere Intelligent Solutions ,9505 Northpark Dr,Urbandale ,Polk ,IA,50322,Mass Layoff ,58,06/03/2024,2024-06-06 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+John Deere Waterloo Works ,3500 East Donald St ,Waterloo ,Black Hawk,IA,50704,Mass Layoff - Salaired ,49,06/03/2024,2024-06-06 00:00:00,Northeast Iowa,Manufacturing,,,,,,,,,,,,,,
+John Deere Des Moines Works,825 SW Irvinedale ,Ankeny,Polk ,IA ,50023,Mass Layoff ,16,06/03/2024,2024-06-06 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+Bridgestone Americas Manufacturing Group-Firestone Ag Plant Des Moines,4600 NW 2nd St,Des Moines,Polk,IA,50313,Mass Layoff ,118,06/05/2024,2024-07-05 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+John Deere Intelligent Solutions ,9505 Northpark Dr,Urbandale ,Polk ,IA,50322,Amendment,1,06/07/2024,2024-06-07 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+Atek Metal Technologies,2205 Rusty Kennedy Rd,New Hampton ,Chickasaw ,IA ,50659,Mass Layoff ,48,06/05/2024,2024-06-27 00:00:00,Northeast Iowa ,Manufacturing,,,,,,,,,,,,,,
+Wells Fargo,800 S Jordan Creek Parkway,West Des Moines,Polk,IA,50266,Amendment ,26,06/11/2024,2024-08-11 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+Bridgestone Americas Manufacturing Group-Firestone Ag Plant Des Moines,4600 NW 2nd St,Des Moines,Polk,IA,50313,Amendmnet - Decrease in number ,89,06/12/2024,2024-07-05 00:00:00,Central Iowa,Manufacturing,,,,,,,,,,,,,,
+Tyson Foods,13500 I Court,Perry ,Dallas,IA ,50220,Amendment - Change in Date ,32,06/11/2024,2024-07-27 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+Tyson Foods,13500 I Court,Perry ,Dallas,IA ,50220,Amendment - Change in Date,32,06/11/2024,2024-08-24 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+Tyson Foods,13500 I Court,Perry ,Dallas,IA ,50220,Amendment - Change in Date ,5,06/11/2024,2024-09-28 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+FD Treats ,315 10th St,Hawarden,Sioux ,IA ,51023,Closing ,36,06/20/2024,2024-07-19 00:00:00,Iowa Plains,Manufacturing,,,,,,,,,,,,,,
+Wells Fargo ,800 S Jordan Creek Parkway,West Des Moines,Polk,IA ,50266,Amendment - Additional Employees,10,06/25/2024,2024-08-25 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+John Deere Davenport Works,1175 E 90th St ,Davenport,Scott,IA ,52807,Mass Layoff,211,06/28/2024,2024-08-30 00:00:00,Mississippi Valley ,Manufacturing,,,,,,,,,,,,,,
+John Deere Dubuque Works ,186000 S John Deere Rd,Dubuque,Dubuque,IA,52001,Mass Layoff,99,06/28/2024,2024-08-30 00:00:00,Northeast Iowa,Manufacturing,,,,,,,,,,,,,,
+Chicago RIvet & Machine Co,N Highway 5,Albia,Monroe,IA,52531,Closing,19,06/28/2024,2024-10-31 00:00:00,South Central Iowa,Manufacturing,,,,,,,,,,,,,,
+Smithfield Packaged Meats Corp,"612 Adventureland Dr, NE",Altoona,Polk,IA,50009,Closing ,319,07/02/2024,2024-08-30 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+Winnebago Industries,1200 11th St ,Charles City ,Floyd ,IA ,50616,Closing ,36,07/09/2024,2024-09-01 00:00:00,Northeast Iowa ,Manufacturing,,,,,,,,,,,,,,
+Wells Fargo,800 S Jordan Creek Parkway,West Des Moines,Polk,IA ,50266,Amendment - Additional Employees,24,07/09/2024,2024-09-11 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Family Resources Inc,1414 W Lombard St,Davenport,Scott,IA ,52002,Amendment- Change in Date ,0,06/17/2024,2024-06-14 00:00:00,Mississippi Valley,Health Care and Social Assistance,,,,,,,,,,,,,,
+John Deere Waterloo Works ,3500 East Donald St ,Waterloo,Black Hawk,IA ,50704,Mass Layoff,191,07/11/2024,2024-09-20 00:00:00,Northeast Iowa,Manufacturing,,,,,,,,,,,,,,
+John Deere Waterloo Works ,300 Commerical St ,Waterloo,Black Hawk,IA ,50701,Mass Layoff,89,07/11/2024,2024-09-20 00:00:00,Northeast Iowa,Manufacturing,,,,,,,,,,,,,,
+John Deere Waterloo Works ,3801 W Ridgeway Ave ,Waterloo ,Black Hawk,IA ,50701,Mass Layoff,65,07/11/2024,2024-09-20 00:00:00,Northeast Iowa,Manufacturing,,,,,,,,,,,,,,
+"Salford, Inc",928 Furnas Dr,Osceola,Clarke,IA ,50213,Closing ,51,07/16/2024,2024-07-16 00:00:00,Iowa Plains ,Manufacturing,,,,,,,,,,,,,,
+West Liberty Foods ,207 W 2nd St ,West Liberty ,Muscatine ,IA ,52776,Mass Layoff ,1,07/17/2024,2024-08-18 00:00:00,Mississippi Valley ,Manufacturing,,,,,,,,,,,,,,
+Wells Fargo ,800 S Jordan Creek Parkway,West Des Moines,Polk,IA ,50266,Amendment - Additional Employees,12,07/23/2024,2024-09-23 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+John Deere Dubuque Works,18600 S John Deere Rd,Dubuque,Dubuque,IA,52001,Mass Layoff ,34,07/24/2024,2024-07-24 00:00:00,Northeast Iowa ,Manufacturing,,,,,,,,,,,,,,
+John Deere Waterloo Works ,3500 East Donald St ,Waterloo,Black Hawk,IA ,50704,Mass Layoff ,69,07/24/2024,2024-07-24 00:00:00,Northeast Iowa ,Manufacturing,,,,,,,,,,,,,,
+John Deere Financial,6400 NW 86th St ,Johnston,Polk,IA,50131,Mass Layoff,67,07/24/2024,2024-07-24 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+"Kinze Manufacturing, Inc.",2172 M Ave.,Williamsburg,Iowa,IA,52361,Mass Layoff,192,07/31/2024,2024-08-01 00:00:00,East Central Iowa,Manufacturing ,,,,,,,,,,,,,,
+Gates Corporation,1801 N 19th Ave E.,Newton,Jasper,IA,50208,Closing,33,8/1/2024,2024-11-01 00:00:00,Central Iowa,Manufacturing,,,,,,,,,,,,,,
+Gates Corporation,1801 N 19th Ave E.,Newton,Jasper,IA,50208,Closing,4,8/1/2024,2024-11-15 00:00:00,Central Iowa,Manufacturing,,,,,,,,,,,,,,
+Gates Corporation,1801 N 19th Ave E.,Newton,Jasper,IA,50208,Closing,4,8/1/2024,2024-11-22 00:00:00,Central Iowa,Manufacturing,,,,,,,,,,,,,,
+Morning Sun Care Center,200 S. Washington St,Morning Sun,Louisa,IA,52640,Closing,68,8/1/2024,2024-10-02 00:00:00,Mississippi Valley,Health Care and Social Assistance,,,,,,,,,,,,,,
+Myers Industires ,1501 Owner Avenue ,Atlantic,Cass,IA,50022,Closing ,60,07/31/2024,2024-12-15 00:00:00,Iowa Plains ,Manufacturing,,,,,,,,,,,,,,
+Wells Fargo,800 S Jordan Creek Parkway,West Des Moines,Polk,IA ,50266,Amendment - Additional Employees,3,08/06/2024,2024-10-06 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Tata Consultancy Services,929 Marthas Way,Hiawatha,Linn,IA,52233,Closing,23,08/05/2024,2024-10-03 00:00:00,East Central Iowa,"Professional, Scientific, and Technical Services",,,,,,,,,,,,,,
+Danfoss Power Solutions,2800 East 13th St,Ames,Story,IA,50010,Mass Layoff,40,08/14/2024,2024-08-31 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+Wells Fargo,800 S Jordan Creek Parkway,West Des Moines,Polk,IA,50266,Amendment - Additional Employees,16,08/20/2024,2024-10-20 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+Duluth Trading Company,7456 Chavanelle Rd,Dubuque,Dubuque,IA,52002,Closing,74,08/22/2024,2024-10-27 00:00:00,Northeast Iowa ,Transportation and Warehousing,,,,,,,,,,,,,,
+Wilson Trailer Company,4400 S Lewis Blvd,Sioux City,Woodbury,IA ,51106,Mass Layoff,58,08/29/2024,2024-09-30 00:00:00,Iowa Plains ,Manufacturing,,,,,,,,,,,,,,
+Knutson Construction Services Midwest Inc ,2351 Scott Blvd SE,Iowa City ,Johnson,IA,52240,Closing ,40,09/03/2024,2024-10-03 00:00:00,East Central Iowa ,Construction,,,,,,,,,,,,,,
+Optimae LifeServices,22425 Overland Ave ,Bloomfield ,Davis ,IA ,52537,Closing,30,09/03/2024,2024-10-03 00:00:00,South Central Iowa,Health Care and Social Assistance,,,,,,,,,,,,,,
+"Hampton Hydraulics, LLC d/b/a Seabee Foundry ",1483 Highway 3,Hampton ,Franklin,IA ,50441,Closing ,17,09/04/2024,2024-10-06 00:00:00,Northeast Iowa ,Manufacturing,,,,,,,,,,,,,,
+"Tyson Foods, Inc",13500 I Court,Perry,Dallas,IA,50220,Amendment- Change in Date,19,09/09/2024,2024-11-01 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+Quality Manufacturing Corporation,4300 NW Urbandale Dr,Urbandale,Polk,IA,50322,Mass Layoff,68,09/12/2024,2024-09-12 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+Wells Fargo ,800 S Jordan Creek Parkway,West Des Moines,Polk,IA,50266,Amendment - Additional Employees,47,09/18/2024,2024-11-18 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+NSK-AKS Precision Ball Company,1100 N 1st St,Clarinda,Page,IA,51632,Closing ,54,09/19/2024,2025-03-31 00:00:00,Iowa Plains ,Manufacturing,,,,,,,,,,,,,,
+"Cygnus Home Services, LLC d/b/a Yelloh ",510 Ashl St,Atlantic,Cass,IA ,50022,Closing ,13,09/23/2024,2024-11-22 00:00:00,Iowa Plains ,Retail Trade ,,,,,,,,,,,,,,
+"Cygnus Home Services, LLC d/b/a Yelloh",405 6th Ave NW,Dyersville,Deleware,IA ,52040,Closing ,8,09/23/2024,2024-11-22 00:00:00,Northeast Iowa ,Retail Trade ,,,,,,,,,,,,,,
+"Cygnus Home Services, LLC d/b/a Yelloh",3781 4th Ave ,Marion ,Linn,IA ,52302,Closing ,10,09/23/2024,2024-11-22 00:00:00,East Central Iowa ,Retail Trade ,,,,,,,,,,,,,,
+"Cygnus Home Services, LLC d/b/a Yelloh",2801 Boulevard of Champions,Sioux City ,Woodbury,IA ,51111,Closing ,10,09/23/2024,2024-11-22 00:00:00,Iowa Plains ,Retail Trade ,,,,,,,,,,,,,,
+"Cygnus Home Services, LLC d/b/a Yelloh",100 North Industiral Parkway,West Union ,Fayette,IA ,52175,Closing ,12,09/23/2024,2024-11-22 00:00:00,Northeast Iowa ,Retail Trade ,,,,,,,,,,,,,,
+Danfoss Power Solutions,2800 East 13th St,Ames,Story,IA,50010,Amendment- Additional Employees,3,9/25/2024,2024-09-25 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+Wilson Trailer Company,4400 S Lewis Blvd,Sioux City,Woodbury,IA ,51106,Amendment- Additional Employees,6,09/27/2024,2024-09-27 00:00:00,Iowa Plains,Manufacturing,,,,,,,,,,,,,,
+Wells Fargo ,800 S Jordan Creek Parkway,West Des Moines,Polk,IA,50266,Amendment - Additional Employees,8,10/01/2024,2024-12-01 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+JELD-WEN Inc. ,911 Industiral Ave ,Grinnell,Poweshiek,IA,50112,Mass Layoff ,152,10/08/2024,2024-11-07 00:00:00,South Central Iowa,Manufacturing,,,,,,,,,,,,,,
+Gates Corporation,1801 N 19th Ave E.,Newton,Jasper,IA,50208,Amendment- Change in Date,2,10/10/2024,2024-11-22 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+Gates Corporation,1801 N 19th Ave E.,Newton,Jasper,IA,50208,Amendment- Change in Date,2,10/10/2024,2025-01-31 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+"Omaha Standard, LLC ",3501 S 11th St,Coucil Bluffs,Pottawattamie,IA,51501,Mass Layoff ,49,10/11/2024,2024-11-01 00:00:00,Iowa Plains,Manufacturing,,,,,,,,,,,,,,
+John Deere Davenport Works,1175 E 90th St ,Davenport,Scott,IA ,52807,Mass Layoff,80,10/16/2024,2025-01-03 00:00:00,Mississippi Valley ,Manufacturing,,,,,,,,,,,,,,
+Pure Prairie Poultry ,901 N Main St,Charles City ,Floyd ,IA ,50616,Closing ,132,10/17/2024,2024-10-01 00:00:00,Northeast Iowa ,Manufacturing,,,,,,,,,,,,,,
+Continuus Materials ,2425 Hubbell Ave Ste 107,Des Moines ,Polk,IA,50317,Closing ,32,10/22/2024,2024-11-01 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+Winnebago Industires ,605 W Crystal Lake Rd,Forect City ,Winnebago ,IA ,50436,Mass Layoff ,33,10/22/2024,2024-11-22 00:00:00,Northeast Iowa ,Manufacturing,,,,,,,,,,,,,,
+"QG Printing II, LLC ",250 N 10th St,Waukee,Dallas,IA ,50263,Closing,88,10/24/2024,2025-01-10 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+Wells Fargo ,800 S Jordan Creek Parkway,West Des Moines,Polk,IA,50266,Mass Layoff ,32,10/29/2024,2024-12-29 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+Toyota Financial Services,5005 N River Blvd NE,Cedar Rapids ,Linn,IA,52411,Closing ,54,10/21/2024,2025-12-31 00:00:00,East Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+Jack Links Inc,210 North 1st St ,Laurens,Pocahontas,IA ,50554,Mass Layoff ,91,11/07/2024,2025-01-24 00:00:00,Iowa Plains,Transportation and Warehousing,,,,,,,,,,,,,,
+Wells Fargo,800 S Jordan Creek Pkwy,West Des Moines,Polk,IA,50266,Amendment - Additional Employees,2,11/12/2024,2025-01-12 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+Perfection Press Inc.,1200 Industiral Dr,Logan,Harrison,IA,51546,Closing,25,11/15/2024,2024-12-31 00:00:00,Iowa Plains,Information,,,,,,,,,,,,,,
+"Maximus, Inc",1600 Tyson's Blvd,McLean,Fairfax ,VA,22102,Mass Layoff ,34,11/22/2024,2024-12-31 00:00:00,Central Iowa ,"Professional, Scientific, and Technical Services",,,,,,,,,,,,,,
+Wells Fargo ,800 S Jordan Creek Pkwy,West Des Moines,Polk,IA,50266,Amendment- Additional Employees,2,11/26/2024,2025-01-26 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+CDS Global Inc,3107 Shelby St,Harlan,Shelby,IA,51537,Closing ,94,11/26/2024,2025-02-03 00:00:00,Iowa Plains,Information,,,,,,,,,,,,,,
+John Deere Waterloo Works ,3500 East Donald St,Waterloo,Black Hawk,IA,50704,Mass Layoff ,112,12/03/2024,2025-01-06 00:00:00,Northeast Iowa ,Manufacturing,,,,,,,,,,,,,,
+Wells Fargo ,800 S Jordan Creek Pkwy,West Des Moines,Polk,IA,50266,Amendment- Additional Employees,21,12/10/2024,2025-02-10 00:00:00,Central Iowa,Finance and Insurance ,,,,,,,,,,,,,,
+CVS Health,4170 NW 114th St ,Urbandale,Polk,IA,50322,Mass Layoff,48,12/16/2024,2025-02-15 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
+Cargill ,17540 Monroe Wapello Rd,Eddyville,Wapello,IA,52553,Mass Layoff ,29,12/23/2024,2025-02-05 00:00:00,South Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+John Deere Ottumwa Works ,928 E Vine St,Ottumwa,Wapello,IA ,52501,Mass Layoff,75,01/06/2025,2025-02-07 00:00:00,South Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+"IES Communications, LLC ",500 Share Way,Altoona,Polk,IA,50009,Mass Layoff,28,01/10/2025,2025-01-10 00:00:00,Central Iowa,Construction,,,,,,,,,,,,,,
+SpartanNash,423 Sharp St,Glenwood,Mills,IA,51534,Closing,23,01/15/2025,2025-02-14 00:00:00,Iowa Plains,Wholesale Trade ,,,,,,,,,,,,,,
+"Kinze Manufacturing, Inc ",2172 M Ave,Williamsburg,Iowa,IA,52361,Mass Layoff ,53,01/15/2025,2025-01-15 00:00:00,East Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+Dotdash Meredith,1716 Locust St,Des Moines,Polk,IA,50309,Mass Layoff,28,01/16/2025,2025-02-01 00:00:00,Central Iowa,Information,,,,,,,,,,,,,,
+JELD-WEN Inc,911 Industiral Ave,Grinnell,Poweshiek,IA ,50112,Closing,298,01/20/2025,2025-03-21 00:00:00,South Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+NSK Americas,1100 N 1St St,Clarinda,Page,IA,51632,Mass Layoff,34,01/27/2025,2025-02-28 00:00:00,Iowa Plains ,Manufacturing,,,,,,,,,,,,,,
+United HR Direct,3022 Airport Blvd.,Waterloo,Black Hawk,IA,50704,Mass Layoff,52,2011-01-13 00:00:00,2011-03-08 00:00:00
+Wells Fargo,800 Walnut Street,Des Moines,Polk,IA,50309,Mass Layoff,32,2011-01-14 00:00:00,2011-02-13 00:00:00
+Electrolux,400 Des Moines Street,Webster City,Hamilton,IA,50595,Amendment,510,2011-01-27 00:00:00,2011-03-31 00:00:00
+Electrolux,400 West Des Moines Street,Webster City,Hamilton,IA,50595,Amendment,173,2011-01-28 00:00:00,2011-03-31 00:00:00
+"Cummins Filtration, Inc.",311 N. Park St.,Lake Mills,Winnebago,IA,50450,Amendment,206,2011-02-04 00:00:00,2011-04-08 00:00:00
+Wells Fargo,1963 Bell Avenue,Des Moines,Polk,IA,50315,Amendment,142,2011-02-11 00:00:00,2011-04-11 00:00:00
+"Electrolux Home Products, Inc.",400 Des Moines Street,Webster City,Hamilton,IA,50595,Amendment,4,2011-02-16 00:00:00,2011-04-18 00:00:00
+United Hrdirect,3022 Airport Blvd.,Waterloo,Black Hawk,IA,50704,Mass Layoff,55,2011-02-22 00:00:00,2011-05-20 00:00:00
+"Electrolux Home Products, Inc.",400 Des Moines St.,Webster City,Hamilton,IA,50595,Amendment,4,2011-03-10 00:00:00,2011-05-13 00:00:00
+"Terex USA, LLC",909 17th Street NE,Cedar Rapids,Linn,IA,52402,Amendment,23,2011-03-11 00:00:00,2011-03-21 00:00:00
+Stream Global Services,102 Sergeant Bluff Drive,Sergeant Bluff,Woodbury,IA,51054,Mass Layoff,246,2011-03-14 00:00:00,2011-05-15 00:00:00
+Wells Fargo,800 Walnut Street,Des Moines,Polk,IA,50309,Amendment,139,2011-03-23 00:00:00,2011-03-23 00:00:00
+"Electrolux Home Products, Inc.",400 Des Moines Street,Webster City,Hamilton,IA,50595,Amendment,1,2011-04-21 00:00:00,2011-06-21 00:00:00
+Thomas & Betts,1001 South 2nd Street,Clinton,Clinton,IA,52732,Closing,139,2011-04-25 00:00:00,2011-05-01 00:00:00
+Aegon,North Pointe Plaza building 2,Cedar Rapids,Linn,IA,52499,Mass Layoff,4,2011-04-25 00:00:00,2011-07-01 00:00:00
+Children & Families of Iowa,111 Ave. O West,Fort Dodge,Webster,IA,50501,Mass Layoff,84,2011-04-29 00:00:00,2011-06-30 00:00:00
+Wells Fargo,800 Walnut Street,Des Moines,Polk,IA,50309,Mass Layoff,3,2011-05-17 00:00:00,2011-06-17 00:00:00
+Flextronics Americas LLS,Northpark Verizon Retail Store,Davenport,Scott,IA,52806,Mass Layoff,1,2011-05-25 00:00:00,2011-08-31 00:00:00
+RR Donnelley,400 South 14th Street,Eldridge,Scott,IA,52748,Closing,279,2011-05-31 00:00:00,2011-07-31 00:00:00
+Klaussner Home Furnishings,Hyw 71,Milford,Dickinson,IA,51351,Closing,105,2011-06-21 00:00:00,2011-08-20 00:00:00
+Electrolux,400 Des Moines St,Webster City,Hamilton,IA,50595,Amendment,3,2011-06-28 00:00:00,2011-08-29 00:00:00
+"KBR, Inc",1251 Beaver Channel Parkway,Clinton,Clinton,IA,52732,Mass Layoff,119,2011-07-07 00:00:00,2011-07-22 00:00:00
+Wells Fargo,1693 Bell Avenue,Des Moines,Polk,IA,50315,Mass Layoff,79,2011-07-13 00:00:00,2011-09-11 00:00:00
+"Tyson Foods, Inc.",2101 S. 29th Street,Council Bluffs,Pottawattamie,IA,51501,Mass Layoff,171,2011-07-27 00:00:00,2011-09-30 00:00:00
+"Electrolux Home Products, Inc.",400 Des Moines St,Webster City,Hamilton,IA,50595,Amendment,3,2011-07-29 00:00:00,2011-09-30 00:00:00
+ConAgra Foods,2201 Washington St,Hamburg,Fremont,IA,51640,Mass Layoff,95,2011-08-10 00:00:00,2011-10-14 00:00:00
+Westec Intelligent Surveillanc,1089 Jordan Creek Parkway,West Des Moines,Polk,IA,50266,Closing,30,2011-08-22 00:00:00,2011-10-31 00:00:00
+"Tyson Foods, Inc",2101 S. 29th Street,Council Bluffs,Pottawattamie,IA,51501,Amendment,,2011-09-22 00:00:00,2011-11-18 00:00:00
+"Electrolux Home Products, Inc.",400 Des Moines Street,Webster City,Hamilton,IA,50595,Amendment,5,2011-10-28 00:00:00,2011-12-29 00:00:00
+"Bosselman Travel Centers, Inc.",3231 Adventureland Drive,Altoona,Polk,IA,50009,Closing,56,2011-11-04 00:00:00,2012-01-05 00:00:00
+Larson Manufacturing Company,2109 4th Ave. South,Clear Lake,Cerro Gordo,IA,50428,Closing,99,2011-11-08 00:00:00,2012-01-07 00:00:00
+"Electrolux Home Products, Inc.",400 Des Moines Street,Webster City,Hamilton,IA,50595,Amendment,1,2011-12-05 00:00:00,2012-02-03 00:00:00
+"McGraw-Hill Companies, Inc",7500 Chavenelle Road,Dubuque,Dubuque,IA,52002,Closing,52,2011-12-08 00:00:00,2012-02-06 00:00:00
+FirstFleet,185 50th SW,Cedar Rapids,Linn,IA,52404,Mass Layoff,64,2012-01-12 00:00:00,2012-02-03 00:00:00
+"PCCW Teleservices (US), Inc.",102 South Market Street,Ottumwa,Wapello,IA,52501,Closing,80,2012-01-31 00:00:00,2012-03-31 00:00:00
+"Results Customer Solutions, LL",1900 North Grand Avenue,Spencer,Clay,IA,51301,Mass Layoff,71,2012-03-01 00:00:00,2012-05-01 00:00:00
+Iowa Health Home Care,11333 Aurora Avenue,Urbandale,Polk,IA,50322,Mass Layoff,65,2012-03-07 00:00:00,2012-04-15 00:00:00
+"MVM, Inc.",44620 Guilford Drive,Ashburn,,VA,20147,Mass Layoff,59,2012-03-22 00:00:00,2012-06-01 00:00:00
+"Beef Products, Inc.",501 N Elk Road,Waterloo,Black Hawk,IA,50703,Closing,216,2012-03-26 00:00:00,2012-05-25 00:00:00
+Lennox,4301 121st Street,Urbandale,Polk,IA,50323,Amendment,5,2012-03-29 00:00:00,2012-05-31 00:00:00
+"Delta Air Lines, Inc.",607 4th Street,Sioux City,Woodbury,IA,51101,Closing,164,2012-05-21 00:00:00,2012-09-01 00:00:00
+Nemschoff,402 14th Street NE,Sioux Center,Sioux,IA,51250,Closing,110,2012-05-30 00:00:00,2012-07-29 00:00:00
+Lennox,4301 121st Street,Urbandale,Polk,IA,50323,Amendment,10,2012-05-31 00:00:00,2012-07-31 00:00:00
+ING,909 Locust Street,Des Moines,Polk,IA,50309,Mass Layoff,407,2012-06-14 00:00:00,2012-08-15 00:00:00
+Georgia-Pacific,823 N. Cedar St.,Monticello,Jones,IA,52310,Amendment,1,2012-07-09 00:00:00,2012-09-07 00:00:00
+Iowa Health Home Care,11333 Aurora Avenue,Urbandale,Polk,IA,50322,Mass Layoff,60,2012-07-12 00:00:00,2012-09-01 00:00:00
+Lennox,4301 121st Street,Urbandale,Polk,IA,50323,Amendment,5,2012-07-30 00:00:00,2012-09-28 00:00:00
+Eagle Iron Works,129 East Holcomb Avenue,Des Moines,Polk,IA,50313,Closing,100,2012-08-13 00:00:00,2012-10-15 00:00:00
+"Clipper Windpower, LLC",4601 Bowling Street SW,Cedar Rapids,Linn,IA,52404,Mass Layoff,76,2012-08-20 00:00:00,2012-08-20 00:00:00
+Lennox,4301 121st Street,Urbandale,Polk,IA,50323,Amendment,9,2012-08-31 00:00:00,2012-10-31 00:00:00
+Lennox,4301 121st Street,Urbandale,Polk,IA,50323,Amendment,9,2012-08-31 00:00:00,2012-10-31 00:00:00
+Regional Elite,Eastern Iowa Airport,Cedar Rapids,Linn,IA,52402,Closing,66,2012-08-31 00:00:00,2012-11-06 00:00:00
+Regional Elite,Des Moines International Airport,Des Moines,Polk,IA,50307,Closing,79,2012-08-31 00:00:00,2012-11-06 00:00:00
+Iowa Health Home Care,11333 Aurora Avenue,Urbandale,Polk,IA,50322,Mass Layoff,46,2012-09-17 00:00:00,2012-11-01 00:00:00
+Siemens,2597 Highway 61,Fort Madison,Lee,IA,52627,Mass Layoff,407,2012-09-19 00:00:00,2012-11-19 00:00:00
+Lennox,4301 121st Street,Urbandale,Polk,IA,50323,Amendment,18,2012-09-19 00:00:00,2012-11-30 00:00:00
+"Clipper Windpower, LLC",4601 Bowling Street SW,Cedar Rapids,Linn,IA,52404,Mass Layoff,10,2012-10-16 00:00:00,2012-10-16 00:00:00
+AdvancePierre Foods,101 14th Street SE,Orange City,Sioux,IA,51041,Closing,143,2012-10-17 00:00:00,2012-12-28 00:00:00
+Lennox,4301 121st Street,Urbandale,Polk,IA,50323,Amendment,11,2012-11-30 00:00:00,2013-01-25 00:00:00
+Cargill Kitchen Solutions,500 SE Third Street,Panora,Guthrie,IA,50216,Closing,50,2012-11-30 00:00:00,2013-02-01 00:00:00
+IC Systems,858 Calmus Court,Mason City,Cerro Gordo,IA,50401,Closing,94,2012-12-03 00:00:00,2013-02-01 00:00:00
+QuadGraphics,2470 Kerper Blvd.,Dubuque,Dubuque,IA,52001,Closing,216,2013-01-09 00:00:00,2013-03-11 00:00:00
+Lennox,4301 121st Street,Urbandale,Polk,IA,50323,Amendment,30,2013-02-28 00:00:00,2013-04-30 00:00:00
+"Electrolux Home Products, Inc.",1700 West Second Street,Webster City,Hamilton,IA,50595,Amendment,12,2013-03-18 00:00:00,2013-05-15 00:00:00
+"Electrolux Home Products, Inc.",1700 West Second Street,Webster City,Hamilton,IA,50595,Amendment,2,2013-03-18 00:00:00,2013-05-20 00:00:00
+CBE Group,1031 Office Park Road,West Des Moines,Polk,IA,50265,Closing,109,2013-04-10 00:00:00,2013-06-12 00:00:00
+"Electrolux Home Products, Inc.",1700 West Second Street,Webster City,Hamilton,IA,50595,Amendment,9,2013-04-12 00:00:00,2013-06-12 00:00:00
+Lennox,4301 121st Street,Urbandale,Polk,IA,50323,Amendment,,2013-04-29 00:00:00,2013-04-30 00:00:00
+ING,5900 Aurora Avenue,Des Moines,Polk,IA,50322,Mass Layoff,50,2013-05-07 00:00:00,2013-07-07 00:00:00
+"Electrolux Home Products, Inc.",1700 West Second Street,Webster City,Hamilton,IA,50595,Amendment,17,2013-05-17 00:00:00,2013-07-17 00:00:00
+"Electrolux Home Products, Inc.",1700 West Second Street,Webster City,Hamilton,IA,50595,Amendment,3,2013-05-20 00:00:00,2013-07-19 00:00:00
+"Electrolux Home Products, Inc.",1700 West Second Street,Webster City,Hamilton,IA,50595,Amendment,1,2013-06-04 00:00:00,2013-08-02 00:00:00
+Lennox,4301 121st Street,Urbandale,Polk,IA,50323,Amendment,,2013-06-13 00:00:00,2013-06-21 00:00:00
+"Electrolux Home Products, Inc.",1700 West Second Street,Webster City,Hamilton,IA,50595,Amendment,1,2013-06-28 00:00:00,2013-08-30 00:00:00
+"Electrolux Home Products, Inc.",1700 West Second Street,Webster City,Hamilton,IA,50595,Amendment,9,2013-08-05 00:00:00,2013-10-04 00:00:00
+"Electrolux Home Products, Inc.",1700 West Second Street,Webster City,Hamilton,IA,50595,Amendment,6,2013-08-19 00:00:00,2013-10-18 00:00:00
+"Electrolux Home Products, Inc.",1700 West Second Street,Webster City,Hamilton,IA,50595,Amendment,3,2013-08-28 00:00:00,2013-11-01 00:00:00
+"Electrolux Home Products, Inc.",1700 West Second Street,Webster City,Hamilton,IA,50595,Amendment,2,2013-10-31 00:00:00,2013-12-31 00:00:00
+"Electrolux Home Products, Inc.",1700 West Second Street,Webster City,Hamilton,IA,50595,Amendment,1,2013-11-19 00:00:00,2014-01-17 00:00:00
+"Premium Pet Health, LLC",101 Virginia Street,Sioux City,Woodbury,IA,51101,Closing,45,2013-11-21 00:00:00,2014-01-31 00:00:00
+"Premium Pet Health, LLC",101 Virginia Street,Sioux City,Woodbury,IA,51101,Amendment,0,2014-01-27 00:00:00,2014-02-21 00:00:00
+"Bimbo Bakeries USA, Inc.",1500 N. Highway 75,Sioux City,Woodbury,IA,51105,Closing,93,2014-01-31 00:00:00,2014-04-01 00:00:00
+"Electrolux Home Products, Inc.",1700 West Second Street,Webster City,Hamilton,IA,50595,Amendment,1,2014-02-11 00:00:00,2014-04-14 00:00:00
+"Electrolux Home Products, Inc.",1700 West Second Street,Webster City,Hamilton,IA,50595,Amendment,1,2014-02-14 00:00:00,2014-04-15 00:00:00
+American TV & Appliance of Mad,5355 NW 86th Street,Johnston,Polk,IA,50131,Closing,75,2014-02-17 00:00:00,2014-04-19 00:00:00
+American TV & Appliance of Mad,4800 Elmore Avenue,Davenport,Scott,IA,52807,Closing,83,2014-02-17 00:00:00,2014-04-19 00:00:00
+"Premium Pet Health, LLC",101 Virginia Street,Sioux City,Woodbury,IA,51101,Amendment,4,2014-02-21 00:00:00,2014-04-04 00:00:00
+"Griffin Pipe Products, LLC",2601 9th Ave,Council Bluffs,Pottawattamie,IA,51501,Closing,255,2014-03-03 00:00:00,2014-05-03 00:00:00
+Hillshire Brands,315 Vilas Rd,Storm Lake,Buena Vista,IA,50588,Closing,542,2014-04-02 00:00:00,2014-03-26 00:00:00
+Pioneer Hi-Bred International,505 N. Harvey Road,Mount Pleasant,Henry,IA,52641,Closing,56,2014-05-14 00:00:00,2014-07-16 00:00:00
+Convergys,102 Sergeant Square Drive,Sergeant Bluff,Woodbury,IA,51054,Mass Layoff,152,2014-05-21 00:00:00,2014-07-28 00:00:00
+Pioneer Hi-Bred International,7100 N. W. 62nd Avenue,Johnston,Polk,IA,50131,Mass Layoff,8,2014-05-29 00:00:00,2014-07-29 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Avenue,Johnston,Polk,IA,50131,Mass Layoff,19,2014-06-13 00:00:00,2014-08-16 00:00:00
+Pioneer Hi-Bred International,7100 N. W. 62nd Avenue,Johnston,Polk,IA,50131,Amendment,8,2014-06-20 00:00:00,2014-08-19 00:00:00
+Evergreen Packaging,1500 South 14th Street,Clinton,Clinton,IA,52732,Closing,112,2014-06-30 00:00:00,2014-09-01 00:00:00
+Hewlett-Packard Company,3600 Army Post Road,Des Moines,Polk,IA,50321,Mass Layoff,44,2014-07-10 00:00:00,2014-07-25 00:00:00
+Pioneer Hi-Bred International,7100 N. W. 62nd Avenue,Johnston,Polk,IA,50131,Mass Layoff,11,2014-07-11 00:00:00,2014-09-09 00:00:00
+Pioneer Hi-Bred International,7100 N. W. 62nd Avenue,Johnston,Polk,IA,50131,Mass Layoff,1,2014-07-22 00:00:00,2014-08-26 00:00:00
+"Tysons Deli, Inc.",1300 South Lake Street,Cherokee,Cherokee,IA,51012,Closing,444,2014-07-25 00:00:00,2014-09-27 00:00:00
+Pioneer Hi-Bred International,7100 N. W. 62nd Avenue,Johnston,Polk,IA,50131,Amendment,1,2014-07-31 00:00:00,2014-09-30 00:00:00
+Pioneer Hi-Bred International,7100 N. W. 62nd Avenue,Johnston,Polk,IA,50131,Amendment,2,2014-09-12 00:00:00,2014-11-16 00:00:00
+Pioneer Hi-Bred International,7100 N. W. 62nd Avenue,Johnston,Polk,IA,50131,Amendment,4,2014-09-26 00:00:00,2014-11-25 00:00:00
+Pioneer Hi-Bred International,7100 N. W. 62nd Avenue,Johnston,Polk,IA,50131,Amendment,16,2014-10-03 00:00:00,2014-12-02 00:00:00
+Pioneer Hi-Bred International,7100 N. W. 62nd Avenue,Johnston,Polk,IA,50131,Mass Layoff,15,2014-10-10 00:00:00,2014-12-09 00:00:00
+Cummins Filtration,311 North Park,Lake Mills,Winnebago,IA,50450,Amendment,1,2014-10-15 00:00:00,2014-12-31 00:00:00
+Hewlett-Packard Company,3600 Army Post Road,Des Moines,Polk,IA,50321,Mass Layoff,32,2014-10-23 00:00:00,2014-10-24 00:00:00
+Pioneer Hi-Bred International,7100 N. W. 62nd Avenue,Johnston,Polk,IA,50131,Mass Layoff,5,2014-10-24 00:00:00,2014-12-23 00:00:00
+"Electrolux Home Products, Inc.",1700 West Secon Street,Webster City,Hamilton,IA,50595,Amendment,1,2014-10-29 00:00:00,2014-12-31 00:00:00
+Pioneer Hi-Bred International,7100 N. W. 62nd Avenue,Johnston,Polk,IA,50131,Mass Layoff,4,2014-10-29 00:00:00,2014-12-30 00:00:00
+Hewlett-Packard Company,3600 Army Post Road,Des Moines,Polk,IA,50321,Mass Layoff,5,2014-11-13 00:00:00,2014-11-14 00:00:00
+Donaldson Filtration Solutions,201 east Street South,Grinnell,Poweshiek,IA,50112,Mass Layoff,75,2014-12-10 00:00:00,2015-01-01 00:00:00
+"Five Star Quality Care, Inc.",114 East Green Street,Glenwood,Mills,IA,51534,Closing,200,2014-12-15 00:00:00,2015-02-13 00:00:00
+Pioneer Hi-Bred International,7100 N. W. 62nd Avenue,Johnston,Polk,IA,50131,Mass Layoff,2,2014-12-18 00:00:00,2015-02-17 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Avenue,Johnston,Polk,IA,50131,Mass Layoff,15,2015-01-16 00:00:00,2015-03-17 00:00:00
+John Deere Des Moines Works,825 SW Irvinedale Drive,Ankeny,Polk,IA,50023,Mass Layoff,287,2015-01-23 00:00:00,2015-03-02 00:00:00
+John Deere Waterloo Works,3500 E. Donald Street,Waterloo,Black Hawk,IA,50704,Mass Layoff,565,2015-01-27 00:00:00,2015-03-25 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Avenue,Johnston,Polk,IA,50131,Mass Layoff,6,2015-01-29 00:00:00,2015-03-31 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Avenue,Johnston,Polk,IA,50131,Mass Layoff,3,2015-02-20 00:00:00,2015-04-21 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Avenue,Johnston,Polk,IA,50131,Mass Layoff,1,2015-02-27 00:00:00,2015-04-16 00:00:00
+IPSCO Tubulars Inc.,2011 7th Avenue,Camanche,Clinton,IA,52730,Mass Layoff,88,2015-03-04 00:00:00,2015-05-06 00:00:00
+John Deere Waterloo Works,3500 E Donald Street,Waterloo,Black Hawk,IA,50704,Amendment,499,2015-03-06 00:00:00,2015-04-03 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Avenue,Johnston,Polk,IA,50131,Mass Layoff,1,2015-03-10 00:00:00,2015-05-12 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Avenue,Johnston,Polk,IA,50131,Mass Layoff,4,2015-03-20 00:00:00,2015-05-19 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Avenue,Johnston,Polk,IA,50131,Mass Layoff,1,2015-03-25 00:00:00,2015-05-26 00:00:00
+AIB College of Business,2500 Fleur Drive,Des Moines,Polk,IA,50321,Closing,17,2015-04-06 00:00:00,2015-06-08 00:00:00
+"Electrolux Home Products, Inc.",1700 West Second Street,Webster City,Hamilton,IA,50595,Amendment,1,2015-04-08 00:00:00,2015-06-06 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Avenue,Johnston,Polk,IA,50131,Mass Layoff,1,2015-04-21 00:00:00,2015-06-23 00:00:00
+"RW Constructors, LLC",3548 180th Street,Weaver,Lee,IA,52658,Mass Layoff,1606,2015-04-22 00:00:00,2015-04-17 00:00:00
+Fansteel Wellman Dynamics,1746 Commerce Road,Creston,Union,IA,50801,Mass Layoff,50,2015-04-28 00:00:00,2015-05-28 00:00:00
+Northrup Grumman Corporation,7105 NW 70th Avenue,Johnston,Polk,IA,50131,Mass Layoff,59,2015-04-29 00:00:00,2015-06-29 00:00:00
+AIB College of Business,2500 Fleur Drive,Des Moines,Polk,IA,50321,Amendment,7,2015-04-30 00:00:00,2015-07-06 00:00:00
+Pioneer Hi-Bred International,7100 N.W.62nd Avenue,Johnston,Polk,IA,50131,Amendment,6,2015-05-05 00:00:00,2015-06-29 00:00:00
+IPSCO Tubulars Inc.,2011 7th Avenue,Camanche,Clinton,IA,52730,Mass Layoff,80,2015-05-06 00:00:00,2015-07-07 00:00:00
+Nationwide Advantage Mortgage,1100 Locust Street,Des Moines,Polk,IA,50309,Mass Layoff,121,2015-05-14 00:00:00,2015-07-13 00:00:00
+AIB College of Business,2500 Fleur Drive,Des Moines,Polk,IA,50321,Amendment,1,2015-05-28 00:00:00,2015-06-12 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Avenue,Johnston,Polk,IA,50131,Amendment,1,2015-06-03 00:00:00,2015-08-04 00:00:00
+"Daybreak Foods, Inc.",3159 Buchanan Avenue,Eagle Grove,Wright,IA,50533,Mass Layoff,60,2015-06-04 00:00:00,2015-06-05 00:00:00
+"Bridgepoint Education, Inc.",Iowa Campus,Clinton,Clinton,IA,52732,Mass Layoff,5,2015-06-16 00:00:00,2015-08-17 00:00:00
+AIB College of Business,2500 Fluer Drive,Des Moines,Polk,IA,50321,Amendment,11,2015-06-18 00:00:00,2015-08-22 00:00:00
+Kinze,2172 M Avenue,Williamsburg,Iowa,IA,52361,Mass Layoff,215,2015-06-25 00:00:00,2015-06-25 00:00:00
+Buccaneer Computer Systems & S,1401 50th Street,West Des Moines,Polk,IA,50266,Mass Layoff,145,2015-06-25 00:00:00,2015-08-25 00:00:00
+"Bushwacker Automotive Group, L",1924 S. Washington Blvd.,Camanche,Clinton,IA,52730,Mass Layoff,52,2015-06-25 00:00:00,2015-08-24 00:00:00
+AIB College of Business,2500 Fluer Drive,Des Moines,Polk,IA,50321,Amendment,10,2015-06-29 00:00:00,2015-09-01 00:00:00
+Citigroup Inc.,4740 121st Street,Urbandale,Polk,IA,50323,Mass Layoff,325,2015-07-01 00:00:00,2015-03-11 00:00:00
+Berry Plastics,1036 Industrial Park Road,Iowa Falls,Hardin,IA,50126,Closing,51,2015-07-07 00:00:00,2015-09-07 00:00:00
+"Daybreak Foods, Inc.",3159 Buchanan Ave.,Eagle Grove,Wright,IA,50533,Amendment,3,2015-07-08 00:00:00,2015-06-25 00:00:00
+Verizon Corporate Resporces G,500 2nd Avenue SE,Cedar Rapids,Linn,IA,52401,Mass Layoff,102,2015-07-16 00:00:00,2015-09-13 00:00:00
+WestRock,2561 Independence Rd.,Iowa City,Johnson,IA,52240,Closing,50,2015-07-17 00:00:00,2015-09-30 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Avenue,Johnston,Polk,IA,50131,Amendment,1,2015-07-17 00:00:00,2015-09-16 00:00:00
+"Daybreak Foods, Inc.",3159 Buchanan Ave.,Eagle Grove,Wright,IA,50533,Mass Layoff,55,2015-07-21 00:00:00,2015-07-22 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Avenue,Johnston,Polk,IA,50131,Amendment,6,2015-07-24 00:00:00,2015-09-29 00:00:00
+MAG Retail Group,13225 Circle Drive,Anamosa,Jones,IA,52205,Mass Layoff,158,2015-07-28 00:00:00,2015-09-30 00:00:00
+AIB College of Business,2500 Fleur Drive,Des Moines,Polk,IA,50321,Amendment,6,2015-07-28 00:00:00,2015-10-01 00:00:00
+Sears Holdings Company,1720 S Federal Ave,Mason City,Cerro Gordo,IA,50401,Closing,25,2015-08-05 00:00:00,2015-11-15 00:00:00
+"Schenker, Inc.",5405 Heinze Road,Iowa City,Johnson,IA,52240,Mass Layoff,77,2015-08-05 00:00:00,2015-10-07 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Avenue,Johnston,Polk,IA,50131,Amendment,6,2015-08-10 00:00:00,2015-09-29 00:00:00
+"Tyson Foods, Inc.",2490 Lincoln Way,Denison,Crawford,IA,51442,Closing,404,2015-08-14 00:00:00,2015-08-14 00:00:00
+Northrup Grumman Corporation,7105 NW 70th Avenue,Johnston,Polk,IA,50131,Amendment,57,2015-09-10 00:00:00,2015-09-30 00:00:00
+GENCO,3805 6th Street SW,Cedar Rapids,Linn,IA,52404,Closing,98,2015-09-21 00:00:00,2015-12-05 00:00:00
+"Ocwen Loan Servicing, LLC",3451 Hammond Ave,Waterloo,Black Hawk,IA,50702,Mass Layoff,287,2015-09-24 00:00:00,2015-11-27 00:00:00
+Eaton Corporation,1600 Airport Rd.,Shenandoah,Page,IA,51601,Mass Layoff,71,2015-10-05 00:00:00,2015-12-04 00:00:00
+BridgePoint Ashford University,400 North Bluff Blvd,Clinton,Clinton,IA,52732,Mass Layoff,12,2015-11-19 00:00:00,2016-01-19 00:00:00
+"Schenker, Inc.",160 Fawcett Dr,West Branch,Cedar,IA,52358,Amendment,71,2015-12-08 00:00:00,2016-02-07 00:00:00
+Keokuk Steel Castings,3972 Main Street,Keokuk,Lee,IA,52632,Closing,182,2015-12-09 00:00:00,2016-02-15 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Ave,Johnston,Polk,IA,50131,Mass Layoff,1,2015-12-23 00:00:00,2016-02-02 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Ave,Johnston,Polk,IA,50131,Mass Layoff,30,2015-12-23 00:00:00,2016-02-16 00:00:00
+"Schenker, Inc.",5405 Heinze Rd,Iowa City,Johnson,IA,52240,Amendment,58,2016-01-05 00:00:00,2016-03-05 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Ave,Johnston,Polk,IA,50131,Amendment,34,2016-01-12 00:00:00,2016-03-08 00:00:00
+Keokuk Steel Castings,3972 Main Street,Keokuk,Lee,IA,52632,Amendment,139,2016-01-18 00:00:00,2016-03-31 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Ave,Johnston,Polk,IA,50131,Amendment,30,2016-01-18 00:00:00,2016-03-16 00:00:00
+XPO Logistics,3440 Gannett Ave,Des Moines,Polk,IA,50321,Mass Layoff,97,2016-01-22 00:00:00,2016-03-23 00:00:00
+Keokuk Steel Castings,3972 Main Street,Keokuk,Lee,IA,52632,Amendment,60,2016-01-25 00:00:00,2016-03-31 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Ave,Johnston,Polk,IA,50131,Mass Layoff,46,2016-01-26 00:00:00,2016-03-23 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Ave,Johnston,Polk,IA,50131,Mass Layoff,36,2016-02-04 00:00:00,2016-03-29 00:00:00
+Eaton Corporation,1600 Airport Road,Shenandoah,Page,IA,51601,Mass Layoff,260,2016-02-08 00:00:00,2016-04-08 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Ave,Johnston,Polk,IA,50131,Amendment,4,2016-02-22 00:00:00,2016-04-19 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Ave,Johnston,Polk,IA,50131,Amendment,9,2016-02-26 00:00:00,2016-04-26 00:00:00
+Commercial Vehicle Group,200 N Locust Street,Edgewood,Delaware,IA,52042,Closing,71,2016-03-01 00:00:00,2016-06-01 00:00:00
+SC Data Center,1801 South 21st Street,Clinton,Clinton,IA,52732,Closing,316,2016-03-02 00:00:00,2016-10-01 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Ave,Johnston,Polk,IA,50131,Amendment,5,2016-03-04 00:00:00,2016-05-03 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Ave,Johnston,Polk,IA,50131,Amendment,9,2016-03-14 00:00:00,2016-05-10 00:00:00
+AIB College of Business,2500 Fleur Drive,Des Moines,Polk,IA,50321,Closing,47,2016-03-24 00:00:00,2016-06-01 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Ave,Johnston,Polk,IA,50131,Amendment,8,2016-03-29 00:00:00,2016-05-24 00:00:00
+Sears Holdings Company,7100 Westown Parkway,West Des Moines,Polk,IA,50266,Closing,162,2016-03-29 00:00:00,2016-05-30 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Ave,Johnston,Polk,IA,50131,Amendment,8,2016-04-05 00:00:00,2016-05-31 00:00:00
+Hillcrest,2505 Wilbricht Lane,Dubuque,Dubuque,IA,52001,Closing,56,2016-04-06 00:00:00,2016-06-08 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Ave,Johnston,Polk,IA,50131,Amendment,9,2016-04-07 00:00:00,2016-05-31 00:00:00
+Pioneer Hi-Bred International,7100 N.W. 62nd Ave,Johnston,Polk,IA,50131,Amendment,1,2016-04-08 00:00:00,2016-06-16 00:00:00
+"Schenker, Inc.",160 Fawcett Drive,West Branch,Johnson,IA,52358,Amendment,4,2016-04-14 00:00:00,2016-06-15 00:00:00
+Kinze,2172 M Ave PO Box 806,Williamsburg,Iowa,IA,52361,Mass Layoff,110,2016-04-18 00:00:00,2016-06-18 00:00:00
+Wells Fargo,800 S. Jordan Creek Pkwy,West Des Moines,Polk,IA,50266,Mass Layoff,13,2016-04-20 00:00:00,2016-06-20 00:00:00
+Edaptive Systems,"4900 University Avenue, Suite 200",West Des Moines,Polk,IA,50266,Mass Layoff,13,2016-04-25 00:00:00,2016-06-30 00:00:00
+Applegate Livestock Equipment,1505 N Elm Street,Jefferson,Greene,IA,50129,Closing,6,2016-04-27 00:00:00,2016-06-30 00:00:00
+AIB College of Business,2500 Fluer Drive,Des Moines,Iowa,IA,50321,Amendment,17,2016-04-27 00:00:00,2016-07-01 00:00:00
+John Deere Ottumwa Works,928 East Vine Street,Ottumwa,Wapello,IA,52501,Mass Layoff,36,2016-04-29 00:00:00,2016-05-31 00:00:00
+Corizon Health,1985 NE 51st Street Place,Des Moines,Polk,IA,50313,Mass Layoff,57,2016-04-29 00:00:00,2016-06-30 00:00:00
+Sears Holdings Company,1111 SE Army Post Road,Des Moines,Polk,IA,50315,Amendment,3,2016-05-02 00:00:00,2016-08-08 00:00:00
+Sears Holdings Company,1111 Army Post Road,Des Moines,Polk,IA,50315,Closing,39,2016-05-02 00:00:00,2016-08-08 00:00:00
+Rockwell Collins,400 Collins Road NE,Cedar Rapids,Linn,IA,52498,Amendment,1,2016-05-02 00:00:00,2016-06-03 00:00:00
+All American Homes,1551 15th Street,Dyersville,Delaware,IA,52040,Closing,81,2016-05-03 00:00:00,2016-05-13 00:00:00
+The Fresh Market,"5901 Mills Civic Parkway, Suite 4130",West Des Moines,Polk,IA,50266,Closing,86,2016-05-04 00:00:00,2016-06-18 00:00:00
+John Deere Davenport Works,P.O. Box 4198,Davenport,Scott,IA,52807,Mass Layoff,56,2016-05-06 00:00:00,2016-06-10 00:00:00
+Packers Sanitation Services Inc - PSSI,1800 Maury Street,Des Moines,Polk,IA,50317,Mass Layoff,15,2016-05-07 00:00:00,2016-06-01 00:00:00
+Pioneer Hi-Bred International,7100 NW 62nd Avenue,Johnston,Polk,IA,50131,Amendment,1,2016-05-10 00:00:00,2016-07-11 00:00:00
+Modine Manufacturing,1100 East 7th,Washington,Washington,IA,52353,Closing,60,2016-05-13 00:00:00,2016-07-14 00:00:00
+Blumenthal Lansing,1929 Main Street,Lansing,Allamakee,IA,52151,Closing,64,2016-05-17 00:00:00,2016-07-29 00:00:00
+Modine Manufacturing,1100 East 7th Street,Washington,Washington,IA,52353,Amendment,1,2016-05-23 00:00:00,2016-07-27 00:00:00
+New Link Genetics,2503 South Loop Drive,Ames,Story,IA,50010,Mass Layoff,87,2016-05-25 00:00:00,2016-07-24 00:00:00
+Pioneer Hi-Bred International,7100 NW 62nd Avenue,Johnston,Polk,IA,50131,Amendment,1,2016-05-25 00:00:00,2016-07-29 00:00:00
+BridgePoint Ashford University,400 North Bluff Blvd.,Clinton,Clinton,IA,52732,Amendment,30,2016-05-31 00:00:00,2016-07-31 00:00:00
+Eaton Corporation,32nd Avenue,Spencer,Clay,IA,51301,Mass Layoff,23,2016-06-01 00:00:00,2016-08-01 00:00:00
+Pearson,2510 Dodge Street,Iowa City,Johnson,IA,52245,Amendment,47,2016-06-07 00:00:00,2016-07-10 00:00:00
+Applegate Livestock Equipment,1505 N Elm Street,Jefferson,Greene,Ia,50129,Amendment,6,2016-06-10 00:00:00,2016-07-31 00:00:00
+Blumenthal Lansing,1929 Main Street,Lansing,Allamakee,Ia,52151,Amendment,64,2016-06-13 00:00:00,2016-08-12 00:00:00
+Schulte Hospitality Group,401 Locust Street,Des Moines,Polk,Ia,50309,Mass Layoff,80,2016-06-14 00:00:00,2016-08-07 00:00:00
+Modine Manufacturing,1100 East 7th Street,Washington,Washington,Ia,52353,Amendment,2,2016-06-15 00:00:00,2016-08-15 00:00:00
+BridgePoint Ashford University,400 North Bluff Blvd.,Clinton,Clinton,Ia,52732,Amendment,9,2016-06-17 00:00:00,2016-08-16 00:00:00
+BridgePoint Ashford University,400 North Bluff Blvd.,Clinton,Clinton,Ia,52732,Amendment,25,2016-06-20 00:00:00,2016-08-19 00:00:00
+Pearson,2510 Dodge Street,Iowa City,Johnson,Ia,52245,Amendment,4,2016-06-23 00:00:00,2016-07-21 00:00:00
+Gerdau - Wilton Mill,1500 West Third Street,Wilton,Muscatine,Ia,52778,Mass Layoff,15,2016-06-23 00:00:00,2016-07-23 00:00:00
+"Lime Springs Beef, LLC",4614 US-63,Lime Springs,Howard,IA,52155,Closing,71,2016-06-24 00:00:00,2016-05-27 00:00:00
+Pioneer Hi-Bred International,7100 NW 62nd Aven,Johnston,Polk,IA,50131,Amendment,6,2016-07-01 00:00:00,2016-08-30 00:00:00
+Terex Cranes,106 12th Street SE,Waverly,Bremer,IA,50677,Closing,155,2016-07-01 00:00:00,2016-09-19 00:00:00
+Wells Fargo,800 S. Jordan Creek Parkway,West Des Moines,Polk,IA,50266,Amendment,19,2016-07-13 00:00:00,2016-09-11 00:00:00
+Applegate Livestock Equipment,1505 N Elm Street,Jefferson,Greene,IA,50129,Amendment,0,2016-07-14 00:00:00,2016-08-12 00:00:00
+Modine Manufacturing,1100 East 7th Street,Washington,Washington,IA,52353,Amendment,2,2016-07-20 00:00:00,2016-09-23 00:00:00
+Modine Manufacturing,1100 East 7th Street,Washington,Washington,IA,52353,Amendment,31,2016-07-22 00:00:00,2016-09-23 00:00:00
+Eaton Corporation,700 Luicks Lane,Belmond,Wright,IA,50421,Mass Layoff,23,2016-08-02 00:00:00,2016-08-31 00:00:00
+Noridian Healthcare Solutions,100 Army Post Road,Des Moines,Polk,IA,50315,Mass Layoff,8,2016-08-04 00:00:00,2016-09-05 00:00:00
+Webster City Medical,1610 Collins Street,Webster City,Hamilton,IA,50595,Closing,5,2016-08-05 00:00:00,2016-09-30 00:00:00
+Guide One Mutual Insurance,1111 Ashworth Road,West Des Moines,Polk,IA,50265,Mass Layoff,83,2016-08-05 00:00:00,2016-11-01 00:00:00
+Blumenthal Lansing,1929 Main Street,Lansing,Allamakee,IA,52151,Amendment,64,2016-08-11 00:00:00,2016-08-17 00:00:00
+Modine Manufacturing,1100 East 7th Street,Washington,Washington,IA,52353,Amendment,41,2016-08-12 00:00:00,2016-10-14 00:00:00
+Best Buy,3115 Manawa Center Drive,Council Bluffs,Pottawattamie,IA,51501,Closing,43,2016-08-15 00:00:00,2016-10-29 00:00:00
+Eaton Corporation,32nd Avenue,Spencer,Clay,IA,51301,Amendment,21,2016-08-15 00:00:00,2016-10-17 00:00:00
+Blumenthal Lansing,1929 Main Street,Lansing,Allamakee,IA,52151,Amendment,64,2016-08-18 00:00:00,2016-09-02 00:00:00
+John Deere Davenport Works,P.O.Box 4198,Davenport,Scott,IA,52807,Mass Layoff,30,2016-08-22 00:00:00,2016-09-30 00:00:00
+John Deere Waterloo Works,3500 E. Donald Street,Waterloo,Black Hawk,IA,50704,Mass Layoff,115,2016-08-22 00:00:00,2016-09-26 00:00:00
+Commercial Vehicle Group,301 Spruce Street,Monona,Clayton,IA,52159,Closing,125,2016-08-24 00:00:00,2016-10-01 00:00:00
+Modine Manufacturing,1100 East 7th Street,Washington,Washington,IA,52353,Amendment,3,2016-08-29 00:00:00,2016-11-01 00:00:00
+Blumenthal Lansing,1929 Main Street,Lansing,Allamakee,IA,52151,Amendment,64,2016-09-01 00:00:00,2016-11-04 00:00:00
+Modine Manufacturing,1100 East 7th Street,Washington,Washington,IA,52353,Amendment,1,2016-09-16 00:00:00,2016-11-18 00:00:00
+"Stafanini, Inc.",1010 Kimberly Rd. #1,Davenport,Scott,IA,52807,Mass Layoff,177,2016-09-23 00:00:00,2016-11-22 00:00:00
+Modine Manufacturing,1100 East 7th Street,Washington,Washington,IA,52353,Amendment,1,2016-09-27 00:00:00,2016-12-01 00:00:00
+Met Life,4700 Westown Parkway,West Des Moines,Polk,IA,50266,Mass Layoff,34,2016-09-28 00:00:00,2016-10-31 00:00:00
+Modine Manufacturing,1100 East 7th Street,Washington,Washington,IA,52323,Amendment,0,2016-09-30 00:00:00,2016-11-16 00:00:00
+"Jacobson Warehouse Co., XPO Logistics",3440 Gannett Avenue,Des Moines,Polk,IA,50321,Mass Layoff,37,2016-09-30 00:00:00,2016-10-31 00:00:00
+Hewlett-Packard Company,3600 Army Post Road,Des Moines,Polk,IA,50321,Mass Layoff,32,2016-09-30 00:00:00,2016-10-31 00:00:00
+Rockwell Collins,400 Collins Road NE,Cedar Rapids,Linn,IA,52498,Mass Layoff,25,2016-10-10 00:00:00,2016-11-16 00:00:00
+Modine Manufacturing,1100 East 7th Street,Washington,Washington,IA,52323,Amendment,58,2016-10-17 00:00:00,2016-12-16 00:00:00
+"International Automotive Components, IAC",2500 Highway 6 East,Iowa City,Johnson,IA,52240,Mass Layoff,460,2016-10-21 00:00:00,2016-12-23 00:00:00
+"Premier Brick & Stone, Inc.",205 S. 35th Street,Bettendorf,Scott,IA,52722,Closing,25,2016-10-31 00:00:00,2016-10-25 00:00:00
+Shopko,3271 Marketplace Drive,Council Bluffs,Pottawattamie,IA,51501,Closing,24,2016-11-01 00:00:00,2017-01-28 00:00:00
+Eaton Corporation,32nd Avenue,Spencer,Clay,IA,51301,Mass Layoff,144,2016-11-18 00:00:00,2017-03-24 00:00:00
+Transamerica Life Ins.,6400 C. Street SW,Cedar Rapids,Linn,IA,52499,Mass Layoff,75,2016-12-02 00:00:00,2017-02-03 00:00:00
+Transamerica Life Ins.,4333 Edgewood Rd. NE,Cedar Rapids,Linn,IA,52499,Mass Layoff,44,2016-12-02 00:00:00,2017-02-03 00:00:00
+Central Iowa Healthcare,55 Central Iowa Drive,Marshalltown,Marshall,IA,50158,Closing,529,2016-12-20 00:00:00,2017-03-01 00:00:00
+Rockwell Collins,400 Collins Road NE,Cedar Rapids,Linn,IA,52498,Mass Layoff,4,2016-12-22 00:00:00,2017-01-27 00:00:00
+Rockwell Collins,400 Collins Road NE,Cedar Rapids,Linn,IA,52498,Mass Layoff,69,2016-12-22 00:00:00,2017-02-24 00:00:00
+The Abbey of LeMars,320 1st Avenue SE,LeMars,Plymouth,IA,51031,Closing,32,2016-12-23 00:00:00,2017-02-01 00:00:00
+Security Industry Specialists,100 Share Way NW,Altoona,Polk,IA,50009,Mass Layoff,98,2016-12-31 00:00:00,2017-01-31 00:00:00
+HGS,131 Tower Park Drive #300,Waterloo,Black Hawk,IA,50701,Closing,129,2017-01-01 00:00:00,2017-03-03 00:00:00
+Ridgeway Place,155 E. Ridgeway Ave.,Waterloo,Black Hawk,IA,50702,Closing,33,2017-01-05 00:00:00,2017-03-01 00:00:00
+Rockwell Collins,400 Collins Road NE,Cedar Rapids,Linn,IA,52498,Amendment,1,2017-02-06 00:00:00,2017-03-10 00:00:00
+Rose Publishing,17909 Adria Maru Lane,Carson,Sioux,CA,90746,Mass Layoff,1,2017-02-15 00:00:00,2017-04-15 00:00:00
+Rockwell Collins,400 Colllins Road NE,Cedar Rapids,Linn,IA,52498,Amendment,4,2017-02-20 00:00:00,2017-03-24 00:00:00
+Raining Rose,"100 30th Street Drive, SE",Cedar Rapids,Linn,IA,52403,Mass Layoff,49,2017-02-22 00:00:00,2017-03-24 00:00:00
+Americold Logistics,6875 State Street,Bettendorf,Scott,IA,52722,Closing,43,2017-02-24 00:00:00,2017-04-01 00:00:00
+Rockwell Collins,400 Collins Road NE,Cedar Rapids,Linn,IA,52498,Amendment,8,2017-02-28 00:00:00,2017-03-31 00:00:00
+Maquoketa Web Printing,1287 Maple Street,Maquoketa,Jackson,IA,52060,Mass Layoff,42,2017-03-16 00:00:00,2017-04-16 00:00:00
+General Dynamics Information Technology,2400 Oakdale Blvd.,Coralville,Johnson,IA,52241,Mass Layoff,220,2017-03-29 00:00:00,2017-05-31 00:00:00
+Owner Revolution Inc. - Plastic Professionals,1501 Owner Avenue,Atlantic,Cass,IA,50022,Mass Layoff,207,2017-04-02 00:00:00,2017-06-30 00:00:00
+K-Mart,715 US Highway 30 West,Carroll,Carroll,IA,51401,Closing,46,2017-04-06 00:00:00,2017-07-09 00:00:00
+Central Iowa Healthcare,55 Cemtra Iowa Drive,Marshalltown,Marshall,IA,50158,Amendment,0,2017-04-18 00:00:00,2017-05-01 00:00:00
+Rockwell Collins,400 Collins Road NE,Cedar Rapids,Linn,IA,52498,Amendment,1,2017-04-19 00:00:00,2017-05-19 00:00:00
+Polaris,909 4th Street,Milford,Dickinson,IA,51351,Mass Layoff,275,2017-04-25 00:00:00,2017-07-01 00:00:00
+"SSP America, Ic.",5800 Fleur Drive,Des Moines,Polk,IA,50321,Mass Layoff,57,2017-04-28 00:00:00,2017-06-30 00:00:00
+Premier Linen & Drycleaning,461 West 9th Street,Dubuque,Dubuque,IA,52004,Closing,86,2017-05-10 00:00:00,2017-06-11 00:00:00
+Caterpillar Inc.,1003 Miller Street,Elkader,Clayton,IA,52043,Closing,59,2017-05-25 00:00:00,2017-07-28 00:00:00
+General Dynamics Information Technology,2400 Oakdale Blvd.,Coralville,Johnson,IA,52241,Amendment,17,2017-05-31 00:00:00,2017-08-01 00:00:00
+"Alorica, Inc.",2829 Westown Pkwy.,West Des Moines,Polk,IA,50266,Mass Layoff,44,2017-06-01 00:00:00,2017-06-30 00:00:00
+K-Mart,1720 S. Center Street,Marshalltown,Marshall,IA,50158,Closing,50,2017-06-06 00:00:00,2017-09-03 00:00:00
+K-Mart,851 HWY 6 East,Iowa City,Johnson,IA,52240,Closing,49,2017-06-06 00:00:00,2017-09-03 00:00:00
+General Dynamics Information Technology,2400 Oakdale Blvd.,Coralville,Johnson,IA,52241,Amendment,4,2017-06-08 00:00:00,2017-08-08 00:00:00
+Wells Fargo,800 S. Jordan Creek,West Des Moines,Polk,IA,50266,Amendment,32,2017-06-15 00:00:00,2017-08-14 00:00:00
+Rockwell Collins,400 Collins Road NE,Cedar Rapids,Linn,IA,52498,Amendment,1,2017-06-19 00:00:00,2017-07-21 00:00:00
+Wells Fargo,800 S. Jordan Creek,West Des Moines,Polk,IA,50266,Amendment,7,2017-07-13 00:00:00,2017-09-11 00:00:00
+Convergys,102 Sergeant Square Drive,Sergeant Bluff,Woodbury,IA,51054,Mass Layoff,152,2017-07-24 00:00:00,2017-09-30 00:00:00
+adidas Group,951 32nd Ave. SW,Cedar Rapids,Linn,IA,52404,Closing,98,2017-07-27 00:00:00,2017-09-29 00:00:00
+New Link Genetics,2503 South Loop Drive,Ames,Story,IA,50010,Mass Layoff,39,2017-07-28 00:00:00,2017-08-24 00:00:00
+Westrock,1540 Tri View,Sioux City,Woodbury,IA,51103,Closing,80,2017-08-01 00:00:00,2017-09-29 00:00:00
+Wells Fargo,800 S. Jordan Creek,West Des Moines,Polk,IA,50266,Amendment,1,2017-08-10 00:00:00,2017-10-09 00:00:00
+LeanCor Supply Chain Group,500 20th Ave. SW,Cedar Rapids,Linn,IA,52404,Mass Layoff,50,2017-08-15 00:00:00,2017-10-27 00:00:00
+"J.C. Penney Corporation, Inc.",117 S.25th Street,Fort Dodge,Webster,IA,50501,Closing,52,2017-08-18 00:00:00,2017-10-24 00:00:00
+Wells Fargo,800 S. Jordan Creek,West Des Moines,Polk,IA,50266,Amendment,3,2017-09-06 00:00:00,2017-11-05 00:00:00
+Rockwell Collins,400 Collins Road NE,Cedar Rapids,Linn,IA,52498,Amendment,4,2017-09-11 00:00:00,2017-10-13 00:00:00
+Mercy - Iowa City,500 E. Market Street,Iowa City,Johnson,IA,52245,Mass Layoff,60,2017-09-19 00:00:00,2017-10-19 00:00:00
+Ferrara Candy Company,500 Industrial Parkway,Creston,Union,IA,50801,Closing,215,2017-10-02 00:00:00,2017-12-15 00:00:00
+Sheraton - Iowa City,210 South Dubuque Street,Iowa City,Johnson,IA,52240,Mass Layoff,30,2017-10-27 00:00:00,2017-12-31 00:00:00
+AmeriHealth Caritas Iowa,601 Locust Street,Des Moines,Polk,IA,50309,Mass Layoff,400,2017-10-31 00:00:00,2017-12-31 00:00:00
+ICON Ag & Turf,4511 Eagle Ave,Ireton,Sioux,IA,51027,Mass Layoff,83,2017-11-02 00:00:00,2018-01-01 00:00:00
+DuPont,59219 Lincoln Hwy,Nevada,Story,IA,50201,Mass Layoff,66,2017-11-02 00:00:00,2017-12-31 00:00:00
+Community Support Advocates,6000 Aurora Avenue,Des Moines,Polk,IA,50322,Mass Layoff,26,2017-11-16 00:00:00,2017-12-16 00:00:00
+Rockwell Collins,400 Collins Road NE,Cedar Rapids,Linn,IA,52498,Amendment,1,2017-11-17 00:00:00,2018-01-05 00:00:00
+Easter Seals Iowa,2920 30th Street,Des Moines,Polk,IA,50310,Mass Layoff,33,2017-11-17 00:00:00,2017-12-31 00:00:00
+"Telligen, Inc.",1776 West Lakes Pkwy,West Des Moines,Polk,IA,50266,Mass Layoff,28,2017-11-30 00:00:00,2017-12-15 00:00:00
+CHS Inc.,1310 E. Howard Street,Creston,Union,IA,50801,Closing,53,2017-12-01 00:00:00,2018-01-30 00:00:00
+"Link Snacks, Inc.",210 North 1st St.,Laurens,Pocahontas,IA,50554,Mass Layoff,36,2017-12-08 00:00:00,2018-02-09 00:00:00
+"Colorfx, LLC.",1000 Railroad Street,Boyden,Sioux,IA,51234,Closing,36,2018-01-01 00:00:00,2018-02-01 00:00:00
+Pioneer Hi-Bred International,7100 NW 62nd Avenue,Johnston,Polk,IA,50131,Mass Layoff,53,2018-01-01 00:00:00,2018-01-31 00:00:00
+Rock Communications,1117 East 14th Street North,Newton,Jasper,IA,50208,Mass Layoff,33,2018-01-08 00:00:00,2018-02-08 00:00:00
+K-Mart,7501 Hickman Road,Des Moines,Polk,IA,50322,Closing,59,2018-01-08 00:00:00,2018-04-08 00:00:00
+Siemens,2597 Highway 61,Fort Madison,Lee,IA,52627,Mass Layoff,202,2018-01-24 00:00:00,2018-03-24 00:00:00
+DuPont,59219 Lincoln Hwy,Nevada,Story,IA,50201,Amendment,28,2018-01-26 00:00:00,2018-03-31 00:00:00
+Convergys,102 Sergeant Square,Sergeant Bluff,Woodbury,IA,51054,Closing,178,2018-01-30 00:00:00,2018-04-14 00:00:00
+The Sandbox Agency,9245 Northpark Ave.,Johnston,Polk,IA,50131,Closing,29,2018-01-30 00:00:00,2018-02-15 00:00:00
+Younkers,2800 Edgewood Rd.  SW,Cedar Rapids,Linn,IA,52404,Closing,62,2018-01-31 00:00:00,2018-03-02 00:00:00
+Nationwide- Mortgage Division,1100 Locust Street,Des Moines,Polk,IA,50391,Mass Layoff,54,2018-02-02 00:00:00,2018-04-02 00:00:00
+Transamerica Life Ins.,4333 Edgewood Rd.,Cedar Rapids,Linn,IA,52499,Mass Layoff,863,2018-02-13 00:00:00,2018-04-13 00:00:00
+Pioneer Hi-Bred International,7100 NW 62nd Avenue,Johnston,Polk,IA,50131,Amendment,3,2018-02-21 00:00:00,2018-04-30 00:00:00
+Goldman Sachs Bank USA,1010 Thomas Edison Boulevard,Cedar Rapids,Linn,IA,52404,Closing,39,2018-02-28 00:00:00,2018-05-01 00:00:00
+Boyd Coffee Company,3217 Nebraska Ave.,Council Bluffs,Pottawattamie,IA,51501,Mass Layoff,2,2018-03-22 00:00:00,2018-05-23 00:00:00
+Sitel,3102 West End Ave,Nashville,Davidson,TN,37203,Closing,1,2018-04-02 00:00:00,2018-04-02 00:00:00
+Younkers,555 John F. Kennedy Rd.,Dubuque,Dubuque,IA,52002,Closing,90,2018-04-05 00:00:00,2018-06-05 00:00:00
+Younkers,4380 Sergeant Rd.,Sioux City,Woodbury,IA,51106,Closing,84,2018-04-05 00:00:00,2018-06-05 00:00:00
+Younkers,101 Jordan Creek Park,West Des Moines,Polk,IA,50266,Closing,108,2018-04-05 00:00:00,2018-06-05 00:00:00
+Younkers,"4444 1st Avenue, NE",Cedar Rapids,Linn,IA,52404,Closing,95,2018-04-05 00:00:00,2018-06-05 00:00:00
+Younkers,1421 Coral Ridge Ave.,Coralville,Johnson,IA,52241,Closing,110,2018-04-05 00:00:00,2018-06-05 00:00:00
+Younkers,3800 Merle Hay Road,Des Moines,Polk,IA,50310,Closing,84,2018-04-05 00:00:00,2018-06-05 00:00:00
+Younkers,102 South Delaware,Mason City,Cerro Gordo,IA,50401,Closing,64,2018-04-05 00:00:00,2018-06-05 00:00:00
+Younkers,"1551 Valley West Drive, Suite 200",West Des Moines,Polk,IA,50266,Closing,164,2018-04-05 00:00:00,2018-06-05 00:00:00
+Sears Holdings Company,4600 1st Ave. NE,Cedar Rapids,Linn,IA,52402,Closing,45,2018-04-12 00:00:00,2018-07-08 00:00:00
+Sears Auto Store,4600 1st Ave. NE,Cedar Rapids,Linn,IA,52402,Closing,6,2018-04-12 00:00:00,2018-07-08 00:00:00
+Mahle,505 E. Madison,Winterset,Madison,IA,50273,Closing,33,2018-04-15 00:00:00,2018-07-13 00:00:00
+Aramark,1600 E. Washington,Des Moines,Polk,IA,50312,Mass Layoff,78,2018-04-24 00:00:00,2018-06-30 00:00:00
+Pioneer Hi-Bred International,7100 NW 62nd Avenue,Johnston,Polk,IA,50131,Amendment,23,2018-04-25 00:00:00,2018-06-30 00:00:00
+The Barrent Group,3056 104th Street,Urbandale,Polk,IA,50322,Mass Layoff,39,2018-04-26 00:00:00,2018-06-01 00:00:00
+General Dynamics Information Technology,2400 Oakdale Blvd.,Coralville,Johnson,IA,52241,Mass Layoff,112,2018-04-30 00:00:00,2018-07-02 00:00:00
+University of Iowa Health Ventures,"327 2nd Street, Ste. 200",Coralville,Johnson,IA,52241,Mass Layoff,190,2018-05-01 00:00:00,2018-06-29 00:00:00
