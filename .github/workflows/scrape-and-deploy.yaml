@@ -55,7 +55,7 @@ jobs:
           node-version: "20.11"
 
       - name: Install dependencies
-        run: npm install --dev --prefix site
+        run: npm install --prefix site
         shell: bash
 
       - name: Build
