@@ -1,0 +1,48 @@
+name: Scraper with input
+
+on:
+  workflow_dispatch:
+    inputs:
+      state:
+        description: 'U.S. state to scrape'
+        required: true
+        default: 'ia'
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    name: Scrape
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello world
+        run: echo "Hello world"
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install scraper
+        run: pip install warn-scraper
+
+      - name: Scrape
+        run: warn-scraper ${{ inputs.state }} --data-dir ./data/
+
+      - name: Commit and push
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@users.noreply.github.com"	
+          git add ./data/
+          git commit -m "Latest data from ${{ inputs.state }}"
+          git push || true
+
+      - name: upload-artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: data
+          path: ./data/

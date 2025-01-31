@@ -1,4 +1,4 @@
-name: Scraper
+name: First Scraper
 
 on:
   workflow_dispatch:
@@ -30,7 +30,7 @@ jobs:
 
       - name: Commit and push
         run: |
-          git config user.name "Automated"	
+          git config user.name "GitHub Actions"
           git config user.email "actions@users.noreply.github.com"	
           git add ./data/
           git commit -m "Latest data"
@@ -39,5 +39,5 @@ jobs:
       - name: upload-artifact
         uses: actions/upload-artifact@v4
         with:
-          name: exports
+          name: data
           path: ./data/
