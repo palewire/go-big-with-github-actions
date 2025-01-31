@@ -31,10 +31,10 @@ jobs:
 
       - name: Commit and push
         run: |
-          git status
-          git add ./data/
           git config user.name "Automated"	
           git config user.email "actions@users.noreply.github.com"	
+          git status
+          git add ./data/
           git commit -m "Latest data"
           git push
 
