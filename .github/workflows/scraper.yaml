@@ -27,10 +27,18 @@ jobs:
         run: pip install warn-scraper
 
       - name: Scrape Iowa
-        run: warn-scraper ia
+        run: warn-scraper ia --data-dir ./data/
 
       - name: upload-artifact
         uses: actions/upload-artifact@v4
         with:
           name: exports
-          path: /home/runner/.warn-scraper/exports/ia.csv
+          path: ./data/
+
+      - name: Commit and push
+        run: |
+          git add ./data/
+          git config user.name "Automated"	
+          git config user.email "actions@users.noreply.github.com"	
+          git commit -m "Latest data"
+          git push
