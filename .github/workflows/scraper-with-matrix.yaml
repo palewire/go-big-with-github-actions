@@ -14,49 +14,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        source:
-          [
-              al,
-              ak,
-              az,
-              # ca,
-              # co,
-              # ct,
-              # dc,
-              # de,
-              # fl,
-              # ga,
-              # hi,
-              # ia,
-              # id,
-              # il,
-              # in,
-              # ks,
-              # ky,
-              # la,
-              # md,
-              # me,
-              # mi,
-              # mo,
-              # mt,
-              # ne,
-              # nj,
-              # nm,
-              # ny,
-              # oh,
-              # ok,
-              # or,
-              # ri,
-              # sc,
-              # sd,
-              # tn,
-              # tx,
-              # ut,
-              # va,
-              # vt,
-              # wa,
-              # wi,
-            ]
+        state: [al, ca, ia]
     steps:
       - name: Hello world
         run: echo "Hello world"
@@ -73,7 +31,7 @@ jobs:
         run: pip install warn-scraper
 
       - name: Scrape
-        run: warn-scraper ${{ matrix.source }} --data-dir ./data/
+        run: warn-scraper ${{ matrix.state }} --data-dir ./data/
 
       - name: upload-artifact
         uses: actions/upload-artifact@v4
