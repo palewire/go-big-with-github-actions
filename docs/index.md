@@ -1,3 +1,19 @@
-# Your package name
+# Go big with GitHub Actions
 
-Your documention starts here ...
+Learn how to scale up your data pipelines using GitHub’s powerful Actions framework.
+
+## What you will learn
+
+Work through this tutorial and you will get hands-on experience creating an automated system that can collect, process and publish a large datasets with ease.
+
+It will teach you how to:
+
+* Schedule an automated task
+* Scrape and store data from a newsworthy source
+* Scale up to run hundreds of tasks in parallel
+* Publish a data dashboard to share your work
+* Extend GitHub’s free system to access gigantic amounts of computing power
+
+## Who can take it
+
+This course is free. Previous experience working with GitHub will come in handy, but anyone with good attitude is qualified to take the class.

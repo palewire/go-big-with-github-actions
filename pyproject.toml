@@ -36,7 +36,6 @@ test = [
 docs = [
     "sphinx",
     "sphinx-autobuild",
-    "sphinxcontrib-mermaid",
     "myst-parser",
 ]
 mypy = [
