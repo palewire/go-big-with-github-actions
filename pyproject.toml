@@ -1,28 +1,13 @@
 [build-system]
-requires = ["setuptools >= 61.0", "setuptools_scm>=8"]
+requires = ["setuptools >= 61.0",]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "your-package-name"
-dynamic = ["version"]
+name = "go-big-with-github-actions"
+description = "Learn how to scale up your data pipelines using GitHub’s powerful Actions framework"
 requires-python = ">=3.9"
 dependencies = [
     'exceptiongroup; python_version<"3.11"',
-]
-authors = [
-  { name="Ben Welsh", email="b@palewi.re" },
-]
-description = "Your package description"
-license = {text = "MIT"}
-readme = "README.md"
-classifiers = [
-    "Development Status :: 5 - Production/Stable",
-    "Programming Language :: Python",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
-    "License :: OSI Approved :: MIT License",
 ]
 
 [project.optional-dependencies]
@@ -41,14 +26,3 @@ docs = [
 mypy = [
     "mypy",
 ]
-
-[project.urls]
-Documentation = "https://palewi.re/docs/your-respository/"
-Maintainer = "https://github.com/palewire/"
-Source = "https://github.com/palewire/your-respository/"
-Issues = "https://github.com/palewire/your-respository/issues/"
-
-# [tool.setuptools]
-# packages = ["your_package_module"]
-
-[tool.setuptools_scm]
