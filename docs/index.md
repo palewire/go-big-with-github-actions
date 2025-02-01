@@ -17,3 +17,21 @@ It will teach you how to:
 ## Who can take it
 
 This course is free. Previous experience working with GitHub will come in handy, but anyone with good attitude is qualified to take the class.
+
+## Table of contents
+
+```{toctree}
+:maxdepth: 1
+:name: mastertoc
+:numbered:
+
+what-are-actions
+what-is-yaml
+getting-started
+first-action
+scraper
+matrix
+deploy
+ec2
+about
+```
