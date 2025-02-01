@@ -1,4 +1,4 @@
-# GitHub Actions scrapers
+# Actions scrapers
 
 This chapter that Iris will write will show how to expand the basic action to scraper data on a cron and commit the results to the repo.
 
