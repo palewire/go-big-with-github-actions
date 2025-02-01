@@ -9,6 +9,7 @@ version = "1.0.0"
 requires-python = ">=3.9"
 dependencies = [
     'exceptiongroup; python_version<"3.11"',
+    'warn-scraper',
 ]
 
 [project.optional-dependencies]
@@ -27,3 +28,6 @@ docs = [
 mypy = [
     "mypy",
 ]
+
+[tool.setuptools]
+packages = ["docs",]
