@@ -5,6 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "go-big-with-github-actions"
 description = "Learn how to scale up your data pipelines using GitHub’s powerful Actions framework"
+version = "1.0.0"
 requires-python = ">=3.9"
 dependencies = [
     'exceptiongroup; python_version<"3.11"',
