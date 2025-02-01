@@ -24,6 +24,7 @@ docs = [
     "sphinx",
     "sphinx-autobuild",
     "myst-parser",
+    "sphinx-palewire-theme",
 ]
 mypy = [
     "mypy",
