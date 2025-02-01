@@ -2,6 +2,8 @@
 
 This chapter, which Dana will write, will show how to introduce a matrix to your Actions workflow that will run a bunch of scrapers in parallel and then commit the results.
 
+It will gradually build up to:
+
 ```yaml
 name: Scraper with matrix
 
