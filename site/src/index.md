@@ -1,10 +1,10 @@
-# Iowa WARN notices
+# WARN notice database
 
 Search the latest layoff notices
 
 ```js
 // Read in the CSV file
-const data = FileAttachment("ia.csv").csv({typed: true});
+const data = FileAttachment("data/ia.csv").csv({typed: true});
 ```
 
 ```js
