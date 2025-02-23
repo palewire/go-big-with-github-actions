@@ -4,7 +4,7 @@ Learn how to scale up your data pipelines using GitHub’s powerful Actions fram
 
 ## What you will learn
 
-Work through this tutorial and you will get hands-on experience creating an automated system that can collect, process and publish a large datasets with ease.
+Work through this tutorial and you will get hands-on experience creating an automated system that can collect, process and publish a gigantic dataset with ease.
 
 It will teach you how to:
 
@@ -12,7 +12,7 @@ It will teach you how to:
 * Scrape and store data from a newsworthy source
 * Scale up to run hundreds of tasks in parallel
 * Publish a data dashboard to share your work
-* Extend GitHub’s free system to access gigantic amounts of computing power
+* Extend GitHub’s free system to access mammoth amounts of computing power
 
 ## Who can take it
 
