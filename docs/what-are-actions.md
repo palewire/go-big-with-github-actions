@@ -18,7 +18,7 @@ These routines are common in the software industry, where they are used to steng
 
 However, Actions is not limited to these arcane, back-office tasks. Because it can be used to run any kind of script, computer programmers, including journalists, have found ways put Actions to all kinds of creative uses.
 
-A simple example is the [@ReutersJobs](https://mastodon.palewi.re/@ReutersJobs) social media bot. The project scrapes the job listings from the Reuters website, identifies new openings, generates promotional images and posts notices to Mastodon, a social media platform.
+A simple example is the [@ReutersJobs](https://mastodon.palewi.re/@ReutersJobs) social media bot. The project scrapes the job listings from the Reuters website, identifies new openings, generates promotional images and posts notices to social media.
 
 [![@ReutersJobs post](_static/reuters-jobs-post.png)](https://mastodon.palewi.re/@ReutersJobs/113823961066565728)
 
