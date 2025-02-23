@@ -14,9 +14,9 @@ Each time a developer submits a patch for review, tests are run to ensure that n
 
 [![VS Code actions](_static/vscode-actions.png)](https://github.com/microsoft/vscode/actions)
 
-These routines are common in the software industry, where they are used to stengthen quality control and speed up releases. However, Actions is not limited to these arcane, back-office tasks.
+These routines are common in the software industry, where they are used to stengthen quality control and speed up releases.
 
-Because it can be used to run any kind of script, computer programmers, including journalists, have found ways put it to all kinds of creative uses.
+However, Actions is not limited to these arcane, back-office tasks. Because it can be used to run any kind of script, computer programmers, including journalists, have found ways put Actions to all kinds of creative uses.
 
 A simple example is the [@ReutersJobs](https://mastodon.palewi.re/@ReutersJobs) social media bot. The project scrapes the latest job postings from the Reuters website, identifies new openings, generates promotional images and posts to Mastodon.
 
