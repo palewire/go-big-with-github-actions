@@ -13,11 +13,10 @@ exclude_patterns = ["_build", "Thumbs.db", ".DS_Store"]
 html_theme = "palewire"
 pygments_style = "sphinx"
 
-html_sidebars: dict[Any, Any] = {}
 html_sidebars: dict[Any, Any] = {
-    '**': [
-        'about.html',
-        'navigation.html',
+    "**": [
+        "about.html",
+        "navigation.html",
     ]
 }
 html_theme_options: dict[Any, Any] = {
@@ -26,4 +25,8 @@ html_theme_options: dict[Any, Any] = {
 
 extensions = [
     "myst_parser",
+]
+
+myst_enable_extensions = [
+    "attrs_block",
 ]

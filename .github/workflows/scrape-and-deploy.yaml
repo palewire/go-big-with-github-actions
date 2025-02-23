@@ -53,15 +53,15 @@ jobs:
 
       - name: Install dependencies
         run: npm install --prefix site
-        shell: bash
 
-      - name: Load data
-        run: cp data/* site/src/data/
-        shell: bash
+      - name: Download data
+        uses: actions/download-artifact@v4
+        with:
+          name: data
+          path: site/src/data/
 
       - name: Build
         run: npm run build --prefix site
-        shell: bash
 
       - name: Upload release candidate
         uses: actions/upload-pages-artifact@v3
