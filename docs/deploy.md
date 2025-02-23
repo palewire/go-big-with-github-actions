@@ -18,9 +18,9 @@ Many people use Pages to publish their blogs, porfolios and other personal websi
 
 [![Pages homepage](_static/pages-homepage.png)](https://pages.github.com/)
 
-Data journalists can use Pages to share the information they collect with the coworkers, peers and even the general public. When combined with Actions and an automated data-gathering routine, Pages can be used to create a live dashboard that will regularly update itself with the latest data.
+Data journalists can use Pages to share the information they collect with their coworkers, peers and even the general public. When combined with Actions and an automated data-gathering routine, Pages can be used to create live dashboards that regularly update with the fresh data.
 
-We'll do that by integrating the WARN notices we've scraped in previous chapters into a simple search created with Observable's Framework for building data dashboards.
+We'll do that now by integrating the WARN notices we've scraped in previous chapters into a simple search.
 
 ![Dashboard tease](_static/dashboard-tease.png)
 
