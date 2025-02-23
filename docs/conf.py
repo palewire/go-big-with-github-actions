@@ -26,7 +26,4 @@ html_theme_options: dict[Any, Any] = {
 
 extensions = [
     "myst_parser",
-    "sphinx.ext.napoleon",
 ]
-source_suffix = ".md"
-master_doc = "index"
