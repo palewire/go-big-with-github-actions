@@ -2,7 +2,7 @@
 
 Our focus in this class will be how to configure GitHub Actions to run your code, not how to write the code itself.
 
-So we won't be covering how to write Python or JavaScript or another programming language to develop the contents of an automation, which would need to be tailored to a specific goal. Instead we will show you broad patterns you can use automate different types of tasks, which you can apply to any number of tasks in almost any programming language.
+So we won't be covering how to use Python or JavaScript or another programming language to develop the contents of an automation tailored to a specific goal. Instead we will show you broad patterns you can use automate tasks within Actions, which you can apply to any number of tasks in the programming language of your choice.
 
 However, to work with Actions you need to know one crucial tool that may be new to you. That's the YAML programming language.
 
