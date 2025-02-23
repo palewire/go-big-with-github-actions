@@ -1,6 +1,28 @@
 # Deploy a data dashboard
 
-This chapter, which Ben will write, will show to deploy a data dashboard with your latest scrape using GitHub Pages.
+You can use Actions to do more than pull in data. You can also use it out via all kinds of different publishing systems.
+
+Examples we've worked on include:
+
+* The Reuters system that publishes hundreds of automated charts each week [via the Datawrapper API](https://docs.google.com/presentation/d/e/2PACX-1vTFf1nR6Bs5Y41kUzv3n-ZkBWJmSeF0W7inISfvG7pfPR1BrP8VdO6bwxxVJtToKacTcxhyXcgDzyQM/pub?start=false&loop=false&delayms=3000).
+* The crowdsourced dictionary of campaign-finance jargon at [moneyinpolitics.wtf](https://moneyinpolitics.wtf)
+* The regularly updating database of amateur radio satellites at [amsat.org](https://www.amsat.org/amateur-satellite-index/)
+* A continually updating study of [which news organizations block AI spiders](https://palewi.re/docs/news-homepages/openai-gptbot-robotstxt.html)
+* Social media bots that publish selections from a [variety](https://mastodon.palewi.re/@laxweather) of [public](https://mastodon.palewi.re/@OldLAPhotos) [resources](https://mastodon.palewi.re/@sanbornmaps)
+
+In this chapter we'll show how you can schedule an Action to publish data to the Internet using another one GitHub's powerful tools, GitHub Pages.
+
+[GitHub Pages](https://pages.github.com/) is a hosting service that will host files in a GitHub repository as a public website. For free. Yes, free.
+
+Many people use Pages to host their blogs, porfolios and other personal websites. But it can be used for any app that only requires flat files like HTML, CSS and JavaScript to run.
+
+[![Pages homepage](_static/pages-homepage.png)](https://pages.github.com/)
+
+Data journalists can use Pages to share the information they collect with the coworkers, peers and even the general public. When combined with Actions and an automated data-gathering routine, Pages can be used to create a live dashboard that will regularly update itself with the latest data.
+
+We'll do that by integrating the WARN notices we've scraped in previous chapters into a simple search created with Observable's Framework for building data dashboards.
+
+![Dashboard tease](_static/dashboard-tease.png)
 
 This will build up to:
 
@@ -35,7 +57,7 @@ jobs:
       - name: Commit and push
         run: |
           git config user.name "GitHub Actions"
-          git config user.email "actions@users.noreply.github.com"	
+          git config user.email "actions@users.noreply.github.com"
           git add ./data/
           git commit -m "Latest data" && git push || true
 

@@ -11,9 +11,6 @@ jobs:
     name: Scrape
     runs-on: ubuntu-latest
     steps:
-      - name: Hello world
-        run: echo "Hello world"
-
       - name: Checkout
         uses: actions/checkout@v4
 
