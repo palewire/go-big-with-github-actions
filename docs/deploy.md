@@ -1,14 +1,14 @@
 # Deploy a data dashboard
 
-You can use Actions to do more than pull in data. You can also use it out via all kinds of different publishing systems.
+You can use Actions to do more than pull in data. You can also use it to push out data via all kinds of different publishing systems.
 
 Examples we've worked on include:
 
-* The Reuters system that publishes hundreds of automated charts each week [via the Datawrapper API](https://docs.google.com/presentation/d/e/2PACX-1vTFf1nR6Bs5Y41kUzv3n-ZkBWJmSeF0W7inISfvG7pfPR1BrP8VdO6bwxxVJtToKacTcxhyXcgDzyQM/pub?start=false&loop=false&delayms=3000).
+* The Reuters system that drafts hundreds of automated charts each week [via the Datawrapper API](https://docs.google.com/presentation/d/e/2PACX-1vTFf1nR6Bs5Y41kUzv3n-ZkBWJmSeF0W7inISfvG7pfPR1BrP8VdO6bwxxVJtToKacTcxhyXcgDzyQM/pub?start=false&loop=false&delayms=3000).
 * The crowdsourced dictionary of campaign-finance jargon at [moneyinpolitics.wtf](https://moneyinpolitics.wtf)
 * The regularly updating database of amateur radio satellites at [amsat.org](https://www.amsat.org/amateur-satellite-index/)
 * A continually updating study of [which news organizations block AI spiders](https://palewi.re/docs/news-homepages/openai-gptbot-robotstxt.html)
-* Social media bots that publish selections from a [variety](https://mastodon.palewi.re/@laxweather) of [public](https://mastodon.palewi.re/@OldLAPhotos) [resources](https://mastodon.palewi.re/@sanbornmaps)
+* A range of social media bots that post selections from a [variety](https://mastodon.palewi.re/@laxweather) of [public](https://mastodon.palewi.re/@OldLAPhotos) [resources](https://mastodon.palewi.re/@sanbornmaps)
 
 In this chapter we'll show how you can schedule an Action to publish data to the Internet using another one GitHub's powerful tools, GitHub Pages.
 
