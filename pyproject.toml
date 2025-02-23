@@ -6,26 +6,16 @@ build-backend = "setuptools.build_meta"
 name = "go-big-with-github-actions"
 description = "Learn how to scale up your data pipelines using GitHub’s powerful Actions framework"
 version = "1.0.0"
-requires-python = ">=3.9"
+requires-python = "==3.12.*"
 dependencies = [
-    'exceptiongroup; python_version<"3.11"',
-    'warn-scraper',
-]
-
-[project.optional-dependencies]
-test = [
-    "pytest-runner",
-    "pytest-cov",
-    "pytest-env",
-    "pytest-vcr",
-    "pytest-xdist",
-]
-docs = [
     "sphinx",
     "sphinx-autobuild",
     "myst-parser",
     "sphinx-palewire-theme",
+    'warn-scraper',
 ]
+
+[project.optional-dependencies]
 mypy = [
     "mypy",
 ]

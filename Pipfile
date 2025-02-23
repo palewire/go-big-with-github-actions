@@ -5,19 +5,13 @@ verify_ssl = true
 
 [dev-packages]
 pre-commit = "*"
-pytest = "*"
-pytest-env = "*"
-pytest-cov = "*"
-sphinx = "*"
-sphinx-autobuild = "*"
-sphinx-click = "*"
-sphinxcontrib-mermaid = "*"
-myst-parser = "*"
-typing_extensions = "*"
-exceptiongroup = "*"
-tomli = "*"
 
 [packages]
+sphinx = "*"
+sphinx-autobuild = "*"
+myst-parser = "*"
+sphinx-palewire-theme = "*"
+warn-scraper = "*"
 
 [requires]
-python_version = "3.11"
+python_version = "3.12"
