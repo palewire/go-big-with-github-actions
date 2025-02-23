@@ -10,7 +10,7 @@ The tool was created primarily to help coders with continuous integration and co
 
 For example, a routine set of Actions is run to vet every change made to the codebase of Microsoft's [Visual Studio Code](https://github.com/microsoft/vscode), a popular open-source project managed via GitHub.
 
-Each time a developer submits a patch for review, tests are run to ensure that nothing breaks. When changes have been approved, Actions can automatically deploy new code to the web servers and other systems that run the software.
+Each time a developer submits a patch for review, tests are run to ensure that nothing breaks. When changes have been approved, Actions can automatically ship out the latest version to users.
 
 [![VS Code actions](_static/vscode-actions.png)](https://github.com/microsoft/vscode/actions)
 
