@@ -253,8 +253,9 @@ Hit the link and you should see the dashboard we built in the `site` directory o
 
 ![Dashboard tease](_static/dashboard-tease.png)
 
-Congratulations. You've deployed a dashboard using GitHub Pages. To schedule it to automatically update, all you'd need to do is schedule the workflow to run on a regular basis as we did in previous chapters.
+Congratulations. You've deployed a dashboard using GitHub Pages. If you're having trouble with your YAML file, you can find a full working example [in our class repository](https://github.com/palewire/go-big-with-github-actions/blob/main/.github/workflows/scrape-and-deploy.yaml).
 
+To schedule it to automatically update, all you'd need to do is schedule the workflow to run on a regular basis as we did in previous chapters.
 
 {emphasize-lines="5-6"}
 ```yaml
