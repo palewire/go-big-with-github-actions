@@ -1,12 +1,4 @@
 Company,Address Line 1,City,County,St,ZIP,Notice Type,Emp #,Notice Date,Layoff Date,Local Workforce Area,Industry,,,,,,,,,,,,,,
-HyPro Incorporated,711 Enterprise Drive,Cedar Falls,Black Hawk,IA,50613,Closing,73,1/28/2020,2020-03-28 00:00:00,Northeast Iowa,Manufacturing,,,,,,,,,,,,,,
-Trinity Health Corporation,421 S. Illinois Avenue,Mason City,Cerro Gordo,IA,50401,Mass Layoff,77,1/28/2020,2020-03-31 00:00:00,Northeast Iowa,"Professional, Scientific, and Technical Services",,,,,,,,,,,,,,
-Sisters of Charity of the Blessed Virgin Mary,1100 Carmel Drive,Dubuque,Dubuque,IA,52003,Mass Layoff,203,2/3/2020,2020-04-12 00:00:00,Northeast Iowa,Health Care and Social Assistance ,,,,,,,,,,,,,,
-Misty Harbor,228 Kenyon Road,Fort Dodge,Webster,IA,50501,Closing,45,2/3/2020,2020-03-05 00:00:00,North Central Iowa,Manufacturing,,,,,,,,,,,,,,
-TCS e-Serve International Ltd,4333 Edgewood Rd. NE,Cedar Rapids,Linn,IA,52411,Amendment,1,2/3/2020,2020-04-03 00:00:00,East Central Iowa,"Professional, Scientific, and Technical Services",,,,,,,,,,,,,,
-John Deere Dubuque Works,18600 S John Deere Rd,Dubuque,Dubuque,IA,52001,Mass Layoff,105,2/6/2020,2020-04-06 00:00:00,Northeast Iowa,Manufacturing,,,,,,,,,,,,,,
-All American Hydraulics,2700 N. Broadway Street,Red Oak,Montgomery,IA,51566,Mass Layoff,56,2/10/2020,2020-04-13 00:00:00,Southwest Iowa,Manufacturing,,,,,,,,,,,,,,
-Diamond Communications Solutions,1209 31st Avenue,Council Bluffs,Pottawattamie,IA,51501,Closing,70,2/11/2020,2020-04-10 00:00:00,Western Iowa,Information,,,,,,,,,,,,,,
 "Hy-Vee, Inc. - Fulfillment Center",3303 86th Street,Des Moines,Polk,IA,50311,Closing,368,3/5/2020,2020-05-06 00:00:00,Central Iowa,Retail Trade,,,,,,,,,,,,,,
 Eaton Corporation,1600 Ariport Road,Shenandoah,Page,IA,51601,Closing,55,4/6/2020,2020-06-15 00:00:00,Western Iowa,Manufacturing,,,,,,,,,,,,,,
 Hollander Sleep Products,1204 East Summit Street,Maquoketa,Jackson,IA,52060,Closing,126,4/13/2020,2020-04-13 00:00:00,Mississippi Valley,Manufacturing,,,,,,,,,,,,,,
@@ -418,6 +410,13 @@ SpartanNash,423 Sharp St,Glenwood,Mills,IA,51534,Closing,23,01/15/2025,2025-02-1
 Dotdash Meredith,1716 Locust St,Des Moines,Polk,IA,50309,Mass Layoff,28,01/16/2025,2025-02-01 00:00:00,Central Iowa,Information,,,,,,,,,,,,,,
 JELD-WEN Inc,911 Industiral Ave,Grinnell,Poweshiek,IA ,50112,Closing,298,01/20/2025,2025-03-21 00:00:00,South Central Iowa ,Manufacturing,,,,,,,,,,,,,,
 NSK Americas,1100 N 1St St,Clarinda,Page,IA,51632,Mass Layoff,34,01/27/2025,2025-02-28 00:00:00,Iowa Plains ,Manufacturing,,,,,,,,,,,,,,
+Quad County Corn Processors Cooperative,6059 159th St,Galva,Ida,IA,51020,Closing ,41,01/24/2025,2025-02-25 00:00:00,Iowa Plains,Manufacturing,,,,,,,,,,,,,,
+"IES Communications, LLC ",500 Share Way,Altoona,Polk,IA,50009,Amendment-Additional Employees,1,2/10/2025,2025-02-10 00:00:00,Central Iowa,Construction,,,,,,,,,,,,,,
+Orient-Macksburg Community School District ,201 S Scholl St,Orient,Adair,IA ,50858,Closing ,36,02/11/2025,2025-07-01 00:00:00,Iowa Plains,Educational Services ,,,,,,,,,,,,,,
+Fisher Group,1250 N Center Point Rd,Hiawatha,Linn,IA,52233,Closing ,32,02/11/2025,2025-03-12 00:00:00,East Central Iowa,Manufacturing,,,,,,,,,,,,,,
+John Deere Des Moines Work,825 SW Irvinedale Dr,Ankeny,Polk,IA,50023,Mass Layoffs,9,02/21/2025,2025-03-31 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+John Deere Des Moines Work,825 SW Irvinedale Dr,Ankeny,Polk,IA,50023,Mass Layoffs,38,02/21/2025,2025-04-07 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+John Deere Des Moines Work,825 SW Irvinedale Dr,Ankeny,Polk,IA,50023,Mass Layoffs,72,02/21/2025,2025-04-28 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
 United HR Direct,3022 Airport Blvd.,Waterloo,Black Hawk,IA,50704,Mass Layoff,52,2011-01-13 00:00:00,2011-03-08 00:00:00
 Wells Fargo,800 Walnut Street,Des Moines,Polk,IA,50309,Mass Layoff,32,2011-01-14 00:00:00,2011-02-13 00:00:00
 Electrolux,400 Des Moines Street,Webster City,Hamilton,IA,50595,Amendment,510,2011-01-27 00:00:00,2011-03-31 00:00:00
