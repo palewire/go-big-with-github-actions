@@ -2,9 +2,9 @@
 
 Our focus in this class will be how to configure GitHub Actions to run your code, not how to write the code itself.
 
-So we won't be covering how to write Python or JavaScript to develop an automation.
+So we won't be covering how to write Python or JavaScript or another programming language to develop the contents of an automation, which would need to be tailored to a specific goal. Instead we will show you broad patterns you can use automate different types of tasks, which you can apply to any number of tasks in almost any programming language.
 
-Instead we'll focus narrowly on the tool that Actions favors for setting up tasks: the YAML programming language. To take advantage of Actions, you will need to learn how to write YAML code.
+However, to work with Actions you need to know one crucial tool that may be new to you. That's the YAML programming language.
 
 [YAML](https://en.wikipedia.org/wiki/YAML) is a data structuring system that was designed to store information in way that is easy for people to read and write. It stands for "YAML Ain't Markup Language" because it does not wrap data in tags like HTML or XML, a technique known as markup.
 
