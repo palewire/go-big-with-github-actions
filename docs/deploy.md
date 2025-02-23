@@ -10,11 +10,11 @@ Examples we've worked on include:
 * A continually updating study of [which news organizations block AI spiders](https://palewi.re/docs/news-homepages/openai-gptbot-robotstxt.html)
 * A range of social media bots that post selections from [public](https://mastodon.palewi.re/@OldLAPhotos) [data](https://mastodon.palewi.re/@laxweather) [sources](https://mastodon.palewi.re/@sanbornmaps)
 
-In this chapter we'll show how you can schedule an Action to publish data to the Internet using another one GitHub's powerful tools, GitHub Pages.
+In this chapter we'll show how you can schedule an Action to share data using another one GitHub's powerful tools, GitHub Pages.
 
-[GitHub Pages](https://pages.github.com/) is a hosting service that will host files in a GitHub repository as a public website. For free. Yes, free.
+[GitHub Pages](https://pages.github.com/) is a free service that will host files in a GitHub repository as a public website. Yes, free.
 
-Many people use Pages to host their blogs, porfolios and other personal websites. But it can be used for any app that only requires flat files like HTML, CSS and JavaScript to run.
+Many people use Pages to publish their blogs, porfolios and other personal websites. But it can be used for any app that only requires flat files like HTML, CSS and JavaScript to run.
 
 [![Pages homepage](_static/pages-homepage.png)](https://pages.github.com/)
 
