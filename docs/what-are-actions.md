@@ -30,6 +30,4 @@ The panel allows you to see the progress of tasks as they execute and review the
 
 [![@ReutersJobs tasks](_static/reuters-jobs-task.png)](https://github.com/palewire/reuters-jobs/actions/runs/13483141005/job/37670903830)
 
-Reporters at top news organizations routinely use Actions to automate the collection, processing, analysis and publication of data. This class will teach you some of the techniques they use.
-
-In the chapters that follow we'll teach you how you can automate your projects. We'll start with a simple example, then build up to more complex and powerful configurations.
+Reporters at top news organizations routinely use Actions to automate the collection, processing, analysis and publication of data. This class will teach you some of their techniques. We'll start with a simple example, then build up to more complex and powerful configurations.
