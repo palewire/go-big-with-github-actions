@@ -43,7 +43,7 @@ The second error-handling setting is called ```continue-on-error```. This **TK**
 continue-on-error: true
 ```
 
-# Uploading artifact
+#### Uploading artifact
 ```yaml
   - name: upload-artifact
         uses: actions/upload-artifact@v4
@@ -54,13 +54,12 @@ continue-on-error: true
 Purpose of uploading artifacts vs just committing like we did before
 Temporary storage
 
-# Commit step
+#### Commit step
 
-# Checkout
+#### Checkout
 
-# Download artifact
-
-# 
+#### Download artifact
+ 
 
 
 It will gradually build up to:
