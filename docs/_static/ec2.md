@@ -40,10 +40,12 @@ The final screen will show you the key's ID and secret. I've redacted my pair in
 
 ![Keys screen](_static/redacted-keys.png)
 
-Copy and paste them into a text file for safekeeping. You will not be able to see the secret key again. They are what Actions will use to gain access to AWS from outside the console.
+Copy and paste them into a text file for safekeeping. You will not be able to see the secret key again. They are what Python will use to gain access to AWS from outside the console.
 
-Outline of TK:
+Outline:
 
+- Create a AWS account
+- Create API key
 - Create a subnet in EC2 or security group or whatever
 - Create a Personal Access Token
 - Create a resuable GitHub Action like this one
