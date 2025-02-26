@@ -4,6 +4,9 @@ Now that we have our initial Actions scraper going, let's try scraping several s
 
 Actions provides a feature called the matrix strategy that allows programmers to easily run different versions of the same Action in parallel using just a few extra lines of code. In our case, we can use the matrix strategy to configure a list of states we want to scrape in one line of YAML, and the matrix will actually spin up a separate instance of the job for each state - meaning, access to parallel compute units in separate virtual machines/containers. Instead of waiting for one scraper to finish before scraping the next state, multiple jobs can run at the same time on separate instances. Let's get started!
 
+
+#### TK : create a new workflow and paste the old YAML in it
+
 First, let's modify our input to be able to accept a list of multiple states, instead of just one state. (Since this is a demo, we will not be adding data validation, but in a real world use case you should consider adding some code to validate the input is a list!) 
 
 {emphasize-lines="6-9"}
@@ -167,6 +170,9 @@ Next, we will
           git add ./data/
           git commit -m "Latest data" && git push || true
 ```
+
+
+#### TK: BREAK IT BY TRYING TO USE MN
 
 
 It will gradually build up to:
