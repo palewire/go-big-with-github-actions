@@ -64,13 +64,14 @@ jobs:
     runs-on: ${{ needs.start-runner.outputs.label }}
     timeout-minutes: ${{ inputs.timeout-minutes }}
     steps:
-      - id: checkout
-        name: Checkout
+      - name: Node16 fix
+        run: |
+            cd $RUNNER_HOME/actions-runner/externals
+            mv node20 node20.bak
+            ln -s node16 node20
+
+      - name: Checkout
         uses: actions/checkout@v4
-        env:
-          ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
-          ACTIONS_RUNNER_FORCED_INTERNAL_NODE_VERSION: node16
-          ACTIONS_RUNNER_FORCE_ACTIONS_NODE_VERSION: node16
 
       - name: Run
         run: ${{ inputs.command }}
