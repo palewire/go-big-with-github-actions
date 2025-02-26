@@ -65,16 +65,15 @@ jobs:
     timeout-minutes: ${{ inputs.timeout-minutes }}
     steps:
       - name: Install dependencies
-        run: yum install -y curl git tar gunzip xz wget
+        run: yum install -y curl git tar gunzip xz wget  # Add any other dependencies you need here. I've included some basics.
 
       - name: Print GLIBC version
         run: ldd --version
 
       - name: Install Node.js 20 glibc2.17
         run: |
-          touch ~/.bashrc
           curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
-          source ~/.bashrc
+          export NVM_DIR="$HOME/.nvm"
           nvm install 20
           nvm use 20
           nvm alias default 20
