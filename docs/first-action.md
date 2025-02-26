@@ -1,6 +1,11 @@
 # Your first Action
 This chapter will show you how to create your first Action on GitHub
 
+## Before we start...words!
+
+*Action(s)* and *Workflow* will be used interchangeably.
+*Action file*, *Workflow file*, *Yaml file* are all the same.
+
 ## Create a simple Action
 
 Navigate back to your repository in the browser. Click on the Actions tab. This will take you to Actions page. 
@@ -87,9 +92,16 @@ jobs:
         run: echo "Hello world"
 ```
 
+Let's go ahead and commit the file
+
+![commit](_static/first-action-10.png)
+
+
 ## Breakdown
 
-{emphasize-lines="7"}
+A workflow run consists of multiple `jobs`. You can have more than one job. In our case we only have a single job called `scrape`. Jobs can run sequentially or in parelle depending on your configuration.
+
+{emphasize-lines="6-7"}
 ```yaml
 name: First Action
 
@@ -104,3 +116,49 @@ jobs:
       - name: Hello world
         run: echo "Hello world"
 ```
+
+For each job, you will need to choose what kind of runner it will us. In our case, chose a Linux runner. You can also choose MacOS or Windows. Actions are free, but if you are paying for them to use beyond the storage and minute limits, you will be [charged differently](https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-github-actions/about-billing-for-github-actions#minute-multipliers) depending on your runner. 
+
+{emphasize-lines="8"}
+```yaml
+name: First Action
+
+on:
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    name: Scrape
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello world
+        run: echo "Hello world"
+```
+
+Each job is likely to have multiple tasks. The `steps` lay out those tasks in a list format. Give each task a name and details.
+
+{emphasize-lines="9-11"}
+```yaml
+name: First Action
+
+on:
+  workflow_dispatch:
+
+jobs:
+  scrape:
+    name: Scrape
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello world
+        run: echo "Hello world"
+```
+
+## Run your action
+
+Let's go back to your `action` tab in the repository. You will see that your action is now populated on the left rail. Choose your action then go to the right corner where you will see a dropdown called `Run workflow`. This workflow will run on our `main` branch - click the green Run `workflow button` to run your first action!
+
+![commit](_static/first-action-11.png)
+
+Once your Action has been completed, you will see a green checkmark to the left. Clicking on the completed action will show you what job just ran -   `Scrape`. Click on the job and open up the steps within workflow to see the output. 
+
+![observe](_static/first-action-12.png)
