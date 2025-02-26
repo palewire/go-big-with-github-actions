@@ -11,7 +11,7 @@ jobs:
       command: echo 'Hello world'
       aws_region: us-east-1
       aws_subnet_id: subnet-0740430bb6f3a687f
-      aws_security_group_id: sgr-05073c2ea9bc4e28b
+      aws_security_group_id: sg-0fe118aaf037afaa2
       ec2_image_id: ami-0a7a4e87939439934
       ec2_instance_type: m8g.xlarge
       timeout-minutes: 4320
