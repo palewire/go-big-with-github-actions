@@ -63,17 +63,21 @@ jobs:
     needs: start-runner
     runs-on: ${{ needs.start-runner.outputs.label }}
     timeout-minutes: ${{ inputs.timeout-minutes }}
+    container:
+      image: amazonlinux:2
+      volumes:
+        - /node20217:/node20217
+        - /node20217:/__e/node20
     steps:
       - name: Install dependencies
         run: yum install -y curl git tar gunzip xz wget
+
       - name: Print GLIBC version
         run: ldd --version
+
       - name: Install Node.js 20 glibc2.17
         # A hack to override default nodejs 20 to a build compatible with older glibc.
-        # Inspired by https://github.com/pytorch/test-infra/pull/5959 If it's good for pytorch, it's good for us too! :)
-        # Q: Why do we need this hack at all? A: Because many github actions, include action/checkout@v4, depend on nodejs 20.
-        # GitHub Actions runner provides a build of nodejs 20 that requires a newer glibc than Amazon Linux 2 has.
-        # Thus we download a build of nodejs 20 that is compatible with Amazon Linux 2 and override the default one.
+        # Taken from https://github.com/questdb/questdb/blob/master/.github/workflows/glibc_smoke_test.yml
         run: |
           curl -LO https://unofficial-builds.nodejs.org/download/release/v20.9.0/node-v20.9.0-linux-x64-glibc-217.tar.xz
           tar -xf node-v20.9.0-linux-x64-glibc-217.tar.xz --strip-components 1 -C /node20217
