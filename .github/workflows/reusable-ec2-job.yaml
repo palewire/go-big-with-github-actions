@@ -72,6 +72,7 @@ jobs:
 
       - name: Install Node.js 20 glibc2.17
         run: |
+          touch ~/.bashrc
           curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
           source ~/.bashrc
           nvm install 20
