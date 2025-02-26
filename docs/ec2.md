@@ -4,7 +4,7 @@ GitHub Actions can do a lot, but sometimes it's simply not enough. The free serv
 
 If you want more horsepower, you will need to link it up with bigger servers.
 
-Amazon Web Services is a cloud platform that offers all forms of computing power. One way to get around GitHub's limitations is to assign Amazon's cloud servers, provided by a service known as EC2, to your GitHub Actions as so-called "custom runners."
+Amazon Web Services is a cloud platform that offers all forms of computing power. One way to get around GitHub's limitations is to assign Amazon's cloud servers, provided by a service known as EC2, to your GitHub Actions as self-hosted runners.
 
 It's a great combination. You get the nearly limitless capacity of Amazon's cloud computing without losing the convenience of GitHub's Actions interface.
 
