@@ -12,7 +12,7 @@ We've used this technique to:
 
 * Standardize hundreds of millions of responses to public opinion polls conducted by Reuters and Ipsos
 * Refine and republish [California's gigantic database](https://github.com/palewire/django-calaccess-downloads-website) of campaign-finance filings
-* Aggregates decades of climate data into global and regional averages
+* Aggregate decades of climate data into global and regional averages
 
 Though, there is bad news here, you will have to pay for it. Jeff Bezos didn't get rich by giving things away.
 
