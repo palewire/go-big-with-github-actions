@@ -37,17 +37,36 @@ jobs:
             state: ${{ fromJSON(inputs.states) }}
 ```
 
-Github Actions provides two error-handling settings that will be helpful. One is called ```fail-fast```. This flag controls whether the entire matrix job should fail if one job in the matrix fails. In our case, we want to mark this flag as false; even if one state's scraper fails, we still want the job to complete and continue scraping the other states. Add the following code under the strategy key.
+Github Actions provides two error-handling settings that will be helpful. One is called ```fail-fast```. This flag controls whether the entire matrix job should fail if one job in the matrix fails. In our case, we want to mark this flag as false; even if one state's scraper fails, we still want the job to complete and continue scraping the other states.
 
+{emphasize-lines="7"}
 ```yaml
-          fail-fast: false
+jobs:
+  scrape:
+    name: Scrape
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    strategy:
+      fail-fast: false
+      matrix:
+        state: [ca, ia, ny]
 
 ```
 
 The second error-handling setting is called ```continue-on-error```. When true, this allows for the Action to continue running subsequent steps even if an earlier step failed. Since our Action has multiple jobs -- a build job and a commit job -- we want the Action to continue running even if one of the scrapes failed earlier.
 
+{emphasize-lines="5"}
 ```yaml
-continue-on-error: true
+jobs:
+  scrape:
+    name: Scrape
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    strategy:
+      fail-fast: false
+      matrix:
+        state: [ca, ia, ny]
+
 ```
 
 ## Uploading artifact
@@ -56,8 +75,27 @@ Now that we've scraped our data, we need a place to store the data before we com
 
 Here we are using the shortcut actions/upload-artifact created by Github that allows us to temporarily store our data within our Action. 
 
+{emphasize-lines="19-23"}
 ```yaml
-  - name: upload-artifact
+    steps:
+      - name: Hello world
+        run: echo "Scraping data for ${{ matrix.state }}"
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install scraper
+        run: pip install warn-scraper
+
+      - name: Scrape
+        run: warn-scraper ${{ matrix.state }} --data-dir ./data/
+
+      - name: upload-artifact
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.state }}
