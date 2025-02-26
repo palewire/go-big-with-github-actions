@@ -63,11 +63,6 @@ jobs:
     needs: start-runner
     runs-on: ${{ needs.start-runner.outputs.label }}
     timeout-minutes: ${{ inputs.timeout-minutes }}
-    container:
-      image: amazonlinux:2
-      volumes:
-        - /node20217:/node20217
-        - /node20217:/__e/node20
     steps:
       - name: Install dependencies
         run: yum install -y curl git tar gunzip xz wget
@@ -75,13 +70,20 @@ jobs:
       - name: Print GLIBC version
         run: ldd --version
 
+      - name: Print node version
+        run: node --version
+
       - name: Install Node.js 20 glibc2.17
-        # A hack to override default nodejs 20 to a build compatible with older glibc.
-        # Taken from https://github.com/questdb/questdb/blob/master/.github/workflows/glibc_smoke_test.yml
         run: |
-          curl -LO https://unofficial-builds.nodejs.org/download/release/v20.9.0/node-v20.9.0-linux-x64-glibc-217.tar.xz
-          tar -xf node-v20.9.0-linux-x64-glibc-217.tar.xz --strip-components 1 -C /node20217
-          ldd /__e/node20/bin/node
+          curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+          source ~/.bashrc
+          nvm install 20
+          nvm use 20
+          nvm alias default 20
+          echo 'export NVM_DIR="$HOME/.nvm"' >> ~/.bashrc
+
+      - name: Print Node.js version
+        run: node -e "console.log('Running Node.js ' + process.version)"
 
       - name: Checkout
         uses: actions/checkout@v4
