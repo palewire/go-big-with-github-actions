@@ -57,7 +57,7 @@ jobs:
 
 Think of Actions as renting a blank computer from GitHub. In order to use it, you will need to install latest version of whatever language you are using and corresponding package managers.
 
-Becasue these actions are used often, GitHub has a [marketplace](https://github.com/marketplace?type=actions)where you can choose pre-packaged Action steps. 
+Becasue these actions are used so often, GitHub has a [marketplace](https://github.com/marketplace?type=actions) where you can choose pre-packaged Action steps. 
 
 The `Checkout` action checks-out our repository so your action file has access to it. We will use this so that we can add the scraped data back into the repo.
 
@@ -94,11 +94,11 @@ jobs:
         run: pip install warn-scraper
 ```
 
-Now that the `warn-scraper` has been installed, we will need to actually run the scraper.
+Now that the `warn-scraper` has been installed, we will need to run the scraper.
 
-Per warn-scraper [documentation](https://warn-scraper.readthedocs.io/en/latest/usage.html), we know that the function is as simple as `warn-scraper <state>`
+Per warn-scraper [documentation](https://warn-scraper.readthedocs.io/en/latest/usage.html), we know that to scrape, we simply type in `warn-scraper <state>`
 
-Let's scrape Iowa. We can see here that the scraped data will be saved to `./data/` folder.
+Let's scrape Iowa, and add that scraped data into a `./data/` folder.
 
 ```yaml
       - name: Scrape
@@ -107,7 +107,7 @@ Let's scrape Iowa. We can see here that the scraped data will be saved to `./dat
 
 Since we using a machine that's not our own, we will need to commit this scrapped data back into our repo. 
 
-{emphasize-lines="30-40"}
+{emphasize-lines="35-41"}
 ```yaml
 name: First Scraper
 
@@ -141,9 +141,6 @@ jobs:
       - name: Scrape
         run: warn-scraper IA --data-dir ./data/
 
-      - name: Save datestamp
-        run: date > ./data/latest-scrape.txt
-
       - name: Commit and push
         run: |
           git config user.name "GitHub Actions"
@@ -154,9 +151,55 @@ jobs:
 
 Let's commit this workflow to our repo and run our Actions!
 
+IMAGE TK
+
+## Adding other enhancements
+
+### Inputs
+
+Github Actions will allow you to specify `inputs` for manually triggered workflows. This works great for us because now we can specify what states to scrape in our `warn-scraper` command.
+
+To add an input option to your workflow, go to your yaml file and add the following lines. Here, we are asking Actions to create an `input` called `state` (there can be more than one inputs in a given Action).
+
+If you need more control over your inputs, you can also add [choices](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputs).
+
+{emphasize-lines="4-8"}
+```yaml
+name: First Scraper
+
+on:
+  workflow_dispatch:
+    inputs:
+      state:
+        description: 'U.S. state to scrape'
+        required: true
+        default: 'ia'
+  schedule:
+  - cron: "0 0 * * *"
+```
+
+Once your input field has been configured, let's change our warn-scraper command so that whatever we input as `state` will reflect on the scrape command.
+
+```yaml
+      - name: Scrape
+        run: warn-scraper ${{ inputs.state }} --data-dir ./data/
+```
+
+
+### Enhance your timestamps
+
+If you want to keep a detailed log on what is being scrapped, you can also use the state input to enahnce your latest-scrape file. Here we will integrate a state name and concatenate our timestamp.
+
+```yaml
+      - name: Save datestamp
+        run: echo "Scraped ${{ inputs.state }} on $(date)" >> ./data/latest-scrape.txt
+```
+
 
 
 ## Final workflow file
+
+Let's make sure our inputs and timestamps are in. Your final file should look like this.
 
 ```yaml
 name: First Scraper
@@ -198,7 +241,7 @@ jobs:
         run: warn-scraper ${{ inputs.state }} --data-dir ./data/
 
       - name: Save datestamp
-        run: date > ./data/latest-scrape.txt
+        run: echo "Scraped ${{ inputs.state }} on $(date)" >> ./data/latest-scrape.txt
 
       - name: Commit and push
         run: |
@@ -208,7 +251,12 @@ jobs:
           git commit -m "Latest data for ${{ inputs.state }}" && git push || true
 ```
 
-Examples to hype:
+IMAGE TK
+
+
+## Let's scrape everything!
+
+
 
 - [LAT coronavirus scrapers](https://github.com/datadesk/california-coronavirus-scrapers)
 - [USDA animal inspections](https://github.com/data-liberation-project/aphis-inspection-reports)
