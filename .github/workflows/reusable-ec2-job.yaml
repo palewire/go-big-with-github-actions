@@ -26,9 +26,6 @@ on:
         description: 'The timeout in minutes for the job'
         type: number
 
-env:
-  ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
-
 jobs:
   start-runner:
     name: Start self-hosted EC2 runner
@@ -70,6 +67,8 @@ jobs:
       - id: checkout
         name: Checkout
         uses: actions/checkout@v4
+        env:
+          ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
 
       - name: Run
         run: ${{ inputs.command }}
