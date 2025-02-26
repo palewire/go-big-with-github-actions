@@ -37,13 +37,18 @@ Github Actions provides two error-handling settings that will be helpful. One is
 
 ```
 
-The second error-handling setting is called ```continue-on-error```. This **TK**
+The second error-handling setting is called ```continue-on-error```. When true, this allows for the Action to continue running subsequent steps even if an earlier step failed. Since our Action has multiple jobs -- a build job and a commit job -- we want the Action to continue running even if one of the scrapes failed earlier.
 
 ```yaml
 continue-on-error: true
 ```
 
-#### Uploading artifact
+## Uploading artifact
+
+Now that we've scraped our data, we need a place to store the data before we commit it to the repo. To do this, we are using Actions Artifacts. Artifacts allow you to persist data after a job has completed, and share that data with another job in the same workflow. An artifact is a file or collection of files produced during a workflow run.
+
+Here we are using the shortcut actions/upload-artifact created by Github that allows us to temporarily store our data within our Action. 
+
 ```yaml
   - name: upload-artifact
         uses: actions/upload-artifact@v4
@@ -51,14 +56,72 @@ continue-on-error: true
           name: ${{ matrix.state }}
           path: ./data/
 ```
-Purpose of uploading artifacts vs just committing like we did before
-Temporary storage
 
-#### Commit step
+## Commit step
 
-#### Checkout
+Next, let's create a second step for our Action: the commit step. We'll start with the standard step of checking out the code. Notice that the step needs the scrape step, which ensures that it will not run until our first step has finished.
 
-#### Download artifact
+{emphasize-lines="4"}
+
+```yaml
+commit:
+    name: Commit
+    runs-on: ubuntu-latest
+    needs: scrape
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+```
+
+The next step is to download the artifacts we previously stored for use in this step. This is done using the actions/download-artifact companion to the uploader.
+
+{emphasize-lines="9-13"}
+
+```yaml
+ commit:
+    name: Commit
+    runs-on: ubuntu-latest
+    needs: scrape
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          pattern: '*'
+          path: artifacts/
+```
+
+Next, we will 
+
+```yaml
+ commit:
+    name: Commit
+    runs-on: ubuntu-latest
+    needs: scrape
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          pattern: '*'
+          path: artifacts/
+
+      - name: Move
+        run: |
+          mkdir data -p
+          mv artifacts/**/*.csv data/
+
+      - name: Commit and push
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@users.noreply.github.com"	
+          git add ./data/
+          git commit -m "Latest data" && git push || true
+```
  
 
 
