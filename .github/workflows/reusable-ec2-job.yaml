@@ -26,10 +26,6 @@ on:
         description: 'The timeout in minutes for the job'
         type: number
 
-permissions:
-  id-token: write
-  contents: write
-
 jobs:
   start-runner:
     name: Start self-hosted EC2 runner
