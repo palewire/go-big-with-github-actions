@@ -64,11 +64,20 @@ jobs:
     runs-on: ${{ needs.start-runner.outputs.label }}
     timeout-minutes: ${{ inputs.timeout-minutes }}
     steps:
-      - name: Node16 fix
+      - name: Install dependencies
+        run: yum install -y curl git tar gunzip xz wget
+      - name: Print GLIBC version
+        run: ldd --version
+      - name: Install Node.js 20 glibc2.17
+        # A hack to override default nodejs 20 to a build compatible with older glibc.
+        # Inspired by https://github.com/pytorch/test-infra/pull/5959 If it's good for pytorch, it's good for us too! :)
+        # Q: Why do we need this hack at all? A: Because many github actions, include action/checkout@v4, depend on nodejs 20.
+        # GitHub Actions runner provides a build of nodejs 20 that requires a newer glibc than Amazon Linux 2 has.
+        # Thus we download a build of nodejs 20 that is compatible with Amazon Linux 2 and override the default one.
         run: |
-            cd $RUNNER_HOME/actions-runner/externals && \
-            mv node20 node20.bak && \
-            ln -s node16 node20
+          curl -LO https://unofficial-builds.nodejs.org/download/release/v20.9.0/node-v20.9.0-linux-x64-glibc-217.tar.xz
+          tar -xf node-v20.9.0-linux-x64-glibc-217.tar.xz --strip-components 1 -C /node20217
+          ldd /__e/node20/bin/node
 
       - name: Checkout
         uses: actions/checkout@v4
