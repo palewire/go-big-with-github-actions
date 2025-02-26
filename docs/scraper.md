@@ -149,9 +149,12 @@ jobs:
           git commit -m "Latest data for Iowa" && git push || true
 ```
 
-Let's commit this workflow to our repo and run our Actions!
+Let's commit this workflow to our repo and run our Action! Go to `Actions` tab and choose your scraper workflow and click `Run workflow`
 
-IMAGE TK
+![first run](_static/scraper-3.png)
+
+Once the workflow has been completed, you should see that there are two new files commited to the `data` folder
+![data folder](_static/scraper-4.png)
 
 ## Adding other enhancements
 
@@ -163,7 +166,7 @@ To add an input option to your workflow, go to your yaml file and add the follow
 
 If you need more control over your inputs, you can also add [choices](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputs).
 
-{emphasize-lines="4-8"}
+{emphasize-lines="4-9"}
 ```yaml
 name: First Scraper
 
@@ -188,13 +191,25 @@ Once your input field has been configured, let's change our warn-scraper command
 
 ### Enhance your timestamps
 
-If you want to keep a detailed log on what is being scrapped, you can also use the state input to enahnce your latest-scrape file. Here we will integrate a state name and concatenate our timestamp.
+If you want to keep a detailed log on what is being scrapped, you can also use the state input to enhance your latest-scrape file. Here we will integrate a state name and concatenate our timestamp.
 
 ```yaml
       - name: Save datestamp
         run: echo "Scraped ${{ inputs.state }} on $(date)" >> ./data/latest-scrape.txt
 ```
 
+### Customize your commit message
+
+You can add these inputs anywhere! Add them to your commit message for accuracy.
+
+```yaml
+      - name: Commit and push
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@users.noreply.github.com"	
+          git add ./data/
+          git commit -m "Latest data for ${{ inputs.state }}" && git push || true
+```
 
 
 ## Final workflow file
@@ -250,8 +265,6 @@ jobs:
           git add ./data/
           git commit -m "Latest data for ${{ inputs.state }}" && git push || true
 ```
-
-IMAGE TK
 
 
 ## Let's scrape everything!
