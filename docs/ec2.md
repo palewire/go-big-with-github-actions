@@ -1,6 +1,6 @@
 # Running bigger servers
 
-GitHub Actions can do a lot, but sometimes it's simply not enough. The free service has limits on disk space, computing power and how long jobs can run.
+GitHub Actions can do a lot, but sometimes it's simply not enough. The free service has limits on disk space, processing units and how long jobs can run.
 
 If you want more horsepower, you will need to link it up with bigger servers.
 
