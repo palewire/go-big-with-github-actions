@@ -16,7 +16,7 @@ We've used this technique to:
 
 Though, there is bad news here, you will have to pay for it. Jeff Bezos didn't get rich by giving things away.
 
-The first step is to create an Amazon Web Services account, if you don't already have. Go to [aws.amazon.com](https://aws.amazon.com/) and click the button that says "Create an AWS account" in the upper right corner.
+The first step is to create an Amazon Web Services account, if you don't already have one. Go to [aws.amazon.com](https://aws.amazon.com/) and click the button that says "Create an AWS account" in the upper right corner.
 
 ![AWS splash page](_static/aws-splash.png)
 
