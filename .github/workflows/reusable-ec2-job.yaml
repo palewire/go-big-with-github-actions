@@ -52,8 +52,9 @@ jobs:
           subnet-id: ${{ inputs.aws_subnet_id }}
           security-group-id: ${{ inputs.aws_security_group_id }}
           pre-runner-script: |
-            sudo dnf update -y && \
-            sudo dnf install docker git libicu -y
+            sudo apt update -y && \
+            sudo apt install docker git libicu -y && \
+            sudo apt install make zip unzip curl sqlite3 gcc build-essential tree awscli -y && \
             sudo systemctl enable docker
 
   run:
@@ -62,14 +63,6 @@ jobs:
     runs-on: ${{ needs.start-runner.outputs.label }}
     timeout-minutes: ${{ inputs.timeout-minutes }}
     steps:
-      - id: apt-update
-        name: Update apt cache
-        run: sudo apt-get update -y
-
-      - id: apt-install
-        name: Install apt dependencies
-        run: sudo apt-get install make zip unzip curl sqlite3 gcc build-essential tree awscli -y
-
       - id: checkout
         name: Checkout
         uses: actions/checkout@v4
