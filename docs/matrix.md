@@ -22,6 +22,8 @@ permissions:
   contents: write
 ```
 
+## Matrix strategy
+
 Next, take a look at the scraping logic we implemented earlier. Under the scrape job, we will now define our matrix strategy. This key will tell our Github Actions file to grab the JSON list from the input, and defines those elements as the states to be used for the matrix.
 
 {emphasize-lines="5-7"}
