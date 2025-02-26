@@ -1,10 +1,10 @@
 # Deploying dashboards
 
-You can use Actions to do more than pull in data. You can also use it to push out data via all kinds of different publishing systems.
+You can use Actions to do more than pull in data. You can also use it to push it out.
 
 Examples we've worked on include:
 
-* A Reuters system that drafts hundreds of automated charts each week [via the Datawrapper API](https://docs.google.com/presentation/d/e/2PACX-1vTFf1nR6Bs5Y41kUzv3n-ZkBWJmSeF0W7inISfvG7pfPR1BrP8VdO6bwxxVJtToKacTcxhyXcgDzyQM/pub?start=false&loop=false&delayms=3000).
+* A [private monitoring dashboard](https://observablehq.com/blog/ben-welsh) for the [Reuters system](https://docs.google.com/presentation/d/e/2PACX-1vTFf1nR6Bs5Y41kUzv3n-ZkBWJmSeF0W7inISfvG7pfPR1BrP8VdO6bwxxVJtToKacTcxhyXcgDzyQM/pub?start=false&loop=false&delayms=3000) that drafts hundreds of automated charts each week.
 * A crowdsourced dictionary of campaign-finance jargon at [moneyinpolitics.wtf](https://moneyinpolitics.wtf)
 * A regularly updating database of [amateur radio satellites](https://www.amsat.org/amateur-satellite-index/)
 * A continually updating study of [which news organizations block AI spiders](https://palewi.re/docs/news-homepages/openai-gptbot-robotstxt.html)
