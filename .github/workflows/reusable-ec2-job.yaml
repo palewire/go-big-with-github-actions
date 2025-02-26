@@ -22,7 +22,7 @@ on:
       ec2_instance_type:
         description: 'The EC2 instance type to use'
         type: string
-      timeout-minutes:
+      timeout_minutes:
         description: 'The timeout in minutes for the job'
         type: number
 
@@ -62,7 +62,7 @@ jobs:
     name: Run
     needs: start-runner
     runs-on: ${{ needs.start-runner.outputs.label }}
-    timeout-minutes: ${{ inputs.timeout-minutes }}
+    timeout-minutes: ${{ inputs.timeout_minutes }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
