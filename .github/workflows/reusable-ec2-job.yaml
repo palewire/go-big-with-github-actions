@@ -64,19 +64,6 @@ jobs:
     runs-on: ${{ needs.start-runner.outputs.label }}
     timeout-minutes: ${{ inputs.timeout-minutes }}
     steps:
-      - name: Install dependencies
-        run: yum install -y curl git tar gunzip xz wget  # Add any other dependencies you need here. I've included some basics.
-
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Print node version
-        run: node -e "console.log('Running Node.js ' + process.version)"
-
-      - name: Print Node.js version
-        run: node -e "console.log('Running Node.js ' + process.version)"
-
       - name: Checkout
         uses: actions/checkout@v4
 
