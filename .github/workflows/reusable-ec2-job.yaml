@@ -9,39 +9,22 @@ on:
         type: string
       aws_region:
         description: 'The AWS region to use'
-        required: false
         type: string
-        default: 'us-east-1'
       aws_subnet_id:
         description: 'The AWS subnet ID to use'
-        required: false
         type: string
-        default: 'subnet-0f7a1b2c3d4e5f6g7'
       aws_security_group_id:
         description: 'The AWS security group ID to use'
-        required: false
         type: string
-        default: 'sg-0f07c5f76997741fa'
       ec2_image_id:
         description: 'The AMI ID to use'
-        required: false
         type: string
-        default: 'ami-0c7217cdde317cfec'
       ec2_instance_type:
         description: 'The EC2 instance type to use'
-        required: false
         type: string
-        default: 'r5d.24xlarge'
       timeout-minutes:
         description: 'The timeout in minutes for the job'
-        required: false
         type: number
-        default: 4320
-
-env:
-  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-  AWS_REGION_NAME: ${{ secrets.AWS_REGION_NAME }}
 
 permissions:
   id-token: write
@@ -55,20 +38,19 @@ jobs:
       label: ${{ steps.start-ec2-runner.outputs.label }}
       ec2-instance-id: ${{ steps.start-ec2-runner.outputs.ec2-instance-id }}
     steps:
-
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::743323791619:role/GitHub-OIDC-Role
-          role-session-name: start-ec2-runner
-          aws-region: ${{ inputs.aws_region }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Start EC2 runner
         id: start-ec2-runner
         uses: machulav/ec2-github-runner@v2
         with:
           mode: start
-          github-token: ${{ secrets.RUNNER_MACHINE_TOKEN }}
+          github-token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
           ec2-image-id: ${{ inputs.ec2_image_id }}
           ec2-instance-type: ${{ inputs.ec2_instance_type }}
           subnet-id: ${{ inputs.aws_subnet_id }}
@@ -110,14 +92,14 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::743323791619:role/GitHub-OIDC-Role
-          role-session-name: stop-ec2-runner
-          aws-region: ${{ inputs.aws_region }}
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
 
       - name: Stop EC2 runner
         uses: machulav/ec2-github-runner@v2
         with:
           mode: stop
-          github-token: ${{ secrets.RUNNER_MACHINE_TOKEN }}
+          github-token: ${{ secrets.GH_PERSONAL_ACCESS_TOKEN }}
           label: ${{ needs.start-runner.outputs.label }}
           ec2-instance-id: ${{ needs.start-runner.outputs.ec2-instance-id }}

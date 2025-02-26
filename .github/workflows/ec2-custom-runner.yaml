@@ -1,0 +1,15 @@
+name: "EC2 custom runner"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  pipeline:
+    uses: palewire/go-big-with-github-actions/.github/workflows/reusable-ec2-job.yaml@main
+    secrets: inherit
+    with:
+      command: echo 'Hello world'
+      aws_region: us-east-1
+      aws_subnet_id: subnet-0740430bb6f3a687f
+      aws_security_group_id: sg-0fe118aaf037afaa2
+      ec2_image_id: ami-04b4f1a9cf54c11d0
