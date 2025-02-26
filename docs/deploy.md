@@ -1,6 +1,6 @@
 # Deploying dashboards
 
-You can use Actions to do more than pull in data. You can also use it to push out data via all kinds of different publishing systems.
+You can use Actions to do more than pull in data. You can also use it to push it out.
 
 Examples we've worked on include:
 
