@@ -6,15 +6,20 @@ Actions provides a feature called the matrix strategy that allows programmers to
 
 First, let's modify our input to be able to accept a list of multiple states, instead of just one state. (Since this is a demo, we will not be adding data validation, but in a real world use case you should consider adding some code to validate the input is a list!) 
 
-{emphasize-lines="7"}
+{emphasize-lines="6-9"}
 ```yaml
+name: Scraper with matrix
+
 on:
   workflow_dispatch:
     inputs:
-      states:
-        description: 'List of U.S. states to scrape (e.g., [ca, ia, ny])'
-        required: true
-        default: '[ca, ia, ny]'
+          states:
+            description: 'List of U.S. states to scrape (e.g., [ca, ia, ny])'
+            required: true
+            default: '[ca, ia, ny]'
+
+permissions:
+  contents: write
 ```
 
 Next, take a look at the scraping logic we implemented earlier. Under the scrape job, we will now define our matrix strategy. This key will tell our Github Actions file to grab the JSON list from the input, and defines those elements as the states to be used for the matrix.
@@ -122,7 +127,6 @@ Next, we will
           git add ./data/
           git commit -m "Latest data" && git push || true
 ```
- 
 
 
 It will gradually build up to:
@@ -132,6 +136,11 @@ name: Scraper with matrix
 
 on:
   workflow_dispatch:
+    inputs:
+          states:
+            description: 'List of U.S. states to scrape (e.g., [ca, ia, ny])'
+            required: true
+            default: '[ca, ia, ny]'
 
 permissions:
   contents: write
