@@ -13,5 +13,5 @@ jobs:
       aws_subnet_id: subnet-0740430bb6f3a687f
       aws_security_group_id: sg-0fe118aaf037afaa2
       ec2_image_id: ami-04b4f1a9cf54c11d0
-      ec2_instance_type: r5d.24xlarge
+      ec2_instance_type: m8g.xlarge
       timeout-minutes: 4320
