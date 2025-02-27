@@ -28,7 +28,6 @@ This course is free. Previous experience working with GitHub will come in handy,
 what-are-actions
 what-is-yaml
 getting-started
-first-action
 scraper
 matrix
 deploy

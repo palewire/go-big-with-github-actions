@@ -1,4 +1,4 @@
-# Your first GitHub Actions
+# Your first GitHub Action
 
 This chapter will walk you through creating a repository hosted in GitHub and creating your first Action
 
