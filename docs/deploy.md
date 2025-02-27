@@ -8,6 +8,7 @@ Examples we've worked on include:
 * A crowdsourced dictionary of campaign-finance jargon at [moneyinpolitics.wtf](https://moneyinpolitics.wtf)
 * A regularly updating database of [amateur radio satellites](https://www.amsat.org/amateur-satellite-index/)
 * A continually updating study of [which news organizations block AI spiders](https://palewi.re/docs/news-homepages/openai-gptbot-robotstxt.html)
+* An RSS feed of the latest [mobile alerts sent by the Washington Post](https://github.com/dwillis/wapo-alerts)
 * A range of social media bots that post selections from [public](https://mastodon.palewi.re/@OldLAPhotos) [data](https://mastodon.palewi.re/@laxweather) [sources](https://mastodon.palewi.re/@sanbornmaps)
 
 In this chapter we'll show how you can schedule an Action to share data using another one GitHub's powerful tools, GitHub Pages.
@@ -24,7 +25,7 @@ We'll do that now by integrating the WARN notices we've scraped in previous chap
 
 ![Dashboard tease](_static/dashboard-tease.png)
 
-We will build the app using [Observable Framework](https://observablehq.com/framework/), an elegant JavaScript system for creating dashboards that pioneered at a company run by a former data journalist.
+We will build the app using [Observable Framework](https://observablehq.com/framework/), an elegant JavaScript system for creating dashboards that was pioneered at a company run by a former data journalist.
 
 [![Framework homepage](_static/framework-homepage.png)](https://observablehq.com/framework/)
 

@@ -1,6 +1,6 @@
-# Scraping Data
+# Scraping data
 
-## What is a Web scraper
+## What is a web scraper
 
 Explain what a web scraper is
 Show some examples
