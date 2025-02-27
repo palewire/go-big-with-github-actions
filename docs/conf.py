@@ -29,4 +29,5 @@ extensions = [
 
 myst_enable_extensions = [
     "attrs_block",
+    "colon_fence",
 ]
