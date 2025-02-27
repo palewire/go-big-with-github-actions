@@ -1,6 +1,6 @@
 # Go big with GitHub Actions
 
-Learn how to scale up your data pipelines using GitHub’s powerful Actions framework
+Scale up your data pipelines using GitHub’s powerful Actions framework
 
 ## What you will learn
 
