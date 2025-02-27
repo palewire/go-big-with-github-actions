@@ -1,10 +1,18 @@
-# Scraping Data
+# Scraping data
 
+<<<<<<< HEAD
 ## Web scrapers that run on GitHub Actions
 
 Web scrapers can be a useful tool collect large amounts of data quickly. GitHub Action takes automation to next level by allowing you to schedule scrapers and run many at the same time. 
 
 Below are some examples of scrapers that are run by GitHub Actions. In this chapter we will learn how to use Action to run web scrapers.
+=======
+## What is a web scraper
+
+Explain what a web scraper is
+Show some examples
+You can also have it run a notebook instead!
+>>>>>>> 41ef7a00f204b928e37bed236c468dda7c209531
 
 - [LAT coronavirus scrapers](https://github.com/datadesk/california-coronavirus-scrapers)
 - [USDA animal inspections](https://github.com/data-liberation-project/aphis-inspection-reports)
@@ -44,7 +52,7 @@ on:
   - cron: "0 0 * * *"
 ```
 
-Next, we will add what we just learned and add job and runner details. 
+Next, we will add what we just learned and add job and runner details.
 
 {emphasize-lines="8-12"}
 ```yaml
@@ -64,7 +72,11 @@ jobs:
 
 Think of Actions as renting a blank computer from GitHub. In order to use it, you will need to install latest version of whatever language you are using and corresponding package managers.
 
+<<<<<<< HEAD
 Because these Actions are used so often, GitHub has a [marketplace](https://github.com/marketplace?type=actions) where you can choose pre-packaged Action steps. 
+=======
+Becasue these actions are used so often, GitHub has a [marketplace](https://github.com/marketplace?type=actions) where you can choose pre-packaged Action steps.
+>>>>>>> 41ef7a00f204b928e37bed236c468dda7c209531
 
 The `Checkout` action checks-out our repository so your action file has access to it. We will use this so that we can add the scraped data back into the repo.
 
@@ -109,7 +121,11 @@ Let's scrape Iowa, and add that scraped data into a `./data/` folder.
         run: warn-scraper IA --data-dir ./data/
 ```
 
+<<<<<<< HEAD
 Now that Action was able to grab the file and add it to a folder, we will need to commit this scrapped data back into our repo. 
+=======
+Since we using a machine that's not our own, we will need to commit this scrapped data back into our repo.
+>>>>>>> 41ef7a00f204b928e37bed236c468dda7c209531
 
 {emphasize-lines="35-41"}
 ```yaml
@@ -206,7 +222,7 @@ jobs:
       - name: Commit and push
         run: |
           git config user.name "GitHub Actions"
-          git config user.email "actions@users.noreply.github.com"	
+          git config user.email "actions@users.noreply.github.com"
           git add ./data/
           git commit -m "Latest data for Iowa" && git push || true
 ```
@@ -257,7 +273,7 @@ You can add these inputs anywhere! Add them to your commit message for accuracy.
       - name: Commit and push
         run: |
           git config user.name "GitHub Actions"
-          git config user.email "actions@users.noreply.github.com"	
+          git config user.email "actions@users.noreply.github.com"
           git add ./data/
           git commit -m "Latest data for ${{ inputs.state }}" && git push || true
 ```
@@ -319,7 +335,7 @@ jobs:
       - name: Commit and push
         run: |
           git config user.name "GitHub Actions"
-          git config user.email "actions@users.noreply.github.com"	
+          git config user.email "actions@users.noreply.github.com"
           git add ./data/
           git commit -m "Latest data for ${{ inputs.state }}" && git push || true
 ```

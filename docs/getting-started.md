@@ -1,14 +1,14 @@
-# Your first GitHub Actions
+# Creating an Action
 
 This chapter will walk you through creating a repository hosted in GitHub and creating your first Action
 
 ## Get started on GitHub
 
-If you already have your own GitHub account, please log in. If you do not have oneplease create an account on [Github](https://github.com) and log in to the site.
+If you already have your own GitHub account, please log in. If you do not have one, please create an account on [github.com](https://github.com) and use it to log in to the site.
 
 Once you are logged into GitHub, create a new repository by clicking on the NEW button on top left corner or simply click this link [https://github.com/new](https://github.com/new).
 
-Once on the page, fill in the name for your repository - go-big-with-github-actions - for example, and click on the Create Repository button at the bottom. 
+Once on the page, fill in the name for your repository - go-big-with-github-actions - for example, and click on the Create Repository button at the bottom.
 
 ![signed in](_static/getting-started-1.png)
 
@@ -16,10 +16,10 @@ Once on the page, fill in the name for your repository - go-big-with-github-acti
 
 We will be editing our files in the browser inside GitHub. But if you'd rather clone your repo and use a code editor instead, that's fine too.
 
-**Action(s)** and **Workflow** will be used interchangeably.    
+**Action(s)** and **Workflow** will be used interchangeably.
 **Action file**, **Workflow file**, **Yaml file** are all the same.
 
-Navigate back to your repository in the browser. Click on the Actions tab. This will take you to Actions page. 
+Navigate back to your repository in the browser. Click on the Actions tab. This will take you to Actions page.
 
 ![first action](_static/first-action-1.png)
 
@@ -43,10 +43,10 @@ You will notice the red squiggly underline. In the browser editor, this means so
 
 ![title](_static/first-action-4.png)
 
-Let's follow the help text add one more line under `name`. 
+Let's follow the help text add one more line under `name`.
 
 ```yaml
-on: 
+on:
   workflow_dispatch:
 ```
 
@@ -115,7 +115,7 @@ jobs:
         run: echo "Hello world"
 ```
 
-For each job, you will need to choose what kind of runner it will us. In our case, chose a Linux runner. You can also choose MacOS or Windows. Actions are free, but if you are paying for them to use beyond the storage and minute limits, you will be [charged differently](https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-github-actions/about-billing-for-github-actions#minute-multipliers) depending on your runner. 
+For each job, you will need to choose what kind of runner it will us. In our case, chose a Linux runner. You can also choose MacOS or Windows. Actions are free, but if you are paying for them to use beyond the storage and minute limits, you will be [charged differently](https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-github-actions/about-billing-for-github-actions#minute-multipliers) depending on your runner.
 
 {emphasize-lines="9"}
 ```yaml
@@ -157,10 +157,6 @@ Let's go back to your `action` tab in the repository. You will see that your act
 
 ![first-commit](_static/first-action-11.png)
 
-Refresh your browser to see your progress. Once your Action has been completed, you will see a green checkmark to the left. Clicking on the completed action will show you what job just ran -  `Say Hello`. Click on the job and open up the steps within workflow to see the output. 
+Refresh your browser to see your progress. Once your Action has been completed, you will see a green checkmark to the left. Clicking on the completed action will show you what job just ran -  `Say Hello`. Click on the job and open up the steps within workflow to see the output.
 
 ![first-workflow](_static/first-action-12.png)
-
-
-
-

@@ -8,6 +8,7 @@ Examples we've worked on include:
 * A crowdsourced dictionary of campaign-finance jargon at [moneyinpolitics.wtf](https://moneyinpolitics.wtf)
 * A regularly updating database of [amateur radio satellites](https://www.amsat.org/amateur-satellite-index/)
 * A continually updating study of [which news organizations block AI spiders](https://palewi.re/docs/news-homepages/openai-gptbot-robotstxt.html)
+* An RSS feed of the latest [mobile alerts sent by the Washington Post](https://github.com/dwillis/wapo-alerts)
 * A range of social media bots that post selections from [public](https://mastodon.palewi.re/@OldLAPhotos) [data](https://mastodon.palewi.re/@laxweather) [sources](https://mastodon.palewi.re/@sanbornmaps)
 
 In this chapter we'll show how you can schedule an Action to share data using another one GitHub's powerful tools, GitHub Pages.
@@ -18,25 +19,52 @@ Many people use Pages to publish their blogs, porfolios and other personal websi
 
 [![Pages homepage](_static/pages-homepage.png)](https://pages.github.com/)
 
-Data journalists can use Pages to share the information they collect with their coworkers, peers and even the general public. When combined with Actions and an automated data-gathering routine, Pages can be used to create live dashboards that regularly update with the fresh data.
+Data journalists can use Pages to share the information they collect with their coworkers, peers and even the general public. When combined with Actions and an automated data-gathering routine, Pages can be used to create live dashboards that regularly update with fresh data.
 
 We'll do that now by integrating the WARN notices we've scraped in previous chapters into a simple search.
 
 ![Dashboard tease](_static/dashboard-tease.png)
 
-We will build the app using [Observable Framework](https://observablehq.com/framework/), an elegant JavaScript system for creating dashboards that pioneered at a company run by a former data journalist.
+We will build the app using [Observable Framework](https://observablehq.com/framework/), an elegant JavaScript system for creating dashboards that was pioneered at a company run by a former data journalist.
 
 [![Framework homepage](_static/framework-homepage.png)](https://observablehq.com/framework/)
 
-We don't have time to go into the details of how to build a full Observable app here, but you can find the code for the example in the `site` directory of this repository. UPDATE THIS ONCE WE FIGURE OUT HOW WE ARE GOING TO MANAGE CODE IN CLASS.
+:::{admonition} Sidenote
+:class: tip
 
-If you're interested in learning more about Framework, you should consult [Observable's documentation](https://observablehq.com/framework/getting-started) or follow the tutorial for journalists I've published [on GitHub](https://github.com/palewire/observable-framework-cpi-example).
+If you're interested in learning more about Framework, you should consult [Observable's documentation](https://observablehq.com/framework/getting-started) or follow the tutorial for journalists we've published [on GitHub](https://github.com/palewire/observable-framework-cpi-example).
+:::
 
-Once you have the example site in your repository, you should create a new YAML file in your workflows folder called `scraper-and-deploy.yaml`. Remember, it needs to be in the `.github/workflows` directory of your repository next to all of your other Actions.
+We don't have time to go into the details of how to build a full Observable app here, so I've prepared a ready-to-serve folder of code that you should [download from GitHub](https://github.com/palewire/go-big-with-github-actions/raw/refs/heads/main/site.zip).
 
-We will start this file off by pasting in the code similar what we used to scrape WARN data in the previous chapter.
+Click that link to retrieve our zipfile. Unzip it in your downloads folder. Now return to your repository's homepage and select "Upload files" from the "Add file" dropdown menu in the toolbar.
 
-{emphasize-lines="35-39"}
+![Upload files](_static/upload-files.png)
+
+Now drag the unzipped `site` folder and drop it in the zone that GitHub presents.
+
+![Drop files](_static/drop-files.png)
+
+After the files finish uploading, scroll to the bottom of the page and commit them to your repository.
+
+![Commit files](_static/commit-site.png)
+
+Before we can move to start working with GitHub Pages, you will need to activate the service in your repository. To do this, click on the "Settings" tab in your repository and then select "Pages" from the left-hand toolbar.
+
+![GitHub settings tab](_static/settings-tab.png)
+
+Next you should select the "Source" pulldown in the "Build and Deployment" section and choose "GitHub Actions."
+
+![GitHub Pages tab](_static/pages-tab.png)
+
+Now Pages is ready to run.
+
+Next you should create a new YAML file in your workflows folder called `scrape-and-deploy.yaml`. Remember, it needs to be in the `.github/workflows` directory of your repository next to all of your other tasks.
+
+We will start this file off by pasting in code similar what we used to scrape WARN Act data in previous chapters. It will simply scrape the latest layoff notices from Iowa's website, commit the data to the repository and then attach it to Action's log.
+
+Copy and paste what you see below into your file.
+
 ```yaml
 name: Scrape and deploy
 
@@ -79,19 +107,7 @@ jobs:
           path: ./data/
 ```
 
-There's little new in this first task. It will simply scrape the latest WARN data from Iowa's website and commits it to the repository. But pay attention to that final step, where we upload the data as an artifact. This will attach everything in the data folder to the Action so it can be used in later steps.
-
-Before we can move to start working with GitHub Pages, you will need to activate the service in your repository. To do this, go to by clicking on the Settings tab and then selecting Pages from the left-hand toolbar.
-
-![GitHub settings tab](_static/settings-tab.png)
-
-Next you should select the Source pulldown in the Build and Deployment section and choose GitHub Actions.
-
-![GitHub Pages tab](_static/pages-tab.png)
-
-Now Pages is ready to run.
-
-Head back to your workflow file and insert a second step at the bottom named `Build`. It will be tasked with using Observable Framework to create a bundle of data and code that's ready to be served up as a website.
+Insert a second step at the bottom named `Build`. It will be tasked with using Observable Framework to create a bundle of data and code that's ready to be served up as a website.
 
 We can start with the standard step of checking out the code. Notice that the step `needs` the scrape step, which ensures that it will not run until our first step has finished.
 
@@ -219,9 +235,9 @@ Finally, we need to add a step that will upload the built files to the Action so
           path: "site/dist"
 ```
 
-This will attach the files in the `site/dist` directory to the Action so they can be published in the final step.
+This will upload the `site/dist` directory where Framework builds the site to the Action so it can be published in the final step.
 
-GitHub's documentation provides a ready-to-use example that requires very little customization. You only need to paste it into your workflow and make sure that the `needs` line is set to the slug of your build step.
+GitHub's documentation provides a ready-to-go example for publishing to Pages that requires only a little customization. You only need to paste the code below into the bottom of your workflow and make sure that the `needs` line is set to the slug of your build step.
 
 {emphasize-lines="4"}
 ```yaml
@@ -241,11 +257,11 @@ GitHub's documentation provides a ready-to-use example that requires very little
         uses: actions/deploy-pages@v4
 ```
 
-That's all it should take. You should save your workflow file and commit it your repository. Once it's been pushed to GitHub you should be able to see it in the Actions tab of your repository. You can run it manually by clicking on the Run workflow button.
+That's all it should take. Save your workflow file and commit it your repository. Once it's been pushed to GitHub you should be able to see it in the Actions tab of your repository. You can run it manually by clicking on the Run workflow button.
 
 ![Run workflow](_static/run-deploy.png)
 
-After the task finishes, your dashboard should be available at the URL `https://<your-username>.github.io/<your-repo-name>/`. You can find the link in the Pages tab of your repository settings and it should appear in the Deploy box in your job's summary page.
+After the task finishes, your dashboard should be available at the URL `https://<your-username>.github.io/<your-repo-name>/`. You can also find the link in the Pages tab of your repository settings and it should appear in the Deploy box in your job's summary page.
 
 ![Deploy task with link](_static/deploy-task.png)
 

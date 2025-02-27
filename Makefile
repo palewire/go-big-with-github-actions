@@ -1,8 +1,8 @@
-PIPENV := pipenv run
+UV := uv run
 PYTHON := python -W ignore -m
 
 serve:
 	@rm -rf docs/_build
-	@cd docs && $(PIPENV) make livehtml
+	@cd docs && $(UV) make livehtml
 
 .PHONY: serve

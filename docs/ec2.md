@@ -112,7 +112,7 @@ Now make sure there is a rule that allows for "HTTPS" traffic on port 433 to the
 
 Before you go we need to save the security group ID for later. You will find it at the top of the profile page. Copy and paste it to the same place you saved the subnet ID.
 
-![EC2 search](_static/security-group-profile.png)
+![EC2 search](_static/copy-sg.png)
 
 Now we need to create a Personal Access Token, or PAT, that will allow GitHub to access your EC2 servers. This is done by going to your GitHub profile page and clicking on "Settings" and then selecting the "Developer settings" link at the bottom of the left-hand menu. You'll then want to select the "Tokens (classic)" option from under "Personal access tokens" in the left-hand menu.
 
@@ -124,7 +124,7 @@ Click on the button that says "Generate new token=" and select the "classic" opt
 
 ![GitHub settings](_static/tokens-dropdown.png)
 
-Give your token a name and then select the "repo" checkbox, which will provide the necessary permissions.
+Give your token a name and then select the "repo" checkbox, which will provide the necessary permissions. If you want to use this Action for a significant time period, you should extend the expiration date beyond the default of 30 days.
 
 ![GitHub settings](_static/tokens-perms.png)
 
@@ -150,7 +150,7 @@ Then you should do the same thing by adding your AWS access key ID as `AWS_ACCES
 
 Phew. After all that, you're finally ready to run your first Action on EC2.
 
-There are a number of different ways to connect outside servers to Actions. We are going to use a set of shortcuts [packaged up in the Actions marketplace]((https://github.com/marketplace/actions/on-demand-self-hosted-aws-ec2-runner-for-github-actions)) by Volodymyr Machula.
+There are a number of different ways to connect outside servers to Actions. We are going to use a set of shortcuts [packaged up in the Actions marketplace](https://github.com/marketplace/actions/on-demand-self-hosted-aws-ec2-runner-for-github-actions) by Volodymyr Machula.
 
 ![GitHub settings](_static/self-hosted-action.png)
 
