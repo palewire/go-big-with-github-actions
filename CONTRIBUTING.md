@@ -16,10 +16,10 @@ Change into the project directory:
 cd go-big-with-github-actions
 ```
 
-Install the dependencies using pipenv:
+Install the dependencies using uv:
 
 ```bash
-pipenv install
+uv install
 ```
 
 ## Contributing
