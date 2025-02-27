@@ -124,7 +124,7 @@ Click on the button that says "Generate new token=" and select the "classic" opt
 
 ![GitHub settings](_static/tokens-dropdown.png)
 
-Give your token a name and then select the "repo" checkbox, which will provide the necessary permissions.
+Give your token a name and then select the "repo" checkbox, which will provide the necessary permissions. If you want to use this Action for a significant time period, you should extend the expiration date beyond the default of 30 days.
 
 ![GitHub settings](_static/tokens-perms.png)
 
