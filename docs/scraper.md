@@ -1,4 +1,16 @@
-# Actions scrapers
+# Scraping Data
+
+## What is a Web scraper
+
+Explain what a web scraper is 
+Show some examples
+You can also have it run a notebook instead!
+
+- [LAT coronavirus scrapers](https://github.com/datadesk/california-coronavirus-scrapers)
+- [USDA animal inspections](https://github.com/data-liberation-project/aphis-inspection-reports)
+- [fed-dot-plot-scraper](https://github.com/palewire/fed-dot-plot-scraper)
+
+## What you will learn
 
 This chapter will show you how to utilize GitHub Actions to
 
@@ -271,6 +283,3 @@ jobs:
 
 
 
-- [LAT coronavirus scrapers](https://github.com/datadesk/california-coronavirus-scrapers)
-- [USDA animal inspections](https://github.com/data-liberation-project/aphis-inspection-reports)
-- [fed-dot-plot-scraper](https://github.com/palewire/fed-dot-plot-scraper)
