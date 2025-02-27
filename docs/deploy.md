@@ -49,11 +49,11 @@ After the files finish uploading, scroll to the bottom of the page and commit th
 
 ![Commit files](_static/commit-site.png)
 
-Before we can move to start working with GitHub Pages, you will need to activate the service in your repository. To do this, go to by clicking on the Settings tab and then selecting Pages from the left-hand toolbar.
+Before we can move to start working with GitHub Pages, you will need to activate the service in your repository. To do this, click on the "Settings" tab in your repository and then select "Pages" from the left-hand toolbar.
 
 ![GitHub settings tab](_static/settings-tab.png)
 
-Next you should select the Source pulldown in the Build and Deployment section and choose GitHub Actions.
+Next you should select the "Source" pulldown in the "Build and Deployment" section and choose "GitHub Actions."
 
 ![GitHub Pages tab](_static/pages-tab.png)
 
