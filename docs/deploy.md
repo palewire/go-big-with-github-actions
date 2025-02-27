@@ -45,11 +45,11 @@ Now drag the unzipped `site` folder and drop it in the zone that GitHub presents
 
 ![Drop files](_static/drop-files.png)
 
-After they finish uploading, scroll to the bottom of the page and commit them to your repository.
+After the files finish uploading, scroll to the bottom of the page and commit them to your repository.
 
 ![Commit files](_static/commit-site.png)
 
-Once you have the example site in your repository, you should create a new YAML file in your workflows folder called `scrape-and-deploy.yaml`. Remember, it needs to be in the `.github/workflows` directory of your repository next to all of your other Actions.
+Once you have the example site in your repository, you should create a new YAML file in your workflows folder called `scrape-and-deploy.yaml`. Remember, it needs to be in the `.github/workflows` directory of your repository next to all of your other tasks.
 
 We will start this file off by pasting in the code similar what we used to scrape WARN data in previous chapters. It will simply scrape the latest WARN data from Iowa's website, commit it to the repository and attach it to Action's log.
 
