@@ -19,7 +19,7 @@ Many people use Pages to publish their blogs, porfolios and other personal websi
 
 [![Pages homepage](_static/pages-homepage.png)](https://pages.github.com/)
 
-Data journalists can use Pages to share the information they collect with their coworkers, peers and even the general public. When combined with Actions and an automated data-gathering routine, Pages can be used to create live dashboards that regularly update with the fresh data.
+Data journalists can use Pages to share the information they collect with their coworkers, peers and even the general public. When combined with Actions and an automated data-gathering routine, Pages can be used to create live dashboards that regularly update with fresh data.
 
 We'll do that now by integrating the WARN notices we've scraped in previous chapters into a simple search.
 
@@ -32,7 +32,7 @@ We will build the app using [Observable Framework](https://observablehq.com/fram
 :::{admonition} Sidenote
 :class: tip
 
-If you're interested in learning more about Framework, you should consult [Observable's documentation](https://observablehq.com/framework/getting-started) or follow the tutorial for journalists I've published [on GitHub](https://github.com/palewire/observable-framework-cpi-example).
+If you're interested in learning more about Framework, you should consult [Observable's documentation](https://observablehq.com/framework/getting-started) or follow the tutorial for journalists we've published [on GitHub](https://github.com/palewire/observable-framework-cpi-example).
 :::
 
 We don't have time to go into the details of how to build a full Observable app here, so I've prepared a ready-to-serve folder of code that you should [download from GitHub](https://github.com/palewire/go-big-with-github-actions/raw/refs/heads/main/site.zip).
@@ -49,9 +49,19 @@ After the files finish uploading, scroll to the bottom of the page and commit th
 
 ![Commit files](_static/commit-site.png)
 
-Once you have the example site in your repository, you should create a new YAML file in your workflows folder called `scrape-and-deploy.yaml`. Remember, it needs to be in the `.github/workflows` directory of your repository next to all of your other tasks.
+Before we can move to start working with GitHub Pages, you will need to activate the service in your repository. To do this, go to by clicking on the Settings tab and then selecting Pages from the left-hand toolbar.
 
-We will start this file off by pasting in the code similar what we used to scrape WARN data in previous chapters. It will simply scrape the latest WARN data from Iowa's website, commit it to the repository and attach it to Action's log.
+![GitHub settings tab](_static/settings-tab.png)
+
+Next you should select the Source pulldown in the Build and Deployment section and choose GitHub Actions.
+
+![GitHub Pages tab](_static/pages-tab.png)
+
+Now Pages is ready to run.
+
+Next you should create a new YAML file in your workflows folder called `scrape-and-deploy.yaml`. Remember, it needs to be in the `.github/workflows` directory of your repository next to all of your other tasks.
+
+We will start this file off by pasting in code similar what we used to scrape WARN Act data in previous chapters. It will simply scrape the latest layoff notices from Iowa's website, commit the data to the repository and then attach it to Action's log.
 
 Copy and paste what you see below into your file.
 
@@ -97,17 +107,7 @@ jobs:
           path: ./data/
 ```
 
-Before we can move to start working with GitHub Pages, you will need to activate the service in your repository. To do this, go to by clicking on the Settings tab and then selecting Pages from the left-hand toolbar.
-
-![GitHub settings tab](_static/settings-tab.png)
-
-Next you should select the Source pulldown in the Build and Deployment section and choose GitHub Actions.
-
-![GitHub Pages tab](_static/pages-tab.png)
-
-Now Pages is ready to run.
-
-Head back to your workflow file and insert a second step at the bottom named `Build`. It will be tasked with using Observable Framework to create a bundle of data and code that's ready to be served up as a website.
+Insert a second step at the bottom named `Build`. It will be tasked with using Observable Framework to create a bundle of data and code that's ready to be served up as a website.
 
 We can start with the standard step of checking out the code. Notice that the step `needs` the scrape step, which ensures that it will not run until our first step has finished.
 

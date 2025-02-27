@@ -33,6 +33,6 @@ address:
   zip: 99999
 ```
 
-In the case of Actions, YAML is used in the configuration files that tell the system what to do. These files are known as workflows and stored in a directory called `.github/workflows` in the root of GitHub code repositories. They are expected to be named with the `.yml` or `.yaml` file extension.
+In the case of Actions, YAML is used in the configuration files that tell the system what to do. These files are known as workflows and stored in a directory called `.github/workflows` in the root of GitHub code repositories. They are expected to be named with a `.yml` or `.yaml` file extension.
 
 GitHub offers extensive [documentation](https://docs.github.com/en/actions/writing-workflows) of how to write these files to fit the very particular expectations of Actions. In our next chapter, we'll start with the basics.
