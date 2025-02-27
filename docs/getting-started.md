@@ -4,7 +4,7 @@ This chapter will walk you through creating a repository hosted in GitHub and cr
 
 ## Get started on GitHub
 
-If you already have your own GitHub account, please log in. If you do not have oneplease create an account on [Github](https://github.com) and log in to the site.
+If you already have your own GitHub account, please log in. If you do not have one, please create an account on [Github](https://github.com) and log in to the site.
 
 Once you are logged into GitHub, create a new repository by clicking on the NEW button on top left corner or simply click this link [https://github.com/new](https://github.com/new).
 
