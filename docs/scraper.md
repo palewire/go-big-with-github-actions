@@ -2,7 +2,7 @@
 
 ## What is a Web scraper
 
-Explain what a web scraper is 
+Explain what a web scraper is
 Show some examples
 You can also have it run a notebook instead!
 
@@ -46,7 +46,7 @@ on:
   - cron: "0 0 * * *"
 ```
 
-Next, we will add what we just learned and add job and runner details. 
+Next, we will add what we just learned and add job and runner details.
 
 {emphasize-lines="11-15"}
 ```yaml
@@ -69,7 +69,7 @@ jobs:
 
 Think of Actions as renting a blank computer from GitHub. In order to use it, you will need to install latest version of whatever language you are using and corresponding package managers.
 
-Becasue these actions are used so often, GitHub has a [marketplace](https://github.com/marketplace?type=actions) where you can choose pre-packaged Action steps. 
+Becasue these actions are used so often, GitHub has a [marketplace](https://github.com/marketplace?type=actions) where you can choose pre-packaged Action steps.
 
 The `Checkout` action checks-out our repository so your action file has access to it. We will use this so that we can add the scraped data back into the repo.
 
@@ -117,7 +117,7 @@ Let's scrape Iowa, and add that scraped data into a `./data/` folder.
         run: warn-scraper IA --data-dir ./data/
 ```
 
-Since we using a machine that's not our own, we will need to commit this scrapped data back into our repo. 
+Since we using a machine that's not our own, we will need to commit this scrapped data back into our repo.
 
 {emphasize-lines="35-41"}
 ```yaml
@@ -156,7 +156,7 @@ jobs:
       - name: Commit and push
         run: |
           git config user.name "GitHub Actions"
-          git config user.email "actions@users.noreply.github.com"	
+          git config user.email "actions@users.noreply.github.com"
           git add ./data/
           git commit -m "Latest data for Iowa" && git push || true
 ```
@@ -218,7 +218,7 @@ You can add these inputs anywhere! Add them to your commit message for accuracy.
       - name: Commit and push
         run: |
           git config user.name "GitHub Actions"
-          git config user.email "actions@users.noreply.github.com"	
+          git config user.email "actions@users.noreply.github.com"
           git add ./data/
           git commit -m "Latest data for ${{ inputs.state }}" && git push || true
 ```
@@ -273,13 +273,10 @@ jobs:
       - name: Commit and push
         run: |
           git config user.name "GitHub Actions"
-          git config user.email "actions@users.noreply.github.com"	
+          git config user.email "actions@users.noreply.github.com"
           git add ./data/
           git commit -m "Latest data for ${{ inputs.state }}" && git push || true
 ```
 
 
 ## Let's scrape everything!
-
-
-

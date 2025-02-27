@@ -1,13 +1,13 @@
 # Parallel Actions
 
-Now that we have our initial Actions scraper going, let's try scraping several states at once. In this chapter, you'll learn how to take advantage of the parallelization capabilities of Actions. 
+Now that we have our initial Actions scraper going, let's try scraping several states at once. In this chapter, you'll learn how to take advantage of the parallelization capabilities of Actions.
 
 Actions provides a feature called the matrix strategy that allows programmers to easily run different versions of the same Action in parallel using just a few extra lines of code. In our case, we can use the matrix strategy to configure a list of states we want to scrape in one line of YAML, and the matrix will actually spin up a separate instance of the job for each state - meaning, access to parallel compute units in separate virtual machines/containers. Instead of waiting for one scraper to finish before scraping the next state, multiple jobs can run at the same time on separate instances. Let's get started!
 
 
 #### TK : create a new workflow and paste the old YAML in it
 
-First, let's modify our input to be able to accept a list of multiple states, instead of just one state. (Since this is a demo, we will not be adding data validation, but in a real world use case you should consider adding some code to validate the input is a list!) 
+First, let's modify our input to be able to accept a list of multiple states, instead of just one state. (Since this is a demo, we will not be adding data validation, but in a real world use case you should consider adding some code to validate the input is a list!)
 
 {emphasize-lines="6-9"}
 ```yaml
@@ -76,7 +76,7 @@ jobs:
 
 Now that we've scraped our data, we need a place to store the data before we commit it to the repo. To do this, we are using Actions Artifacts. Artifacts allow you to persist data after a job has completed, and share that data with another job in the same workflow. An artifact is a file or collection of files produced during a workflow run.
 
-Here we are using the shortcut actions/upload-artifact created by Github that allows us to temporarily store our data within our Action. 
+Here we are using the shortcut actions/upload-artifact created by Github that allows us to temporarily store our data within our Action.
 
 {emphasize-lines="19-23"}
 ```yaml
@@ -141,7 +141,7 @@ The next step is to download the artifacts we previously stored for use in this 
           path: artifacts/
 ```
 
-Next, we will 
+Next, we will
 
 ```yaml
  commit:
@@ -166,7 +166,7 @@ Next, we will
       - name: Commit and push
         run: |
           git config user.name "GitHub Actions"
-          git config user.email "actions@users.noreply.github.com"	
+          git config user.email "actions@users.noreply.github.com"
           git add ./data/
           git commit -m "Latest data" && git push || true
 ```
@@ -246,7 +246,7 @@ jobs:
       - name: Commit and push
         run: |
           git config user.name "GitHub Actions"
-          git config user.email "actions@users.noreply.github.com"	
+          git config user.email "actions@users.noreply.github.com"
           git add ./data/
           git commit -m "Latest data" && git push || true
 ```

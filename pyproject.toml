@@ -12,7 +12,8 @@ dependencies = [
     "sphinx-autobuild",
     "myst-parser",
     "sphinx-palewire-theme",
-    'warn-scraper',
+    "warn-scraper",
+    "pre-commit",
 ]
 
 [project.optional-dependencies]
