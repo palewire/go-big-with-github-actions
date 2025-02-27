@@ -4,7 +4,7 @@ Scale up your data pipelines using GitHub’s powerful Actions framework
 
 ## What you will learn
 
-Work through this tutorial and you will get hands-on experience creating an automated system that can collect, process and publish a gigantic dataset with ease.
+Work through this tutorial and you will get hands-on experience creating automated systems that can collect, process and publish gigantic datasets with ease.
 
 It will teach you how to:
 
