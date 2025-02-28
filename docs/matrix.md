@@ -1,8 +1,14 @@
-# Parallel Actions
+# Scaling up more servers
 
 Now that we have our initial Actions scraper going, let's try scraping several states at once. In this chapter, you'll learn how to take advantage of the parallelization capabilities of Actions.
 
 Actions provides a feature called the matrix strategy that allows programmers to easily run different versions of the same Action in parallel using just a few extra lines of code. In our case, we can use the matrix strategy to configure a list of states we want to scrape in one line of YAML, and the matrix will actually spin up a separate instance of the job for each state - meaning, access to parallel compute units in separate virtual machines/containers. Instead of waiting for one scraper to finish before scraping the next state, multiple jobs can run at the same time on separate instances. Let's get started!
+
+Examples of this technique that we've worked on include:
+
+- The collection of WARN Act notices posted by dozens of different states [by Big Local News](https://github.com/biglocalnews/warn-github-flow)
+- An [open-source archive](https://palewi.re/docs/news-homepages/) that preserves more than 1,000 news homepages twice per day.
+- The [transcription of hundreds of WNYC broadcast recordings](https://github.com/palewire/wnyc-radio-archive-transcriber) from the New York City Municipal Archive
 
 
 #### TK : create a new workflow and paste the old YAML in it
@@ -250,9 +256,3 @@ jobs:
           git add ./data/
           git commit -m "Latest data" && git push || true
 ```
-
-Examples to hype:
-
-- warn-github-flow
-- news-homepages-runner
-- wnyc-archive-audio-transcription

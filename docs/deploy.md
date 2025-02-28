@@ -1,4 +1,4 @@
-# Deploying dashboards
+# Deploying data dashboards
 
 You can use Actions to do more than pull things in. You can also use it to push data out via email, Slack, social media or even as a website.
 

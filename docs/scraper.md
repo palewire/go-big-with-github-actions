@@ -1,16 +1,18 @@
 # Scraping data
 
-## Web scrapers that run on GitHub Actions
+A web scraper is a computer script that can extract data from website and store it in a structure format. It's one of the most common ways to collect information from the web and a favorite tool of data journalists.
 
-Web scrapers can be a useful tool collect large amounts of data quickly. GitHub Action takes automation to next level by allowing you to schedule scrapers and run many at the same time. 
+Since the web is always updating, many scrapers need to be run on a regular basis to keep the data fresh. Scheduling routine tasks on a personal computer can be unreliable and many cloud services can be expensive and difficult to configure. And there's the tricky bit of figuring out where you'll store the data.
 
-Below are some examples of scrapers that are run by GitHub Actions. In this chapter we will learn how to use Action to run web scrapers.
+This is where GitHub Actions can help. Building off the fundamentals we covered in the previous chapter, we can schedule an Action that will run a web scraper and store the results in our repository. For free!
 
-- [LAT coronavirus scrapers](https://github.com/datadesk/california-coronavirus-scrapers)
-- [USDA animal inspections](https://github.com/data-liberation-project/aphis-inspection-reports)
-- [fed-dot-plot-scraper](https://github.com/palewire/fed-dot-plot-scraper)
+Examples of scrapers like that we've worked on include:
 
-## What you will learn
+- The Reuters system that extracts the famous ['dot plot' economic projections](https://github.com/palewire/fed-dot-plot-scraper) issued by the U.S. Federal Reserve
+- Dozens of [COVID-19 data scrapers](https://github.com/datadesk/california-coronavirus-scrapers) developed at the Los Angeles Times
+- A routine that collects and parses [animal welfare inspections](https://github.com/data-liberation-project/aphis-inspection-reports) conducted by the U.S. Department of Agriculture
+
+Here's what we'll cover in this chapter, as you configure your first Actions scraper:
 
 1. Install an existing web scraper from PyPI, run it and `commit` results to your repo.
 2. Set up a `cron` so you can "set it and forget it".
@@ -25,7 +27,6 @@ Let's start a new workflow file
 Again, we will be setting up our own workflow file. This time let's call this file `scraper`.
 
 ![blank](_static/scraper-2.png)
-
 
 ## Write your workflow file
 
@@ -64,7 +65,7 @@ jobs:
 
 Think of Actions as renting a blank computer from GitHub. In order to use it, you will need to install latest version of whatever language you are using and corresponding package managers.
 
-Because these Actions are used so often, GitHub has a [marketplace](https://github.com/marketplace?type=actions) where you can choose pre-packaged Action steps. 
+Because these Actions are used so often, GitHub has a [marketplace](https://github.com/marketplace?type=actions) where you can choose pre-packaged Action steps.
 
 The `Checkout` action checks-out our repository so your action file has access to it. We will use this so that we can add the scraped data back into the repo.
 
@@ -109,7 +110,7 @@ Let's scrape Iowa, and add that scraped data into a `./data/` folder.
         run: warn-scraper IA --data-dir ./data/
 ```
 
-Now that Action was able to grab the file and add it to a folder, we will need to commit this scrapped data back into our repo. 
+Now that Action was able to grab the file and add it to a folder, we will need to commit this scrapped data back into our repo.
 
 {emphasize-lines="35-41"}
 ```yaml
@@ -145,7 +146,7 @@ jobs:
       - name: Commit and push
         run: |
           git config user.name "GitHub Actions"
-          git config user.email "actions@users.noreply.github.com"	
+          git config user.email "actions@users.noreply.github.com"
           git add ./data/
           git commit -m "Latest data for Iowa" && git push || true
 ```
@@ -328,7 +329,6 @@ Let's run the Action again. Now when you go to run your Action, you will see an 
 
 ![final action](_static/scraper-5.png)
 
-Upon completion you will see that steps that reference `inputs.state` have been run with the correctly value. 
+Upon completion you will see that steps that reference `inputs.state` have been run with the correctly value.
 
 ![final result](_static/scraper-6.png)
-
