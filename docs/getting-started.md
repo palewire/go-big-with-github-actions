@@ -1,6 +1,6 @@
-# Creating an Action
+# Creating your first Action
 
-This chapter will walk you through creating a repository hosted in GitHub and creating your first Action
+This chapter will walk you through creating a repository hosted in GitHub and creating your first Action.
 
 ## Get started on GitHub
 

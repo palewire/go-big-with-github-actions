@@ -1,4 +1,4 @@
-# Scraping data
+# Scraping data on schedule
 
 A web scraper is a computer script that can extract data from website and store it in a structure format. It's one of the most common ways to collect information from the web and a favorite tool of data journalists.
 
