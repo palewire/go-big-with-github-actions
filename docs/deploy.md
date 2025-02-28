@@ -1,6 +1,6 @@
 # Deploying data dashboards
 
-You can use Actions to do more than pull things in. You can also use it to push data out via email, Slack, social media or even as a website.
+You can use Actions to do more than pull things in. You can also use it to push data out via email, Slack, social media or a website.
 
 Examples we've worked on include:
 
@@ -11,11 +11,11 @@ Examples we've worked on include:
 * An RSS feed of the latest [mobile alerts sent by the Washington Post](https://github.com/dwillis/wapo-alerts)
 * A range of social media bots that post selections from [public](https://mastodon.palewi.re/@OldLAPhotos) [data](https://mastodon.palewi.re/@laxweather) [sources](https://mastodon.palewi.re/@sanbornmaps)
 
-In this chapter we'll show how you can schedule an Action to share data using another one GitHub's powerful tools, GitHub Pages.
+In this chapter, we'll show how to schedule an Action to share data using another powerful GitHub tool: GitHub Pages.
 
 [GitHub Pages](https://pages.github.com/) is a free service that will host files in a GitHub repository as a public website. Yes, free.
 
-Many people use Pages to publish their blogs, porfolios and other personal websites. But it can be used for any app that only requires flat files like HTML, CSS and JavaScript to run.
+Many people use Pages to publish their blogs, portfolios and other personal websites. However, it can also be used for any app that only requires flat files like HTML, CSS, and JavaScript to run.
 
 [![Pages homepage](_static/pages-homepage.png)](https://pages.github.com/)
 
