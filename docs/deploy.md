@@ -2,7 +2,7 @@
 
 You can use Actions to do more than pull things in. You can also use it to push data out via email, Slack, social media or a website.
 
-Examples we've worked on include:
+Examples we've worked on or admired include:
 
 * A [private monitoring dashboard](https://observablehq.com/blog/ben-welsh) for the [Reuters system](https://docs.google.com/presentation/d/e/2PACX-1vTFf1nR6Bs5Y41kUzv3n-ZkBWJmSeF0W7inISfvG7pfPR1BrP8VdO6bwxxVJtToKacTcxhyXcgDzyQM/pub?start=false&loop=false&delayms=3000) that drafts hundreds of automated charts each week.
 * A crowdsourced dictionary of campaign-finance jargon at [moneyinpolitics.wtf](https://moneyinpolitics.wtf)
