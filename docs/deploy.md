@@ -9,6 +9,7 @@ Examples we've worked on include:
 * A regularly updating database of [amateur radio satellites](https://www.amsat.org/amateur-satellite-index/)
 * A continually updating study of [which news organizations block AI spiders](https://palewi.re/docs/news-homepages/openai-gptbot-robotstxt.html)
 * An RSS feed of the latest [mobile alerts sent by the Washington Post](https://github.com/dwillis/wapo-alerts)
+* The [latest ensemble forecast for COVID-19](https://github.com/CDCgov/covid19-forecast-hub/blob/main/.github/workflows/create_ensemble.yaml) from the U.S. Centers for Disease Control and Prevention
 * A range of social media bots that post selections from [public](https://mastodon.palewi.re/@OldLAPhotos) [data](https://mastodon.palewi.re/@laxweather) [sources](https://mastodon.palewi.re/@sanbornmaps)
 
 In this chapter, we'll show how to schedule an Action to share data using another powerful GitHub tool: GitHub Pages.
