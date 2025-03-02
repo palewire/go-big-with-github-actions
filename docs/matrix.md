@@ -11,29 +11,55 @@ Examples of this technique that we've worked on include:
 - The [transcription of hundreds of WNYC broadcast recordings](https://github.com/palewire/wnyc-radio-archive-transcriber) from the New York City Municipal Archive
 
 
-#### TK : create a new workflow and paste the old YAML in it
+First, let's copy the YAML code we worked on in the last chapter into a new workflow file. Let's call this file `matrix`, and change the `name` property accordingly. For now, let's also remove the steps under `workflow-dispatch` that accept inputs, and remove the scheduling as well. We'll introduce how to combine these concepts later.
 
-First, let's modify our input to be able to accept a list of multiple states, instead of just one state. (Since this is a demo, we will not be adding data validation, but in a real world use case you should consider adding some code to validate the input is a list!)
-
-{emphasize-lines="6-9"}
+{emphasize-lines="1-4"}
 ```yaml
-name: Scraper with matrix
+name: Matrix scraper
 
 on:
   workflow_dispatch:
-    inputs:
-          states:
-            description: 'List of U.S. states to scrape (e.g., [ca, ia, ny])'
-            required: true
-            default: '[ca, ia, ny]'
 
 permissions:
   contents: write
+
+jobs:
+  scrape:
+    name: Scrape
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello world
+        run: echo "Scraping data for ${{ inputs.state }}"
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install scraper
+        run: pip install warn-scraper
+
+      - name: Scrape
+        run: warn-scraper ${{ inputs.state }} --data-dir ./data/
+
+      - name: Save datestamp
+        run: echo "Scraped ${{ inputs.state }}" > ./data/latest-scrape.txt
+
+      - name: Commit and push
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add ./data/
+          git commit -m "Latest data for ${{ inputs.state }}" && git push || true
 ```
+
 
 ## Matrix strategy
 
-Next, take a look at the scraping logic we implemented earlier. Under the scrape job, we will now define our matrix strategy. This key will tell our Github Actions file to grab the JSON list from the input, and defines those elements as the states to be used for the matrix.
+Now, take a look at the scraping logic we implemented earlier. Under the scrape job, we will now define the matrix strategy. Here, we provide a list of states to scrape.
 
 {emphasize-lines="5-7"}
 ```yaml
@@ -42,9 +68,11 @@ jobs:
     name: Scrape
     runs-on: ubuntu-latest
     strategy:
-          matrix:
-            state: ${{ fromJSON(inputs.states) }}
+      matrix:
+        state: [ca, ia, ny]
 ```
+
+###How does this work? Why we need a build job and a commit job. Why we're separating it out... Why we need artifacts
 
 Github Actions provides two error-handling settings that will be helpful. One is called ```fail-fast```. This flag controls whether the entire matrix job should fail if one job in the matrix fails. In our case, we want to mark this flag as false; even if one state's scraper fails, we still want the job to complete and continue scraping the other states.
 
@@ -76,6 +104,14 @@ jobs:
       matrix:
         state: [ca, ia, ny]
 
+```
+
+To accommodate our matrix strategy, we'll also modify the first step -- the `Hello World` step -- to print the correct state name by using `matrix.state`:
+{emphasize-lines="3"}
+```yaml
+steps:
+      - name: Hello world
+        run: echo "Scraping data for ${{ matrix.state }}"
 ```
 
 ## Uploading artifact
@@ -178,8 +214,37 @@ Next, we will
 ```
 
 
-#### TK: BREAK IT BY TRYING TO USE MN
+#### TK: INPUTS AND BREAKING IT BY TRYING TO USE MN
 
+First, let's modify our input to be able to accept a list of multiple states, instead of just one state. (Since this is a demo, we will not be adding data validation, but in a real world use case you should consider adding some code to validate the input is a list!)
+
+{emphasize-lines="6-9"}
+```yaml
+name: Scraper with matrix
+
+on:
+  workflow_dispatch:
+    inputs:
+          states:
+            description: 'List of U.S. states to scrape (e.g., [ca, ia, ny])'
+            required: true
+            default: '[ca, ia, ny]'
+
+permissions:
+  contents: write
+```
+
+This key will tell our Github Actions file to grab the JSON list from the input, and defines those elements as the states to be used for the matrix.
+{emphasize-lines="5-7"}
+```yaml
+jobs:
+  scrape:
+    name: Scrape
+    runs-on: ubuntu-latest
+    strategy:
+          matrix:
+            state: ${{ fromJSON(inputs.states) }}
+```
 
 It will gradually build up to:
 
