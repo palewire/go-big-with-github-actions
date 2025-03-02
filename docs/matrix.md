@@ -107,6 +107,7 @@ jobs:
 ```
 
 To accommodate our matrix strategy, we'll also modify the first step -- the `Hello World` step -- to print the correct state name by using `matrix.state`:
+
 {emphasize-lines="3"}
 ```yaml
 steps:
