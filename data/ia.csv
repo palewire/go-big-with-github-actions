@@ -327,14 +327,14 @@ John Deere Waterloo Works ,3500 East Donald St ,Waterloo ,Black Hawk,IA,50704,Ma
 "Cygnus Home Services, LLC d/b/a Yelloh ",4397 E 50th St ,Des Moines ,Polk,IA ,50317,Mass Layoff ,16,05/28/2024,2024-07-27 00:00:00,Central Iowa ,Retail Trade ,,,,,,,,,,,,,,
 "Cygnus Home Services, LLC d/b/a Yelloh ",1420 N 11th St ,Humboldt ,Humboldt ,IA,50548,Mass Layoff ,5,05/28/2024,2024-07-27 00:00:00,Iowa Plains ,Retail Trade ,,,,,,,,,,,,,,
 John Deere Intelligent Solutions ,9505 Northpark Dr,Urbandale ,Polk ,IA,50322,Mass Layoff ,58,06/03/2024,2024-06-06 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
-John Deere Waterloo Works ,3500 East Donald St ,Waterloo ,Black Hawk,IA,50704,Mass Layoff - Salaired ,49,06/03/2024,2024-06-06 00:00:00,Northeast Iowa,Manufacturing,,,,,,,,,,,,,,
+John Deere Waterloo Works ,3500 East Donald St ,Waterloo ,Black Hawk,IA,50704,Mass Layoff ,49,06/03/2024,2024-06-06 00:00:00,Northeast Iowa,Manufacturing,,,,,,,,,,,,,,
 John Deere Des Moines Works,825 SW Irvinedale ,Ankeny,Polk ,IA ,50023,Mass Layoff ,16,06/03/2024,2024-06-06 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
 Bridgestone Americas Manufacturing Group-Firestone Ag Plant Des Moines,4600 NW 2nd St,Des Moines,Polk,IA,50313,Mass Layoff ,118,06/05/2024,2024-07-05 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
 John Deere Intelligent Solutions ,9505 Northpark Dr,Urbandale ,Polk ,IA,50322,Amendment,1,06/07/2024,2024-06-07 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
 Atek Metal Technologies,2205 Rusty Kennedy Rd,New Hampton ,Chickasaw ,IA ,50659,Mass Layoff ,48,06/05/2024,2024-06-27 00:00:00,Northeast Iowa ,Manufacturing,,,,,,,,,,,,,,
 Wells Fargo,800 S Jordan Creek Parkway,West Des Moines,Polk,IA,50266,Amendment ,26,06/11/2024,2024-08-11 00:00:00,Central Iowa ,Finance and Insurance ,,,,,,,,,,,,,,
 Bridgestone Americas Manufacturing Group-Firestone Ag Plant Des Moines,4600 NW 2nd St,Des Moines,Polk,IA,50313,Amendmnet - Decrease in number ,89,06/12/2024,2024-07-05 00:00:00,Central Iowa,Manufacturing,,,,,,,,,,,,,,
-Tyson Foods,13500 I Court,Perry ,Dallas,IA ,50220,Amendment - Change in Date ,32,06/11/2024,2024-07-27 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+-1,13500 I Court,Perry ,Dallas,IA ,50220,Amendment - Change in Date ,32,06/11/2024,2024-07-27 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
 Tyson Foods,13500 I Court,Perry ,Dallas,IA ,50220,Amendment - Change in Date,32,06/11/2024,2024-08-24 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
 Tyson Foods,13500 I Court,Perry ,Dallas,IA ,50220,Amendment - Change in Date ,5,06/11/2024,2024-09-28 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
 FD Treats ,315 10th St,Hawarden,Sioux ,IA ,51023,Closing ,36,06/20/2024,2024-07-19 00:00:00,Iowa Plains,Manufacturing,,,,,,,,,,,,,,
@@ -417,6 +417,7 @@ Fisher Group,1250 N Center Point Rd,Hiawatha,Linn,IA,52233,Closing ,32,02/11/202
 John Deere Des Moines Work,825 SW Irvinedale Dr,Ankeny,Polk,IA,50023,Mass Layoffs,9,02/21/2025,2025-03-31 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
 John Deere Des Moines Work,825 SW Irvinedale Dr,Ankeny,Polk,IA,50023,Mass Layoffs,38,02/21/2025,2025-04-07 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
 John Deere Des Moines Work,825 SW Irvinedale Dr,Ankeny,Polk,IA,50023,Mass Layoffs,72,02/21/2025,2025-04-28 00:00:00,Central Iowa ,Manufacturing,,,,,,,,,,,,,,
+Ascent Professional Staffing,"119 Sycamore St, Suite 200",Muscatine,Muscatine,IA,52761,Closing ,32,02/28/2025,2025-05-02 00:00:00,Mississippi Valley,Administrative and Support and Waste Management and Remediation Services,,,,,,,,,,,,,,
 United HR Direct,3022 Airport Blvd.,Waterloo,Black Hawk,IA,50704,Mass Layoff,52,2011-01-13 00:00:00,2011-03-08 00:00:00
 Wells Fargo,800 Walnut Street,Des Moines,Polk,IA,50309,Mass Layoff,32,2011-01-14 00:00:00,2011-02-13 00:00:00
 Electrolux,400 Des Moines Street,Webster City,Hamilton,IA,50595,Amendment,510,2011-01-27 00:00:00,2011-03-31 00:00:00
