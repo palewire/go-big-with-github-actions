@@ -154,9 +154,9 @@ steps:
         run: echo "Scraping data for ${{ matrix.state }}"
 ```
 
-And we should do the same for the scraping and logging steps.
+And we should do the same for the scraping step. For simplicity, let's cut that datestamp step for now.
 
-{emphasize-lines="20,34,37"}
+{emphasize-lines="20,34"}
 ```yaml
 name: Matrix scraper
 
@@ -192,9 +192,6 @@ jobs:
 
       - name: Scrape
         run: warn-scraper ${{ matrix.state }} --data-dir ./data/
-
-      - name: Save datestamp
-        run: echo "Scraped ${{ matrix.state }}" > ./data/latest-scrape.txt
 ```
 
 ## Uploading artifact
@@ -204,7 +201,7 @@ Now that we've scraped our data, we need a place to store the data before we com
 Here we are using the shortcut actions/upload-artifact created by Github that allows us to temporarily store our data within our task.
 
 
-{emphasize-lines="39-43"}
+{emphasize-lines="36-40"}
 ```yaml
 name: Matrix scraper
 
@@ -240,9 +237,6 @@ jobs:
 
       - name: Scrape
         run: warn-scraper ${{ matrix.state }} --data-dir ./data/
-
-      - name: Save datestamp
-        run: echo "Scraped ${{ matrix.state }}" > ./data/latest-scrape.txt
 
       - name: upload-artifact
         uses: actions/upload-artifact@v4
