@@ -53,8 +53,11 @@ jobs:
           pattern: '*'
           path: artifacts/
 
+      - name: Tree
+        run: sudo apt install -y tree && tree artifacts
+
       - name: Move
-        run: mv artifacts/**/*.csv data/
+        run: cp artifacts/**/*.csv data/
 
       - name: Commit and push
         run: |
