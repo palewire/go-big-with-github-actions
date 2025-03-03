@@ -6,7 +6,7 @@ Actions provides a feature called the matrix strategy that allows programmers to
 
 Examples of this technique that we've worked on include:
 
-- The collection of WARN Act notices posted by dozens of different states [by Big Local News](https://github.com/biglocalnews/warn-github-flow)
+- The [collection of WARN Act notices](https://github.com/biglocalnews/warn-github-flow) posted by dozens of different states
 - An [open-source archive](https://palewi.re/docs/news-homepages/) that preserves more than 1,000 news homepages twice per day.
 - The [transcription of hundreds of WNYC broadcast recordings](https://github.com/palewire/wnyc-radio-archive-transcriber) from the New York City Municipal Archive
 
