@@ -35,4 +35,89 @@ address:
 
 In the case of Actions, YAML is used in the configuration files to tell the system what to do. These files are known as workflows. You can store them in a directory called `.github/workflows` at the root of GitHub code repositories with a .yml or .yaml file extension.
 
-GitHub offers extensive [documentation](https://docs.github.com/en/actions/writing-workflows) on how to write these files to fit the very particular expectations of Actions. In our next chapter, we'll start with the basics.
+In the case of our example, the social media bot that posts new jobs at Reuters, [the Actions YAML file](https://github.com/palewire/reuters-jobs/blob/main/.github/workflows/etl.yaml) is as follows. Don't worry if you don't understand it yet. In our next chapter, we'll start with the basics and, gradually, you'll learn how to craft your own YAML files to harness the power of Actions and accomplish your goals.
+
+```yaml
+name: "Extract, transform and alert"
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 */6 * * *"
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  run:
+    name: Run
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - id: setup-python
+        name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.9'
+          cache: 'pipenv'
+
+      - name: Install pipenv
+        run: curl https://raw.githubusercontent.com/pypa/pipenv/master/get-pipenv.py | python
+
+      - name: Install Python dependencies
+        run: |
+          pipenv sync
+          pipenv run shot-scraper install
+
+      - name: Download
+        run: make download
+
+      - name: Transform
+        run: make transform
+
+      - name: Flag
+        run: make flag
+
+      - name: Start Flask server
+        run: pipenv run python -m reutersjobs.app &
+
+      - name: Screenshot
+        run: pipenv run python -m reutersjobs.screenshot
+
+      - name: Update RSS
+        run: make rss
+
+      - id: commit
+        name: Commit
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git config pull.rebase false
+          git pull origin $GITHUB_REF
+          git add ./
+          git commit -m "Added latest ETL" --author="palewire <palewire@users.noreply.github.com>" && git push || true
+        shell: bash
+
+      - name: Send toots
+        run: make toot
+        env:
+          MASTODON_CLIENT_KEY: ${{ secrets.MASTODON_CLIENT_KEY }}
+          MASTODON_CLIENT_SECRET: ${{ secrets.MASTODON_CLIENT_SECRET }}
+          MASTODON_ACCESS_TOKEN: ${{ secrets.MASTODON_ACCESS_TOKEN }}
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: data
+
+      - id: deployment
+        name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4
+```
