@@ -14,22 +14,20 @@ Examples of Actions scrapers that we've worked on include:
 
 ## Create a new workflow
 
-Let's start a new workflow file
+Let's begin by starting a new workflow file. Go to your repository's homepage in the browser. Click on the "Actions" tab, which will take you to a page where you manage Actions. Now click on the "New workflow" button.
 
 ![new](_static/scraper-1.png)
 
-Again, we will be setting up our own workflow file. This time let's call this file `scraper`.
+This time let's call this file `scraper.yml`.
 
 ![blank](_static/scraper-2.png)
 
 ## Write your workflow file
 
-Let's start with a `name` and expand the `on` parameter by adding a `cron`. Here, we've added a cron expression that will run the Action everyday at 00:00 UTC.
-
-Here's a handy tool for figuring out [cron expressions](https://crontab.guru/#0_0_*_*_*).
+Start with a `name` and expand the `on` parameter we used last time by adding a `cron` setting. Here, we've added a crontab expression that will run the Action everyday at 00:00 UTC.
 
 
-{emphasize-lines="4-6"}
+{emphasize-lines="5-6"}
 ```yaml
 name: First Scraper
 
@@ -39,7 +37,11 @@ on:
   - cron: "0 0 * * *"
 ```
 
-Next, we will add what we just learned and add job and runner details.
+:::{admonition} Note
+[Crons](https://en.wikipedia.org/wiki/Cron), sometimes known as crontabs or cron jobs, are a way to schedule tasks for particular dates and times. They are a powerful tool, but a bit tricky to understand. If you need help writing a new pattern, try using [crontab.guru](https://crontab.guru/).
+:::
+
+Next, add a simple job named `scrape`.
 
 {emphasize-lines="8-12"}
 ```yaml
@@ -57,17 +59,60 @@ jobs:
     steps:
 ```
 
-Think of Actions as renting a blank computer from GitHub. In order to use it, you will need to install latest version of whatever language you are using and corresponding package managers.
+Think of Actions as renting a blank computer from GitHub. In order to use it, you will need to install the latest version of whatever language you are using, as well as any corresponding package managers and libraries.
 
-Because these Actions are used so often, GitHub has a [marketplace](https://github.com/marketplace?type=actions) where you can choose pre-packaged Action steps.
+Because these Actions are used so often, GitHub has a [marketplace](https://github.com/marketplace?type=actions) where you can find pre-packaged steps for common task.
 
-The `Checkout` action checks-out our repository so your action file has access to it. We will use this so that we can add the scraped data back into the repo.
+The `checkout` action clones our repository onto the server so that all subsequent steps can access to it. We will need to do this so that we can save our the scraped data back into the repo at the end of the workflow.
 
-We will need to install Python, as our scraper is built in Python.
+{emphasize-lines="13-14"}
+```yaml
+name: First Scraper
 
-For scraper we will use [warn scraper](https://pypi.org/project/warn-scraper/) developed by folks at [Big Local News](https://biglocalnews.org/content/tools/layoff-watch.html).
+on:
+  workflow_dispatch:
+  schedule:
+  - cron: "0 0 * * *"
 
-{emphasize-lines="12-22"}
+jobs:
+  scrape:
+    name: Scrape
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+```
+
+Our scraper will gather the latest mass layoff notices posted on government websites according to the requirements of the U.S. Worker Adjustment and Retraining Notification Act, also known as the WARN Act. It's an open-source software package developed by [Big Local News](https://biglocalnews.org/content/tools/layoff-watch.html) that relies on the Python computer programming language.
+
+So our next step is to install Python, which can also be accomplished with a pre-packaged action.
+
+{emphasize-lines="16-19"}
+```yaml
+name: First Scraper
+
+on:
+  workflow_dispatch:
+  schedule:
+  - cron: "0 0 * * *"
+
+jobs:
+  scrape:
+    name: Scrape
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+```
+
+Now we will use Python's `pip` package manager to install the `warn-scraper` package.
+
+{emphasize-lines="21-22"}
 ```yaml
 name: First Scraper
 
@@ -93,20 +138,42 @@ jobs:
         run: pip install warn-scraper
 ```
 
-Now that the `warn-scraper` has been installed, we will need to run the scraper.
+According to the package's [documentation](https://warn-scraper.readthedocs.io/en/latest/usage.html), all we need to do to scrape a state's notices is to type `warn-scraper <state>` into the terminal.
 
-Per warn-scraper [documentation](https://warn-scraper.readthedocs.io/en/latest/usage.html), we know that to scrape, we simply type in `warn-scraper <state>`
+Let's scrape Iowa, America's greatest state, and store the results int `./data/` folder at the root of our repository.
 
-Let's scrape Iowa, and add that scraped data into a `./data/` folder.
-
+{emphasize-lines="24-25"}
 ```yaml
+name: First Scraper
+
+on:
+  workflow_dispatch:
+  schedule:
+  - cron: "0 0 * * *"
+
+jobs:
+  scrape:
+    name: Scrape
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install scraper
+        run: pip install warn-scraper
+
       - name: Scrape
-        run: warn-scraper IA --data-dir ./data/
+        run: warn-scraper ia --data-dir ./data/
 ```
 
-Now that Action was able to grab the file and add it to a folder, we will need to commit this scrapped data back into our repo.
+Finally, we want to commit this scraped data to the repository and push it back to GitHub.
 
-{emphasize-lines="35-41"}
+{emphasize-lines="30-35"}
 ```yaml
 name: First Scraper
 
@@ -145,26 +212,17 @@ jobs:
           git commit -m "Latest data for Iowa" && git push || true
 ```
 
-Let's commit this workflow to our repo and run our Action! Go to `Actions` tab and choose your scraper workflow and click `Run workflow`
+Save this workflow to our repo. Go to `Actions` tab and choose your scraper workflow and click `Run workflow` as we did in the previous chapter.
 
 ![first run](_static/scraper-3.png)
 
-
-Once the Action has been completed, click inside of the Action. You will see that Action was unable to access the repository. This is because GitHub Actions requires that you provide [permissions](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#permissions).
+Once the task has been completed, click its list item for a summary report. You will see that Action was unable to access the repository. This is because GitHub Actions requires that you provide [permissions](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#permissions).
 
 ![no-commit](_static/scraper-3a.png)
 
-Let's go ahead an add the below line between on and jobs so that we provide write permissions to all jobs.
+Let's go ahead an add the below line between on and jobs so that we provide write permission to all jobs.
 
-```yaml
-
-permissions:
-  contents: write
-
-```
-
-Your final file should look like this.
-
+{emphasize-lines="8-9"}
 ```yaml
 name: First Scraper
 
@@ -196,7 +254,7 @@ jobs:
         run: pip install warn-scraper
 
       - name: Scrape
-        run: warn-scraper IA --data-dir ./data/
+        run: warn-scraper ia --data-dir ./data/
 
       - name: Commit and push
         run: |
@@ -208,15 +266,13 @@ jobs:
 
 Save the file and run the Action again.
 
-Once the workflow has been completed, you should see that there are two new files committed to the `data` folder
+Once the workflow has been completed, you should see the `ia.csv` file in your repository's `data` folder.
 
 ![data folder](_static/scraper-4.png)
 
-## Adding other enhancements
+## User-defined inputs
 
-### Inputs
-
-Github Actions will allow you to specify `inputs` for manually triggered workflows. This works great for us because now we can specify what states to scrape in our `warn-scraper` command.
+Github Actions allows you to specify `inputs` for manually triggered workflows, which we can use to allow users to specify what state to scrape.
 
 To add an input option to your workflow, go to your yaml file and add the following lines. Here, we are asking Actions to create an `input` called `state` (there can be more than one inputs in a given Action).
 
