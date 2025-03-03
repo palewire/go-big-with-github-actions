@@ -484,14 +484,12 @@ jobs:
         state: ${{ fromJSON(inputs.states) }}
 ```
 
-What happens when we try to scrape a state that doesn't exist in the scraper? For example, MN WARN notices are not supported by Big Local News' WARN Scraper. Let's try inputting:
-
-```
-["mn", "ia", "ny"]
-```
+What happens when we try to scrape a state that doesn't exist in the scraper? For example, MN WARN notices are not supported by Big Local News' WARN Scraper. Let's try inputting: `["mn", "ia", "ny"]`
 
 ![failed-mn1](_static/parallel-5.png)
 
+Due to our error-handling efforts above, we would expect `ia` and `ny` data to be scraped and committed, and `mn` to fail. 
+
 ![failed-mn](_static/parallel-4.png)
 
-We can see here that `fail-fast` and `continue-on-error` resulted in the data for `ia` and `ny` to still be scraped, even though the MN scraper failed.
+Thanks to `fail-fast` and `continue-on-error`, that's exactly what happens!
