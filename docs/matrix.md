@@ -309,6 +309,30 @@ Just to make sure our repo stays clean, we can add a `Move` step to unpack the a
         run: |
           mkdir data -p
           mv artifacts/**/*.csv data/
+```
+
+Finally, we can add the same commit and push step as before. This time, we don't need to specify the state in the commit message, since all states are now included in the data folder.
+
+{emphasize-lines="20-25"}
+```yaml
+ commit:
+    name: Commit
+    runs-on: ubuntu-latest
+    needs: scrape
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          pattern: '*'
+          path: artifacts/
+
+      - name: Move
+        run: |
+          mkdir data -p
+          mv artifacts/**/*.csv data/
 
       - name: Commit and push
         run: |
