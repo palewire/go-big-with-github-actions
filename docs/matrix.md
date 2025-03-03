@@ -14,11 +14,11 @@ First, let's copy the YAML code we worked on in the last chapter into a new work
 
 ![new-parallel-workflow](_static/parallel-1.png)
 
-Let's call this file `parallel.yml`, and change the `name` property accordingly. 
+Let's call this file `parallel.yml`.
 
 ![call-it-parallel](_static/parallel-2.png)
 
-For now, let's also remove the steps under `workflow-dispatch` that accept inputs, and remove the scheduling as well. We'll introduce how to combine these concepts later.
+Let's change the `name` property accordingly to `Matrix scraper`. For now, let's also remove the steps under `workflow-dispatch` that accept inputs, and remove the scheduling as well. We'll introduce how to combine these concepts later.
 
 {emphasize-lines="1-4"}
 ```yaml
@@ -487,11 +487,11 @@ jobs:
 What happens when we try to scrape a state that doesn't exist in the scraper? For example, MN WARN notices are not supported by Big Local News' WARN Scraper. Let's try inputting:
 
 ```
-[mn, ca, ny]
+[mn, ia, ny]
 ```
 
 ![failed-mn1](_static/parallel-5.png)
 
 ![failed-mn](_static/parallel-4.png)
 
-We can see here that `fail-fast` and `continue-on-error` resulted in the data for `ca` and `ny` to still be scraped, even though the MN scraper failed.
+We can see here that `fail-fast` and `continue-on-error` resulted in the data for `ia` and `ny` to still be scraped, even though the MN scraper failed.
