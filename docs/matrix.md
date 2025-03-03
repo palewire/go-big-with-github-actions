@@ -2,7 +2,7 @@
 
 Now that we have our initial Actions scraper going, let's try scraping several states at once. In this chapter, you'll learn how to take advantage of the parallelization capabilities of Actions.
 
-Actions provides a feature called the matrix strategy that allows programmers to easily run different versions of the same Action in parallel using just a few extra lines of code. In our case, rather than manually inputting each state we want to scrape one at a time, we can use the matrix strategy to scrape multiple states at once using just one line of code. Under the hood, Actions will spin up a separate instance of the job for each state - as if we're renting multiple blank computers from Github. Instead of waiting for one scraper to finish before scraping the next state, multiple jobs can run at the same time on separate instances. Let's get started!
+Actions provides a feature called the matrix strategy that allows programmers to easily run different versions of the same Action in parallel using just a few extra lines of code. Instead of scraping one state, we can provide a list of states, and Actions will spin up a separate instance of the job for each state - as if we're renting multiple blank computers from Github. Instead of waiting for one scraper to finish before scraping the next state, multiple jobs can run at the same time on separate instances. Let's get started!
 
 Examples of this technique that we've worked on include:
 
@@ -185,8 +185,9 @@ The next step is to download the artifacts we previously stored for use in this 
           path: artifacts/
 ```
 
-Next, we will
+Just to make sure our repo stays clean, we can add a `Move` step to unpack the artifacts - which are all stored in their own folders, since they came from different parallel jobs - and put them into our `data/` folder. Lastly, we push with the same code as before.
 
+{emphasize-lines="15-18"}
 ```yaml
  commit:
     name: Commit
@@ -215,10 +216,14 @@ Next, we will
           git commit -m "Latest data" && git push || true
 ```
 
+## TK SCREENSHOTS
 
-#### TK: INPUTS AND BREAKING IT BY TRYING TO USE MN
 
-First, let's modify our input to be able to accept a list of multiple states, instead of just one state. (Since this is a demo, we will not be adding data validation, but in a real world use case you should consider adding some code to validate the input is a list!)
+## Extending our Action
+
+Now that we've successfully created a parallel action, let's try adding back our inputs.
+
+We can modify our input to be able to accept a list of multiple states, instead of just one state. (Since this is a demo, we will not be adding data validation, but in a real world use case you should consider adding some code to validate the input is a list!)
 
 {emphasize-lines="6-9"}
 ```yaml
@@ -236,8 +241,9 @@ permissions:
   contents: write
 ```
 
-This key will tell our Github Actions file to grab the JSON list from the input, and defines those elements as the states to be used for the matrix.
-{emphasize-lines="5-7"}
+Then, in the section where we define our matrix strategy, we can tell our Github Actions file to grab the JSON list from the input, and defines those elements as the states to be used for the matrix.
+
+{emphasize-lines="7"}
 ```yaml
 jobs:
   scrape:
@@ -248,78 +254,12 @@ jobs:
             state: ${{ fromJSON(inputs.states) }}
 ```
 
-It will gradually build up to:
+What happens when we try to scrape a state that doesn't exist in the scraper? For example, MN WARN notices are not supported by Big Local News' WARN Scraper. Let's try inputting:
 
-```yaml
-name: Scraper with matrix
-
-on:
-  workflow_dispatch:
-    inputs:
-          states:
-            description: 'List of U.S. states to scrape (e.g., [ca, ia, ny])'
-            required: true
-            default: '[ca, ia, ny]'
-
-permissions:
-  contents: write
-
-jobs:
-  scrape:
-    name: Scrape
-    runs-on: ubuntu-latest
-    continue-on-error: true
-    strategy:
-      fail-fast: false
-      matrix:
-        state: [ca, ia, ny]
-    steps:
-      - name: Hello world
-        run: echo "Scraping data for ${{ matrix.state }}"
-
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Install Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.12'
-
-      - name: Install scraper
-        run: pip install warn-scraper
-
-      - name: Scrape
-        run: warn-scraper ${{ matrix.state }} --data-dir ./data/
-
-      - name: upload-artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: ${{ matrix.state }}
-          path: ./data/
-
-  commit:
-    name: Commit
-    runs-on: ubuntu-latest
-    needs: scrape
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Download artifact
-        uses: actions/download-artifact@v4
-        with:
-          pattern: '*'
-          path: artifacts/
-
-      - name: Move
-        run: |
-          mkdir data -p
-          mv artifacts/**/*.csv data/
-
-      - name: Commit and push
-        run: |
-          git config user.name "GitHub Actions"
-          git config user.email "actions@users.noreply.github.com"
-          git add ./data/
-          git commit -m "Latest data" && git push || true
 ```
+[mn, ca, ny]
+```
+
+### TK - screenshot of result
+
+We can see here that `fail-fast` and `continue-on-error` resulted in the data for `ca` and `ny` to still be scraped, even though the MN scraper failed.
