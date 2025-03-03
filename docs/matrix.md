@@ -10,7 +10,15 @@ Examples of this technique that we've worked on include:
 - The [transcription of hundreds of WNYC broadcast recordings](https://github.com/palewire/wnyc-radio-archive-transcriber) from the New York City Municipal Archive
 - The [collection of WARN Act notices](https://github.com/biglocalnews/warn-github-flow) posted by dozens of different states that serves as the example for this class
 
-First, let's copy the YAML code we worked on in the last chapter into a new workflow file. Let's call this file `matrix.yml`, and change the `name` property accordingly. For now, let's also remove the steps under `workflow-dispatch` that accept inputs, and remove the scheduling as well. We'll introduce how to combine these concepts later.
+First, let's copy the YAML code we worked on in the last chapter into a new workflow file.
+
+![new-parallel-workflow](parallel-1.png)
+
+Let's call this file `parallel.yml`, and change the `name` property accordingly. 
+
+![call-it-parallel](parallel-2.png)
+
+For now, let's also remove the steps under `workflow-dispatch` that accept inputs, and remove the scheduling as well. We'll introduce how to combine these concepts later.
 
 {emphasize-lines="1-4"}
 ```yaml
@@ -439,8 +447,7 @@ jobs:
           git commit -m "Latest data" && git push || true
 ```
 
-## TK SCREENSHOTS
-
+![success-parallel](parallel-3.png)
 
 ## Extending our Action
 
@@ -483,6 +490,6 @@ What happens when we try to scrape a state that doesn't exist in the scraper? Fo
 [mn, ca, ny]
 ```
 
-### TK - screenshot of result
+![failed-mn](parallel-4.png)
 
 We can see here that `fail-fast` and `continue-on-error` resulted in the data for `ca` and `ny` to still be scraped, even though the MN scraper failed.
