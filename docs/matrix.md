@@ -455,10 +455,10 @@ name: Scraper with matrix
 on:
   workflow_dispatch:
     inputs:
-          states:
-            description: 'List of U.S. states to scrape (e.g., [ca, ia, ny])'
-            required: true
-            default: '[ca, ia, ny]'
+      states:
+        description: 'List of U.S. states to scrape (e.g., [ca, ia, ny])'
+        required: true
+        default: '[ca, ia, ny]'
 
 permissions:
   contents: write
@@ -473,8 +473,8 @@ jobs:
     name: Scrape
     runs-on: ubuntu-latest
     strategy:
-          matrix:
-            state: ${{ fromJSON(inputs.states) }}
+      matrix:
+        state: ${{ fromJSON(inputs.states) }}
 ```
 
 What happens when we try to scrape a state that doesn't exist in the scraper? For example, MN WARN notices are not supported by Big Local News' WARN Scraper. Let's try inputting:
