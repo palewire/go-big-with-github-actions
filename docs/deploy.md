@@ -60,7 +60,7 @@ Next you should select the "Source" pulldown in the "Build and Deployment" secti
 
 Now Pages is ready to run.
 
-Next you should create a new YAML file in your workflows folder called `scrape-and-deploy.yaml`. Remember, it needs to be in the `.github/workflows` directory of your repository next to all of your other tasks.
+Next you should create a new YAML file in your workflows folder called `scrape-and-deploy.yml`. Remember, it needs to be in the `.github/workflows` directory of your repository next to all of your other tasks.
 
 We will start this file off by pasting in code similar what we used to scrape WARN Act data in previous chapters. It will simply scrape the latest layoff notices from Iowa's website, commit the data to the repository and then attach it to Action's log.
 
