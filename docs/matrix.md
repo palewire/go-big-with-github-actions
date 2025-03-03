@@ -12,11 +12,11 @@ Examples of this technique that we've worked on include:
 
 First, let's copy the YAML code we worked on in the last chapter into a new workflow file.
 
-![new-parallel-workflow](parallel-1.png)
+![new-parallel-workflow](_static/parallel-1.png)
 
 Let's call this file `parallel.yml`, and change the `name` property accordingly. 
 
-![call-it-parallel](parallel-2.png)
+![call-it-parallel](_static/parallel-2.png)
 
 For now, let's also remove the steps under `workflow-dispatch` that accept inputs, and remove the scheduling as well. We'll introduce how to combine these concepts later.
 
@@ -447,7 +447,7 @@ jobs:
           git commit -m "Latest data" && git push || true
 ```
 
-![success-parallel](parallel-3.png)
+![success-parallel](_static/parallel-3.png)
 
 ## Extending our Action
 
@@ -463,9 +463,9 @@ on:
   workflow_dispatch:
     inputs:
       states:
-        description: 'List of U.S. states to scrape (e.g., [ca, ia, ny])'
+        description: 'List of U.S. states to scrape (e.g., ["ca", "ia", "ny"])'
         required: true
-        default: '[ca, ia, ny]'
+        default: '["ca", "ia", "ny"]'
 
 permissions:
   contents: write
@@ -490,6 +490,8 @@ What happens when we try to scrape a state that doesn't exist in the scraper? Fo
 [mn, ca, ny]
 ```
 
-![failed-mn](parallel-4.png)
+![failed-mn1](_static/parallel-5.png)
+
+![failed-mn](_static/parallel-4.png)
 
 We can see here that `fail-fast` and `continue-on-error` resulted in the data for `ca` and `ny` to still be scraped, even though the MN scraper failed.
