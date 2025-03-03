@@ -6,9 +6,9 @@ Actions provides a feature called the matrix strategy that allows programmers to
 
 Examples of this technique that we've worked on include:
 
-- The [collection of WARN Act notices](https://github.com/biglocalnews/warn-github-flow) posted by dozens of different states
 - An [open-source archive](https://palewi.re/docs/news-homepages/) that preserves more than 1,000 news homepages twice per day.
 - The [transcription of hundreds of WNYC broadcast recordings](https://github.com/palewire/wnyc-radio-archive-transcriber) from the New York City Municipal Archive
+- The [collection of WARN Act notices](https://github.com/biglocalnews/warn-github-flow) posted by dozens of different states that serves as the example for this class
 
 First, let's copy the YAML code we worked on in the last chapter into a new workflow file. Let's call this file `matrix`, and change the `name` property accordingly. For now, let's also remove the steps under `workflow-dispatch` that accept inputs, and remove the scheduling as well. We'll introduce how to combine these concepts later.
 
