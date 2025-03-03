@@ -200,7 +200,6 @@ Now that we've scraped our data, we need a place to store the data before we com
 
 Here we are using the shortcut actions/upload-artifact created by Github that allows us to temporarily store our data within our task.
 
-
 {emphasize-lines="36-40"}
 ```yaml
 name: Matrix scraper
@@ -242,7 +241,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.state }}
-          path: ./data/
+          path: ./data/${{ matrix.state }}.csv
 ```
 
 ## Commit step
@@ -252,13 +251,13 @@ Next, let's create a second step for our Action: the commit step. We'll start wi
 {emphasize-lines="4"}
 
 ```yaml
-commit:
-    name: Commit
-    runs-on: ubuntu-latest
-    needs: scrape
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+  commit:
+      name: Commit
+      runs-on: ubuntu-latest
+      needs: scrape
+      steps:
+        - name: Checkout
+          uses: actions/checkout@v4
 ```
 
 The next step is to download the artifacts we previously stored for use in this step. This is done using the actions/download-artifact companion to the uploader.
@@ -266,7 +265,7 @@ The next step is to download the artifacts we previously stored for use in this 
 {emphasize-lines="9-13"}
 
 ```yaml
- commit:
+  commit:
     name: Commit
     runs-on: ubuntu-latest
     needs: scrape
@@ -285,7 +284,7 @@ Just to make sure our repo stays clean, we can add a `Move` step to unpack the a
 
 {emphasize-lines="15-18"}
 ```yaml
- commit:
+  commit:
     name: Commit
     runs-on: ubuntu-latest
     needs: scrape
@@ -309,7 +308,7 @@ We can add a logging step here that will save the current date and time to a fil
 
 {emphasize-lines="20-21"}
 ```yaml
- commit:
+  commit:
     name: Commit
     runs-on: ubuntu-latest
     needs: scrape
@@ -336,7 +335,7 @@ Finally, we can add the same commit and push step as before. This time, we don't
 
 {emphasize-lines="23-28"}
 ```yaml
- commit:
+  commit:
     name: Commit
     runs-on: ubuntu-latest
     needs: scrape
@@ -408,9 +407,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.state }}
-          path: ./data/
+          path: ./data/${{ matrix.state }}.csv
 
- commit:
+  commit:
     name: Commit
     runs-on: ubuntu-latest
     needs: scrape
