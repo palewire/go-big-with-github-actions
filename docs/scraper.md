@@ -1,10 +1,10 @@
-# Scraping data on schedule
+# Scraping data on a schedule
 
 A web scraper is a computer script that can extract data from a website and store it in a structured format. It's one of the most common ways to collect information from the web and a favorite tool of data journalists.
 
-Since the web is always updating, many scrapers need to be run regularly to keep the data fresh. Scheduling routine tasks on a personal computer can be unreliable, and many cloud services can be expensive and difficult to configure. And then there's the tricky bit of figuring out where you'll store the data.
+Since the web constantly updates, scrapers must run regularly to keep the data fresh. Scheduling routine tasks on a personal computer can be unreliable, and many cloud services can be expensive or difficult to configure. And then there's the tricky bit of figuring out where you'll store the data.
 
-This is any area where GitHub Actions can help. Building off the fundamentals we covered in the previous chapter, we can schedule a workflow that will run a web scraper and store the results in our repository. For free!
+This is an area where GitHub Actions can help. Building on the fundamentals we covered in the previous chapter, we can schedule a workflow that will run a web scraper and store the results in our repository — for free!
 
 Examples of Actions scrapers that we've worked on include:
 
