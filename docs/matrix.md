@@ -305,9 +305,9 @@ Just to make sure our repo stays clean, we can add a `Move` step to unpack the a
           mv artifacts/**/*.csv data/
 ```
 
-Finally, we can add the same commit and push step as before. This time, we don't need to specify the state in the commit message, since all states are now included in the data folder.
+We can add a logging step here that will save the current date and time to a file. This will help us keep track of when the last scrape was done and prevent GitHub from deactivating the workflow.
 
-{emphasize-lines="20-25"}
+{emphasize-lines="20-21"}
 ```yaml
  commit:
     name: Commit
@@ -327,6 +327,110 @@ Finally, we can add the same commit and push step as before. This time, we don't
         run: |
           mkdir data -p
           mv artifacts/**/*.csv data/
+
+      - name: Save datestamp
+        run: date > ./data/latest-scrape.txt
+```
+
+Finally, we can add the same commit and push step as before. This time, we don't need to specify the state in the commit message, since all states are now included in the data folder.
+
+{emphasize-lines="23-28"}
+```yaml
+ commit:
+    name: Commit
+    runs-on: ubuntu-latest
+    needs: scrape
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          pattern: '*'
+          path: artifacts/
+
+      - name: Move
+        run: |
+          mkdir data -p
+          mv artifacts/**/*.csv data/
+
+      - name: Save datestamp
+        run: date > ./data/latest-scrape.txt
+
+      - name: Commit and push
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add ./data/
+          git commit -m "Latest data" && git push || true
+```
+
+All together, our final code should look like this:
+
+```yaml
+name: Matrix scraper
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    name: Scrape
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    strategy:
+      fail-fast: false
+      matrix:
+        state: [ca, ia, ny]
+    steps:
+      - name: Hello world
+        run: echo "Scraping data for ${{ matrix.state }}"
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install scraper
+        run: pip install warn-scraper
+
+      - name: Scrape
+        run: warn-scraper ${{ matrix.state }} --data-dir ./data/
+
+      - name: upload-artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.state }}
+          path: ./data/
+
+ commit:
+    name: Commit
+    runs-on: ubuntu-latest
+    needs: scrape
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          pattern: '*'
+          path: artifacts/
+
+      - name: Move
+        run: |
+          mkdir data -p
+          mv artifacts/**/*.csv data/
+
+      - name: Save datestamp
+        run: date > ./data/latest-scrape.txt
 
       - name: Commit and push
         run: |
