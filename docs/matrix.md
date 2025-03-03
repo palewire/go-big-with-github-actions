@@ -242,6 +242,7 @@ permissions:
 ```
 
 Then, in the section where we define our matrix strategy, we can tell our Github Actions file to grab the JSON list from the input, and defines those elements as the states to be used for the matrix.
+
 {emphasize-lines="7"}
 ```yaml
 jobs:
