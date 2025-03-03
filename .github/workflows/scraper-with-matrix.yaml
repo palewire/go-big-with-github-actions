@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.state }}
-          path: ./data/
+          path: ./data/${{ matrix.state }}.csv
 
   commit:
     name: Commit
