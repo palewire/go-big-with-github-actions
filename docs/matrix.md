@@ -10,7 +10,6 @@ Examples of this technique that we've worked on include:
 - An [open-source archive](https://palewi.re/docs/news-homepages/) that preserves more than 1,000 news homepages twice per day.
 - The [transcription of hundreds of WNYC broadcast recordings](https://github.com/palewire/wnyc-radio-archive-transcriber) from the New York City Municipal Archive
 
-
 First, let's copy the YAML code we worked on in the last chapter into a new workflow file. Let's call this file `matrix`, and change the `name` property accordingly. For now, let's also remove the steps under `workflow-dispatch` that accept inputs, and remove the scheduling as well. We'll introduce how to combine these concepts later.
 
 {emphasize-lines="1-4"}
@@ -61,8 +60,16 @@ jobs:
 
 Now, take a look at the scraping logic we implemented earlier. Under the scrape job, we will now define the matrix strategy. Here, we provide a list of states to scrape.
 
-{emphasize-lines="5-7"}
+{emphasize-lines="13-15"}
 ```yaml
+name: Matrix scraper
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
 jobs:
   scrape:
     name: Scrape
@@ -70,9 +77,40 @@ jobs:
     strategy:
       matrix:
         state: [ca, ia, ny]
+    steps:
+      - name: Hello world
+        run: echo "Scraping data for ${{ inputs.state }}"
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install scraper
+        run: pip install warn-scraper
+
+      - name: Scrape
+        run: warn-scraper ${{ inputs.state }} --data-dir ./data/
+
+      - name: Save datestamp
+        run: echo "Scraped ${{ inputs.state }}" > ./data/latest-scrape.txt
+
+      - name: Commit and push
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add ./data/
+          git commit -m "Latest data for ${{ inputs.state }}" && git push || true
 ```
 
-In our original scraper, we combined scraping and committing in a single step because we weren't worried about pulling the latest repo changes first. But with multiple jobs running in parallel, we can no longer guarantee their order of completion. In this chapter, we'll solve that by splitting the action into two steps. First, we'll run all scrapers in parallel and save their outputs in a temporary storage known as Artifacts. Then, once every job finishes, we'll collect those Artifacts and make a single commit. This approach ensures that all parallel jobs contribute their changes properly, without overwriting each other.
+In our original scraper, we combined scraping and committing in a single step because we weren't worried about pulling the latest repo changes first. But with multiple jobs running in parallel, we can no longer guarantee their order of completion. In this chapter, we'll solve that by splitting the action into two steps.
+
+First, we'll run all scrapers in parallel and save their outputs in a temporary storage known as artifacts.
+
+Then, once every job finishes, we'll collect those Artifacts and make a single commit. This approach ensures that all parallel jobs contribute their changes properly, without overwriting each other.
 
 ### Error handling
 Github Actions provides two error-handling settings that will be helpful. One is called ```fail-fast```. This flag controls whether the entire matrix job should fail if one job in the matrix fails. In our case, we want to mark this flag as false; even if one state's scraper fails, we still want the job to complete and continue scraping the other states.
@@ -107,7 +145,7 @@ jobs:
 
 ```
 
-To accommodate our matrix strategy, we'll also modify the first step -- the `Hello World` step -- to print the correct state name by using `matrix.state`:
+To accommodate our matrix strategy, we'll also modify all the steps that use the `inputs.state` variable to use `matrix.state` instead. For example, in the `Hello world` step, we can change the line to:
 
 {emphasize-lines="3"}
 ```yaml
@@ -116,14 +154,27 @@ steps:
         run: echo "Scraping data for ${{ matrix.state }}"
 ```
 
-## Uploading artifact
+And we should do the same for the scraping and logging steps.
 
-Now that we've scraped our data, we need a place to store the data before we commit it to the repo. To do this, we are using Actions Artifacts. Artifacts allow you to persist data after a job has completed, and share that data with another job in the same workflow. An artifact is a file or collection of files produced during a workflow run.
-
-Here we are using the shortcut actions/upload-artifact created by Github that allows us to temporarily store our data within our Action.
-
-{emphasize-lines="19-23"}
+{emphasize-lines="20,34,37"}
 ```yaml
+name: Matrix scraper
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    name: Scrape
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    strategy:
+      fail-fast: false
+      matrix:
+        state: [ca, ia, ny]
     steps:
       - name: Hello world
         run: echo "Scraping data for ${{ matrix.state }}"
@@ -141,6 +192,57 @@ Here we are using the shortcut actions/upload-artifact created by Github that al
 
       - name: Scrape
         run: warn-scraper ${{ matrix.state }} --data-dir ./data/
+
+      - name: Save datestamp
+        run: echo "Scraped ${{ matrix.state }}" > ./data/latest-scrape.txt
+```
+
+## Uploading artifact
+
+Now that we've scraped our data, we need a place to store the data before we commit it to the repo. To do this, we are using Actions Artifacts. Artifacts allow you to persist data after a job has completed, and share that data with another job in the same workflow. An artifact is a file or collection of files produced during a workflow run.
+
+Here we are using the shortcut actions/upload-artifact created by Github that allows us to temporarily store our data within our task.
+
+
+{emphasize-lines="39-43"}
+```yaml
+name: Matrix scraper
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    name: Scrape
+    runs-on: ubuntu-latest
+    continue-on-error: true
+    strategy:
+      fail-fast: false
+      matrix:
+        state: [ca, ia, ny]
+    steps:
+      - name: Hello world
+        run: echo "Scraping data for ${{ matrix.state }}"
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install scraper
+        run: pip install warn-scraper
+
+      - name: Scrape
+        run: warn-scraper ${{ matrix.state }} --data-dir ./data/
+
+      - name: Save datestamp
+        run: echo "Scraped ${{ matrix.state }}" > ./data/latest-scrape.txt
 
       - name: upload-artifact
         uses: actions/upload-artifact@v4
