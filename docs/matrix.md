@@ -453,7 +453,7 @@ jobs:
 
 Now that we've successfully created a parallel action, let's try adding back our inputs.
 
-We can modify our input to be able to accept a list of multiple states, instead of just one state. (Since this is a demo, we will not be adding data validation, but in a real world use case you should consider adding some code to validate the input is a list!)
+We can modify our input to be able to accept a JSON list of multiple states, instead of just one state. (Since this is a demo, we will not be adding data validation, but in a real world use case you should consider adding some code to validate the input is a list!)
 
 {emphasize-lines="6-9"}
 ```yaml
@@ -487,7 +487,7 @@ jobs:
 What happens when we try to scrape a state that doesn't exist in the scraper? For example, MN WARN notices are not supported by Big Local News' WARN Scraper. Let's try inputting:
 
 ```
-[mn, ia, ny]
+["mn", "ia", "ny"]
 ```
 
 ![failed-mn1](_static/parallel-5.png)
