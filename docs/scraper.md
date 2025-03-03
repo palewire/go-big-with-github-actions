@@ -2,21 +2,15 @@
 
 A web scraper is a computer script that can extract data from a website and store it in a structured format. It's one of the most common ways to collect information from the web and a favorite tool of data journalists.
 
-Since the web is always updating, many scrapers need to be run regularly to keep the data fresh. Scheduling routine tasks on a personal computer can be unreliable, and many cloud services can be expensive and difficult to configure. And there's the tricky bit of figuring out where you'll store the data.
+Since the web is always updating, many scrapers need to be run regularly to keep the data fresh. Scheduling routine tasks on a personal computer can be unreliable, and many cloud services can be expensive and difficult to configure. And then there's the tricky bit of figuring out where you'll store the data.
 
-This is where GitHub Actions can help. Building off the fundamentals we covered in the previous chapter, we can schedule an Action that will run a web scraper and store the results in our repository. For free!
+This is any area where GitHub Actions can help. Building off the fundamentals we covered in the previous chapter, we can schedule a workflow that will run a web scraper and store the results in our repository. For free!
 
 Examples of Actions scrapers that we've worked on include:
 
 - The Reuters system that extracts the famous ['dot plot' economic projections](https://github.com/palewire/fed-dot-plot-scraper) issued by the U.S. Federal Reserve
 - Dozens of [COVID-19 data scrapers](https://github.com/datadesk/california-coronavirus-scrapers) developed at the Los Angeles Times
 - A routine that collects and parses [animal welfare inspections](https://github.com/data-liberation-project/aphis-inspection-reports) conducted by the U.S. Department of Agriculture
-
-Here's what we'll cover in this chapter, as you configure your first Actions scraper:
-
-1. Install an existing web scraper from PyPI, run it and `commit` results to your repo.
-2. Set up a `cron` so you can "set it and forget it".
-3. Add `inputs` so you can have more control over what to scrape.
 
 ## Create a new workflow
 
