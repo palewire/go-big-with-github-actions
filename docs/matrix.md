@@ -2,7 +2,7 @@
 
 Now that we have our initial Actions scraper going, let's try scraping several states at once. In this chapter, you'll learn how to take advantage of the parallelization capabilities of Actions.
 
-Actions provides a feature called the matrix strategy that allows programmers to easily run different versions of the same Action in parallel using just a few extra lines of code. In our case, we can use the matrix strategy to configure a list of states we want to scrape in one line of YAML, and the matrix will actually spin up a separate instance of the job for each state - meaning, access to parallel compute units in separate virtual machines/containers. Instead of waiting for one scraper to finish before scraping the next state, multiple jobs can run at the same time on separate instances. Let's get started!
+Actions provides a feature called the matrix strategy that allows programmers to easily run different versions of the same Action in parallel using just a few extra lines of code. In our case, rather than manually inputting each state we want to scrape one at a time, we can use the matrix strategy to scrape multiple states at once using just one line of code. Under the hood, Actions will spin up a separate instance of the job for each state - as if we're renting multiple blank computers from Github. Instead of waiting for one scraper to finish before scraping the next state, multiple jobs can run at the same time on separate instances. Let's get started!
 
 Examples of this technique that we've worked on include:
 
@@ -72,8 +72,9 @@ jobs:
         state: [ca, ia, ny]
 ```
 
-###How does this work? Why we need a build job and a commit job. Why we're separating it out... Why we need artifacts
+In our original scraper, we combined scraping and committing in a single step because we weren't worried about pulling the latest repo changes first. But with multiple jobs running in parallel, we can no longer guarantee their order of completion. In this chapter, we'll solve that by splitting the action into two steps. First, we'll run all scrapers in parallel and save their outputs in a temporary storage known as Artifacts. Then, once every job finishes, we'll collect those Artifacts and make a single commit. This approach ensures that all parallel jobs contribute their changes properly, without overwriting each other.
 
+### Error handling
 Github Actions provides two error-handling settings that will be helpful. One is called ```fail-fast```. This flag controls whether the entire matrix job should fail if one job in the matrix fails. In our case, we want to mark this flag as false; even if one state's scraper fails, we still want the job to complete and continue scraping the other states.
 
 {emphasize-lines="7"}
