@@ -4,55 +4,66 @@ This chapter will walk you through creating a repository hosted in GitHub and cr
 
 ## Get started on GitHub
 
-If you already have your own GitHub account, please log in. If you do not have one, please create an account on [github.com](https://github.com) and use it to log in to the site.
+If you already have a GitHub account, please log in. If you do not have one, please create one on [github.com](https://github.com) and use it to log in to the site.
 
-Once you are logged into GitHub, create a new repository by clicking on the NEW button on top left corner or simply click this link [https://github.com/new](https://github.com/new).
+Once you are logged into GitHub, create a new repository by clicking on the "New" button at the top-left corner or simply click this link: [github.com/new](https://github.com/new).
 
-Once on the page, fill in the name for your repository - go-big-with-github-actions - for example, and click on the Create Repository button at the bottom.
+Now, fill in a name for your new repository. A good example would be `go-big-with-github-actions`. Click on the "Create repository" button at the bottom of the form.
 
 ![signed in](_static/getting-started-1.png)
 
 ## Create a simple Action
 
-We will be editing our files in the browser inside GitHub. But if you'd rather clone your repo and use a code editor instead, that's fine too.
-
-**Action(s)** and **Workflow** will be used interchangeably.
-**Action file**, **Workflow file**, **Yaml file** are all the same.
-
-Navigate back to your repository in the browser. Click on the Actions tab. This will take you to Actions page.
+Navigate to your repository's homepage in the browser. Click on the "Actions" tab, which will take you to a page where you can create, manage and monitor your Actions.
 
 ![first action](_static/first-action-1.png)
 
-Scrolling down the Actions page, you will see that GitHub has templates different automation tasks. For our first Action, we will be choosing `set up a workflow yourself` in blue
+Scroll down the page. You will see that GitHub offers a menu of templates for common automation tasks. For our first Action, we will click "set up a workflow yourself" link near the top of the page.
+
+:::{admonition} Note
+The terms action, workflow, job and task and yaml are often used interchangeably by GitHub Actions users to refer to these configuration files.
+:::
 
 ![first workflow](_static/first-action-2.png)
 
-This will open up a YAML file editor inside of your browser. Let's star by renaming the file to `simple.yaml`
+This will open up an editor inside of your browser, which is another one of the features offered by GitHub.
+
+Let's start by renaming the file to `simple.yaml` in the box above the editor. This will be the name of your first Action file.
 
 ![simple workflow](_static/first-action-3.png)
 
-## Start writing your workflow file in YAML
+:::{admonition} Note
+We will be editing our files inside of GitHub using our browser in this manner throughout the tutorial. If you're already a GitHub expert and you'd prefer to clone your repo and use a code editor instead, please feel free to do so. Just make sure to push your changes back to GitHub as you go.
+:::
 
-First we will name our action by adding the following to line up top.
+## Start your workflow
+
+First, we will name our Action by adding the following line at the top of the file.
 
 ```yaml
 name: First Action
 ```
 
-You will notice the red squiggly underline. In the browser editor, this means something is wrong or missing with your actions. When you hover over the squiggly line, a help text will appear.
+You will notice a red squiggly underline beneath your code. This means that GitHub sees something wrong with your workflow. When you hover over the squiggly line, a hint will appear. Here we see it says "Missing required root key `on`."
 
 ![title](_static/first-action-4.png)
 
-Let's follow the help text add one more line under `name`.
+Let's take the hint add another line under `name`.
 
 ```yaml
 on:
   workflow_dispatch:
 ```
 
-`on` is used to determine when the Action file will run. `workflow_dispatch` means the Action can be run manually and accept inputs if any. You can read more about different options for `on` [here](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#on).
+They keyword `on` is used to determine when the Action file will run. When it is configured with `workflow_dispatch`, the Action can be run manually from the monitoring panel.
 
-Let's fill out rest of the workflow. Copy and paste the below code under `workflow_dispatch:`. As you fill out the rest of the file. Be mindful of indentation and syntax errors - the red squiggly marks will give you a hint about what's wrong with the file. At any point if you would like to add comments, you can do so by adding `#` in the front.
+:::{admonition} Note
+You can read more about different options for configuring `on` [in GitHub's documentation](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#on).
+:::
+
+Now let's tell our workflow what we want it to do.
+
+Copy and paste the below code under `workflow_dispatch:`.
 
 ```yaml
 jobs:
@@ -64,7 +75,9 @@ jobs:
       run: echo "Hello world"
 ```
 
-Your final workflow file will look something like this.
+Be mindful of indentation and uneven syntax. The red squiggly marks will give you hints is there's anything wrong with your file.
+
+Your workflow file should now look something like this:
 
 ```yaml
 name: First Action
@@ -72,7 +85,6 @@ name: First Action
 on:
   workflow_dispatch:
 
-# jobs to run
 jobs:
   hello:
     name: Say Hello
@@ -82,22 +94,7 @@ jobs:
         run: echo "Hello world"
 ```
 
-Let's go ahead and commit the file
-
-![commit](_static/first-action-10.png)
-
-In GitHub, all workflow files are saved under `.github > workflows` folder. Your first commit has created the folder and saved your first Action file for you. When you are ready to add more wokflow files locally, you will need to add them to this folder.
-
-![commit](_static/first-action-8.png)
-
-At any point if you need to edit the file again, simply click into the file and click the pencil icon on the top right corner.
-
-![editor](_static/first-action-13.png)
-
-
-## The Breakdown
-
-A workflow run consists of multiple `jobs`. You can have more than one job. In our case we only have a single job called `hello`. Jobs can run sequentially or in parallel depending on your configuration.
+A workflow run consists of one or more `jobs`, which can run sequentially or in parallel depending on your configuration. In this simple case we only have a single job called `hello`.
 
 {emphasize-lines="6-7"}
 ```yaml
@@ -115,7 +112,7 @@ jobs:
         run: echo "Hello world"
 ```
 
-For each job, you will need to choose what kind of runner it will us. In our case, chose a Linux runner. You can also choose MacOS or Windows. Actions are free, but if you are paying for them to use beyond the storage and minute limits, you will be [charged differently](https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-github-actions/about-billing-for-github-actions#minute-multipliers) depending on your runner.
+For each job, you will need to choose what kind of server to use. In our case, we selected an Ubuntu Linux runner. You can also choose MacOS or Windows.
 
 {emphasize-lines="9"}
 ```yaml
@@ -133,7 +130,11 @@ jobs:
         run: echo "Hello world"
 ```
 
-Each job is likely to have multiple tasks. The `steps` lay out those tasks in a list format. Give each task a name and details.
+:::{admonition} Note
+While Actions is free up to 2,000 minutes per month, the fees incurred at higher usage levels [vary](https://docs.github.com/en/billing/managing-billing-for-your-products/managing-billing-for-github-actions/about-billing-for-github-actions#minute-multipliers) depending on the runner you choose. Ubuntu runners are the least expensive.
+:::
+
+Each job then runs as many `steps` as you want to layout as a list. Give each task a name and tell it what to do. In our case, we are simply printing out "Hello world" to the console using the built-in [`echo`](https://linux.die.net/man/1/echo) command.
 
 {emphasize-lines="10-12"}
 ```yaml
@@ -151,12 +152,25 @@ jobs:
         run: echo "Hello world"
 ```
 
+
+Now save you file to the repository by clicking on the green "Commit changes" button in the top-right corner.
+
+![commit](_static/first-action-10.png)
+
+In GitHub, all workflow files are saved under `.github > workflows` folder. Your first commit has created the folder and saved your first workflow for you. When you are ready to add more workflows, you should add them to this folder as well.
+
+![commit](_static/first-action-8.png)
+
+If you need to edit this first file again, simply click into the file and click the pencil icon on the top right corner.
+
+![editor](_static/first-action-13.png)
+
 ## Run your action
 
-Let's go back to your `action` tab in the repository. You will see that your action is now populated on the left rail. Choose your action then go to the right corner where you will see a dropdown called `Run workflow`. This workflow will run on our `main` branch - click the green Run `workflow button` to run your first action!
+Go back to your "Actions" tab in the repository. You will see that your workflow is now available in the left rail. Click on its name there. Then go to the right corner where you will see a dropdown called "Run workflow." Click the second, green "Run workflow" button it presents in a dropdown to kickstart your first job.
 
 ![first-commit](_static/first-action-11.png)
 
-Refresh your browser to see your progress. Once your Action has been completed, you will see a green checkmark to the left. Clicking on the completed action will show you what job just ran -  `Say Hello`. Click on the job and open up the steps within workflow to see the output.
+Refresh your browser. Once your Action has been completed, you will see a green checkmark to the left. Clicking on the completed action will show you what job just ran. Click on the job and open up the steps within workflow to see the output.
 
 ![first-workflow](_static/first-action-12.png)
