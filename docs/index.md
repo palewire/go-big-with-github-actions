@@ -37,4 +37,4 @@ about
 
 ## About this class
 
-[Ben Welsh](https://palewi.re/who-is-ben-welsh/), [Iris Lee](https://www.irisslee.com/) and [Dana Chiueh](https://dana.computer/) prepared this guide for [a training session](https://schedules.ire.org/nicar-2025/index.html#2045) at the National Institute for Computer-Assisted Reporting’s 2025 conference in Minneapolis. GitHub’s Copilot, an AI-powered text generator provided some assistance. The materials are available as free and [open source on GitHub](https://github.com/palewire/go-big-with-github-actions).
+[Ben Welsh](https://palewi.re/who-is-ben-welsh/), [Iris Lee](https://www.irisslee.com/) and [Dana Chiueh](https://dana.computer/) prepared this guide for [a training session](https://schedules.ire.org/nicar-2025/index.html#2045) at the National Institute for Computer-Assisted Reporting’s 2025 conference in Minneapolis. GitHub’s Copilot, an AI-powered text generator, provided some assistance. The materials are available as free and [open source on GitHub](https://github.com/palewire/go-big-with-github-actions).
