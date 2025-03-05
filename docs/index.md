@@ -32,7 +32,6 @@ scraper
 matrix
 deploy
 ec2
-about
 ```
 
 ## About this class
