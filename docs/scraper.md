@@ -365,7 +365,7 @@ jobs:
         run: warn-scraper ${{ inputs.state }} --data-dir ./data/
 
       - name: Save datestamp
-        run: echo "Scraped ${{ inputs.state }}" > ./data/latest-scrape.txt
+        run: date > ./data/latest-scrape.txt
 
       - name: Commit and push
         run: |
