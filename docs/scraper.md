@@ -319,7 +319,7 @@ To get around this you can can have your workflow commit an updated text file ev
 
 ```yaml
       - name: Save datestamp
-        run: echo "Scraped ${{ inputs.state }}" > ./data/latest-scrape.txt
+        run: date > ./data/latest-scrape.txt
 ```
 
 ## Final steps
