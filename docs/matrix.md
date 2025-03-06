@@ -12,13 +12,56 @@ Examples of this technique that we've worked on include:
 - The [transcription of hundreds of WNYC broadcast recordings](https://github.com/palewire/wnyc-radio-archive-transcriber) from the New York City Municipal Archive
 - The [collection of WARN Act notices](https://github.com/biglocalnews/warn-github-flow) posted by dozens of different states that serves as the example for this class
 
-First, let's copy the YAML code we worked on in the last chapter into a new workflow file.
+First, let's copy the YAML code we worked on in the last chapter into a new workflow file named  `parallel.yml`.
 
-![new-parallel-workflow](_static/parallel-1.png)
+```yaml
+name: First Scraper
 
-Let's call this file `parallel.yml`.
+on:
+  workflow_dispatch:
+    inputs:
+      state:
+        description: 'U.S. state to scrape'
+        required: true
+        default: 'ia'
+  schedule:
+  - cron: "0 0 * * *"
 
-![call-it-parallel](_static/parallel-2.png)
+permissions:
+  contents: write
+
+jobs:
+  scrape:
+    name: Scrape
+    runs-on: ubuntu-latest
+    steps:
+      - name: Hello world
+        run: echo "Scraping data for ${{ inputs.state }}"
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install scraper
+        run: pip install warn-scraper
+
+      - name: Scrape
+        run: warn-scraper ${{ inputs.state }} --data-dir ./data/
+
+      - name: Save datestamp
+        run: date > ./data/latest-scrape.txt
+
+      - name: Commit and push
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@users.noreply.github.com"
+          git add ./data/
+          git commit -m "Latest data for ${{ inputs.state }}" && git push || true
+```
 
 Let's change the `name` property accordingly to `Matrix scraper`. For now, let's also remove the steps under `workflow-dispatch` that accept inputs, and remove the scheduling as well.
 
