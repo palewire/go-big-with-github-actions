@@ -187,9 +187,6 @@ jobs:
     name: Scrape
     runs-on: ubuntu-latest
     steps:
-      - name: Hello world
-        run: echo "Scraping data for ${{ inputs.state }}"
-
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -202,7 +199,7 @@ jobs:
         run: pip install warn-scraper
 
       - name: Scrape
-        run: warn-scraper IA --data-dir ./data/
+        run: warn-scraper ia --data-dir ./data/
 
       - name: Commit and push
         run: |
@@ -239,9 +236,6 @@ jobs:
     name: Scrape
     runs-on: ubuntu-latest
     steps:
-      - name: Hello world
-        run: echo "Scraping data for ${{ inputs.state }}"
-
       - name: Checkout
         uses: actions/checkout@v4
 
