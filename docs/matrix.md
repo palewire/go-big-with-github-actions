@@ -67,7 +67,7 @@ Let's change the `name` property accordingly to `Matrix scraper`. For now, let's
 
 {emphasize-lines="1-4"}
 ```yaml
-name: Matrix scraper
+name: Matrix Scraper
 
 on:
   workflow_dispatch:
@@ -115,7 +115,7 @@ Now, take a look at the scraping logic we implemented earlier. Under the scrape 
 
 {emphasize-lines="13-15"}
 ```yaml
-name: Matrix scraper
+name: Matrix Scraper
 
 on:
   workflow_dispatch:
@@ -211,7 +211,7 @@ And we should do the same for the scraping step. For simplicity, let's cut that 
 
 {emphasize-lines="20,34"}
 ```yaml
-name: Matrix scraper
+name: Matrix Scraper
 
 on:
   workflow_dispatch:
@@ -255,7 +255,7 @@ Here we are using the shortcut [actions/upload-artifact](https://github.com/acti
 
 {emphasize-lines="36-40"}
 ```yaml
-name: Matrix scraper
+name: Matrix Scraper
 
 on:
   workflow_dispatch:
@@ -421,7 +421,7 @@ Finally, we can add the same commit and push step as before. This time, we don't
 All together, our final code should look like this:
 
 ```yaml
-name: Matrix scraper
+name: Matrix Scraper
 
 on:
   workflow_dispatch:
