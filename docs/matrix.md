@@ -2,7 +2,9 @@
 
 Now that we have our initial Actions scraper going, let's try scraping several states at once. In this chapter, you'll learn how to take advantage of the parallelization capabilities of Actions.
 
-Actions provides a feature called the matrix strategy that allows programmers to easily run different versions of the same Action in parallel using just a few extra lines of code. Instead of scraping one state, we can provide a list of states, and Actions will spin up a separate instance of the job for each state - as if we're renting multiple blank computers from Github. Instead of waiting for one scraper to finish before scraping the next state, multiple jobs can run at the same time on separate instances.
+Actions provides a feature called the matrix strategy that allows programmers to easily run different versions of the same Action in parallel using just a few extra lines of code.
+
+Instead of scraping one state, we can provide a list of states, and Actions will spin up a separate instance of the job for each state — as if we're renting multiple blank computers from Github. Instead of waiting for one scraper to finish before scraping the next state, multiple jobs can run at the same time on separate instances.
 
 Examples of this technique that we've worked on include:
 
