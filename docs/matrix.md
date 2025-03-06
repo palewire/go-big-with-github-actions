@@ -18,7 +18,7 @@ Let's call this file `parallel.yml`.
 
 ![call-it-parallel](_static/parallel-2.png)
 
-Let's change the `name` property accordingly to `Matrix scraper`. For now, let's also remove the steps under `workflow-dispatch` that accept inputs, and remove the scheduling as well. We'll introduce how to combine these concepts later.
+Let's change the `name` property accordingly to `Matrix scraper`. For now, let's also remove the steps under `workflow-dispatch` that accept inputs, and remove the scheduling as well.
 
 {emphasize-lines="1-4"}
 ```yaml
@@ -206,7 +206,7 @@ jobs:
 
 Now that we've scraped our data, we need a place to store the data before we commit it to the repo. To do this, we are using Actions Artifacts. Artifacts allow you to persist data after a job has completed, and share that data with another job in the same workflow. An artifact is a file or collection of files produced during a workflow run.
 
-Here we are using the shortcut actions/upload-artifact created by Github that allows us to temporarily store our data within our task.
+Here we are using the shortcut [actions/upload-artifact](https://github.com/actions/upload-artifact) created by Github that allows us to temporarily store our data within our task. 
 
 {emphasize-lines="36-40"}
 ```yaml
@@ -449,47 +449,24 @@ jobs:
 
 ![success-parallel](_static/parallel-3.png)
 
-## Extending our Action
+## Breaking our action?
 
-Now that we've successfully created a parallel action, let's try adding back our inputs.
+What happens when we try to scrape a state that doesn't exist in the scraper? For example, MN WARN notices are not supported by Big Local News' WARN Scraper. Let's try changing our list of scraped states:
 
-We can modify our input to be able to accept a JSON list of multiple states, instead of just one state. (Since this is a demo, we will not be adding data validation, but in a real world use case you should consider adding some code to validate the input is a list!)
-
-{emphasize-lines="6-9"}
-```yaml
-name: Scraper with matrix
-
-on:
-  workflow_dispatch:
-    inputs:
-      states:
-        description: 'List of U.S. states to scrape (e.g., ["ca", "ia", "ny"])'
-        required: true
-        default: '["ca", "ia", "ny"]'
-
-permissions:
-  contents: write
-```
-
-Then, in the section where we define our matrix strategy, we can tell our Github Actions file to grab the JSON list from the input, and defines those elements as the states to be used for the matrix.
-
-{emphasize-lines="7"}
+{emphasize-lines="9"}
 ```yaml
 jobs:
   scrape:
     name: Scrape
     runs-on: ubuntu-latest
+    continue-on-error: true
     strategy:
+      fail-fast: false
       matrix:
-        state: ${{ fromJSON(inputs.states) }}
+        state: [mn, md, tn, wv, ny]
 ```
+Now, commit and run the action again.
 
-What happens when we try to scrape a state that doesn't exist in the scraper? For example, MN WARN notices are not supported by Big Local News' WARN Scraper. Let's try inputting: `["mn", "ia", "ny"]`
+![failed-parallel](_static/parallel-5.png)
 
-![failed-mn1](_static/parallel-5.png)
-
-Due to our error-handling efforts above, we would expect `ia` and `ny` data to be scraped and committed, and `mn` to fail. 
-
-![failed-mn](_static/parallel-4.png)
-
-Thanks to `fail-fast` and `continue-on-error`, that's exactly what happens!
+We can see that thanks to `fail-fast`, `mn` and `wv` fail (because the WARN scraper does not support these states), while `md`, `tn` and `ny` succeed. And thanks to `continue-on-error`, even though there were failures in the first scrape step, the action continued to run to the commit step and push the newly scraped data into the repo.
