@@ -8,7 +8,7 @@ Instead of scraping one state, we can provide a list of states, and Actions will
 
 Examples of this technique that we've worked on include:
 
-- An [open-source archive](https://palewi.re/docs/news-homepages/) that preserves more than 1,000 news homepages twice per day.
+- An [open-source archive](https://palewi.re/docs/news-homepages-runner/) that preserves more than 1,000 news homepages twice per day.
 - The [transcription of hundreds of WNYC broadcast recordings](https://github.com/palewire/wnyc-radio-archive-transcriber) from the New York City Municipal Archive
 - The [collection of WARN Act notices](https://github.com/biglocalnews/warn-github-flow) posted by dozens of different states that serves as the example for this class
 
