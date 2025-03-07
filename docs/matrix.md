@@ -12,7 +12,7 @@ Examples of this technique that we've worked on include:
 - The [transcription of hundreds of WNYC broadcast recordings](https://github.com/palewire/wnyc-radio-archive-transcriber) from the New York City Municipal Archive
 - The [collection of WARN Act notices](https://github.com/biglocalnews/warn-github-flow) posted by dozens of different states that serves as the example for this class
 
-First, let's copy the YAML code we worked on in the last chapter into a new workflow file named  `parallel.yml`.
+First, copy the YAML code we worked on in the last chapter into a new workflow file named  `parallel.yml`.
 
 ```yaml
 name: First Scraper
@@ -35,9 +35,6 @@ jobs:
     name: Scrape
     runs-on: ubuntu-latest
     steps:
-      - name: Hello world
-        run: echo "Scraping data for ${{ inputs.state }}"
-
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -63,7 +60,7 @@ jobs:
           git commit -m "Latest data for ${{ inputs.state }}" && git push || true
 ```
 
-Let's change the `name` property accordingly to `Matrix scraper`. For now, let's also remove the steps under `workflow-dispatch` that accept inputs, and remove the scheduling as well.
+Let's change the `name` property to `Matrix Scraper`. For now, let's also remove the steps under `workflow-dispatch` that accept inputs and the scheduling.
 
 {emphasize-lines="1-4"}
 ```yaml
@@ -80,9 +77,6 @@ jobs:
     name: Scrape
     runs-on: ubuntu-latest
     steps:
-      - name: Hello world
-        run: echo "Scraping data for ${{ inputs.state }}"
-
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -111,7 +105,7 @@ jobs:
 
 ## Matrix strategy
 
-Now, take a look at the scraping logic we implemented earlier. Under the scrape job, we will now define the matrix strategy. Here, we provide a list of states to scrape.
+Take a look at the scraping logic we implemented earlier. Under the scrape job, we will define the matrix strategy. Here, we'd like to provide a list of states to scrape.
 
 {emphasize-lines="13-15"}
 ```yaml
@@ -131,9 +125,6 @@ jobs:
       matrix:
         state: [ca, ia, ny]
     steps:
-      - name: Hello world
-        run: echo "Scraping data for ${{ inputs.state }}"
-
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -159,14 +150,15 @@ jobs:
           git commit -m "Latest data for ${{ inputs.state }}" && git push || true
 ```
 
-In our original scraper, we combined scraping and committing in a single step because we weren't worried about pulling the latest repo changes first. But with multiple jobs running in parallel, we can no longer guarantee their order of completion. In this chapter, we'll solve that by splitting the action into two steps.
+In our original scraper, we combined scraping and committing in a single step because we weren't worried about first pulling the latest repo changes. However, with multiple jobs running in parallel, we can no longer guarantee their order of completion. In this chapter, we'll solve that by splitting the action into two steps.
 
-First, we'll run all scrapers in parallel and save their outputs in a temporary storage known as artifacts.
+First, we'll run all scrapers in parallel and save their outputs in temporary storage known as artifacts.
 
-Then, once every job finishes, we'll collect those Artifacts and make a single commit. This approach ensures that all parallel jobs contribute their changes properly, without overwriting each other.
+Then, once every job finishes, we'll collect those Artifacts and make a single commit. This approach ensures that all parallel jobs contribute their changes without overwriting each other.
 
 ### Error handling
-Github Actions provides two error-handling settings that will be helpful. One is called ```fail-fast```. This flag controls whether the entire matrix job should fail if one job in the matrix fails. In our case, we want to mark this flag as false; even if one state's scraper fails, we still want the job to complete and continue scraping the other states.
+
+GitHub Actions provides two error-handling settings that will be helpful. One is called ```fail-fast```. This flag controls whether the entire matrix job should fail if one job in the matrix fails. In our case, we want to mark this flag as false; even if one state's scraper fails, we still want the job to be completed and continue scraping the other states.
 
 {emphasize-lines="7"}
 ```yaml
@@ -182,7 +174,7 @@ jobs:
 
 ```
 
-The second error-handling setting is called ```continue-on-error```. When true, this allows for the Action to continue running subsequent steps even if an earlier step failed. Since our Action has multiple jobs -- a build job and a commit job -- we want the Action to continue running even if one of the scrapes failed earlier.
+The second error-handling setting is called `continue-on-error.` When true, this allows the Action to continue running subsequent steps even if an earlier step fails. Since our Action has multiple jobs—a build job and a commit job—we want the Action to continue running even if one of the scrapes fails earlier.
 
 {emphasize-lines="5"}
 ```yaml
@@ -198,18 +190,16 @@ jobs:
 
 ```
 
-To accommodate our matrix strategy, we'll also modify all the steps that use the `inputs.state` variable to use `matrix.state` instead. For example, in the `Hello world` step, we can change the line to:
+To accommodate our matrix strategy, we'll also modify all the steps that use the `inputs.state` variable to use `matrix.state` instead. For example, in the "Scrape" step, we change the line to:
 
-{emphasize-lines="3"}
+{emphasize-lines="2"}
 ```yaml
-steps:
-      - name: Hello world
-        run: echo "Scraping data for ${{ matrix.state }}"
+      - name: Scrape
+        run: warn-scraper ${{ matrix.state }} --data-dir ./data/
 ```
 
-And we should do the same for the scraping step. For simplicity, let's cut that datestamp step for now.
+We should do the same for the scraping step. For simplicity, let's remove that datestamp step for now.
 
-{emphasize-lines="20,34"}
 ```yaml
 name: Matrix Scraper
 
@@ -229,9 +219,6 @@ jobs:
       matrix:
         state: [ca, ia, ny]
     steps:
-      - name: Hello world
-        run: echo "Scraping data for ${{ matrix.state }}"
-
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -249,11 +236,11 @@ jobs:
 
 ## Uploading artifact
 
-Now that we've scraped our data, we need a place to store the data before we commit it to the repo. To do this, we are using Actions Artifacts. Artifacts allow you to persist data after a job has completed, and share that data with another job in the same workflow. An artifact is a file or collection of files produced during a workflow run.
+Now that we've scraped our data, we need a place to store it before we commit it to the repo. To do this, we are using Actions Artifacts. Artifacts allow you to persist data after a job has completed and share that data with another job in the same workflow. An artifact is a file or collection of files produced during a workflow run.
 
-Here we are using the shortcut [actions/upload-artifact](https://github.com/actions/upload-artifact) created by Github that allows us to temporarily store our data within our task. 
+Here, we are using the shortcut [actions/upload-artifact](https://github.com/actions/upload-artifact) created by GitHub, which allows us to temporarily store our data within our task. 
 
-{emphasize-lines="36-40"}
+{emphasize-lines="33-37"}
 ```yaml
 name: Matrix Scraper
 
@@ -273,9 +260,6 @@ jobs:
       matrix:
         state: [ca, ia, ny]
     steps:
-      - name: Hello world
-        run: echo "Scraping data for ${{ matrix.state }}"
-
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -299,7 +283,7 @@ jobs:
 
 ## Commit step
 
-Next, let's create a second step for our Action: the commit step. We'll start with the standard step of checking out the code. Notice that the step needs the scrape step, which ensures that it will not run until our first step has finished.
+Next, let's create a second step for our Action: the commit step. We'll start with the standard step of checking out the code. Notice that the step needs the scraping step, which ensures it will not run until our first step has finished.
 
 {emphasize-lines="4"}
 
@@ -313,7 +297,7 @@ Next, let's create a second step for our Action: the commit step. We'll start wi
           uses: actions/checkout@v4
 ```
 
-The next step is to download the artifacts we previously stored for use in this step. This is done using the actions/download-artifact companion to the uploader.
+The next step is to download the artifacts we previously stored for use in this step. This is done using the `actions/download-artifact` companion to the uploader.
 
 {emphasize-lines="9-13"}
 
@@ -333,7 +317,7 @@ The next step is to download the artifacts we previously stored for use in this 
           path: artifacts/
 ```
 
-Just to make sure our repo stays clean, we can add a `Move` step to unpack the artifacts - which are all stored in their own folders, since they came from different parallel jobs - and put them into our `data/` folder. Lastly, we push with the same code as before.
+To keep our repo clean, we can add a `Move` step to unpack the artifacts—which are all stored in their own folders since they came from different parallel jobs—and put them into our `data/` folder. Lastly, we push with the same code as before.
 
 {emphasize-lines="15-18"}
 ```yaml
@@ -357,7 +341,7 @@ Just to make sure our repo stays clean, we can add a `Move` step to unpack the a
           mv artifacts/**/*.csv data/
 ```
 
-We can add a logging step here that will save the current date and time to a file. This will help us keep track of when the last scrape was done and prevent GitHub from deactivating the workflow.
+We can add a logging step here to save the current date and time to a file. This will help us track when the last scrape was done and prevent GitHub from deactivating the workflow.
 
 {emphasize-lines="20-21"}
 ```yaml
@@ -384,7 +368,7 @@ We can add a logging step here that will save the current date and time to a fil
         run: date > ./data/latest-scrape.txt
 ```
 
-Finally, we can add the same commit and push step as before. This time, we don't need to specify the state in the commit message, since all states are now included in the data folder.
+Finally, we can add the same commit and push step as before. This time, we don't need to specify the state in the commit message since all states are now included in the data folder.
 
 {emphasize-lines="23-28"}
 ```yaml
@@ -439,9 +423,6 @@ jobs:
       matrix:
         state: [ca, ia, ny]
     steps:
-      - name: Hello world
-        run: echo "Scraping data for ${{ matrix.state }}"
-
       - name: Checkout
         uses: actions/checkout@v4
 
@@ -496,7 +477,7 @@ jobs:
 
 ## Breaking our action?
 
-What happens when we try to scrape a state that doesn't exist in the scraper? For example, MN WARN notices are not supported by Big Local News' WARN Scraper. Let's try changing our list of scraped states:
+What happens when we try to scrape a state that doesn't exist in the scraper? For example, `mn` WARN notices are not supported by Big Local News' WARN Scraper. Let's try changing our list of scraped states:
 
 {emphasize-lines="9"}
 ```yaml
@@ -510,7 +491,7 @@ jobs:
       matrix:
         state: [mn, md, tn, wv, ny]
 ```
-Now, commit and run the action again.
+Now, commit and rerun the action.
 
 ![failed-parallel](_static/parallel-5.png)
 
