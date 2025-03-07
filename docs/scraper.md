@@ -341,9 +341,6 @@ jobs:
     name: Scrape
     runs-on: ubuntu-latest
     steps:
-      - name: Hello world
-        run: echo "Scraping data for ${{ inputs.state }}"
-
       - name: Checkout
         uses: actions/checkout@v4
 
