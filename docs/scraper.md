@@ -24,7 +24,7 @@ This time let's call this file `scraper.yml`.
 
 ## Write your workflow file
 
-Start with a `name` and expand the `on` parameter we used last time by adding a `cron` setting. Here, we've added a crontab expression that will run the Action everyday at 00:00 UTC.
+Start with a `name` and expand the `on` parameter we used last time by adding a `cron` setting. Here, we've added a crontab expression that will run the Action every day at 00:00 UTC.
 
 
 {emphasize-lines="5-6"}
@@ -38,7 +38,7 @@ on:
 ```
 
 :::{admonition} Note
-[Crons](https://en.wikipedia.org/wiki/Cron), sometimes known as crontabs or cron jobs, are a way to schedule tasks for particular dates and times. They are a powerful tool, but a bit tricky to understand. If you need help writing a new pattern, try using [crontab.guru](https://crontab.guru/).
+[Crons](https://en.wikipedia.org/wiki/Cron), sometimes known as crontabs or cron jobs, are a way to schedule tasks for particular dates and times. They are a powerful tool but a bit tricky to understand. If you need help writing a new pattern, try using [crontab.guru](https://crontab.guru/).
 :::
 
 Next, add a simple job named `scrape`.
@@ -59,11 +59,11 @@ jobs:
     steps:
 ```
 
-Think of Actions as renting a blank computer from GitHub. In order to use it, you will need to install the latest version of whatever language you are using, as well as any corresponding package managers and libraries.
+Think of Actions as renting a blank computer from GitHub. To use it, you will need to install the latest version of whatever language you are using, as well as any corresponding package managers and libraries.
 
-Because these Actions are used so often, GitHub has a [marketplace](https://github.com/marketplace?type=actions) where you can find pre-packaged steps for common task.
+Because these Actions are used so often, GitHub has a [marketplace](https://github.com/marketplace?type=actions) where you can find pre-packaged steps for common tasks.
 
-The `checkout` action clones our repository onto the server so that all subsequent steps can access to it. We will need to do this so that we can save our the scraped data back into the repo at the end of the workflow.
+The `checkout` action clones our repository onto the server so that all subsequent steps can access it. We will need to do this so that we can save the scraped data back into the repo at the end of the workflow.
 
 {emphasize-lines="13-14"}
 ```yaml
@@ -83,7 +83,7 @@ jobs:
         uses: actions/checkout@v4
 ```
 
-Our scraper will gather the latest mass layoff notices posted on government websites according to the requirements of the U.S. Worker Adjustment and Retraining Notification Act, also known as the WARN Act. It's an open-source software package developed by [Big Local News](https://biglocalnews.org/content/tools/layoff-watch.html) that relies on the Python computer programming language.
+Our scraper will gather the latest mass layoff notices posted on government websites according to the U.S. Worker Adjustment and Retraining Notification Act requirements, also known as the WARN Act. It's an open-source software package developed by [Big Local News](https://biglocalnews.org/content/tools/layoff-watch.html), which uses the Python computer programming language.
 
 So our next step is to install Python, which can also be accomplished with a pre-packaged action.
 
@@ -140,7 +140,7 @@ jobs:
 
 According to the package's [documentation](https://warn-scraper.readthedocs.io/en/latest/usage.html), all we need to do to scrape a state's notices is to type `warn-scraper <state>` into the terminal.
 
-Let's scrape Iowa, America's greatest state, and store the results int `./data/` folder at the root of our repository.
+Let's scrape Iowa, America's greatest state, and store the results in the `./data/` folder at the root of our repository.
 
 {emphasize-lines="24-25"}
 ```yaml
@@ -209,7 +209,7 @@ jobs:
           git commit -m "Latest data for Iowa" && git push || true
 ```
 
-Save this workflow to our repo. Go to `Actions` tab and choose your scraper workflow and click `Run workflow` as we did in the previous chapter.
+Save this workflow to our repo. Go to the `Actions` tab, choose your scraper workflow, and click `Run workflow`, as we did in the previous chapter.
 
 ![first run](_static/scraper-3.png)
 
@@ -217,7 +217,7 @@ Once the task has been completed, click its list item for a summary report. You 
 
 ![no-commit](_static/scraper-3a.png)
 
-Let's go ahead an add the below line between on and jobs so that we provide write permission to all jobs.
+Let's go ahead and add the line below between on and jobs so that we can provide write permission to all jobs.
 
 {emphasize-lines="8-9"}
 ```yaml
@@ -258,7 +258,7 @@ jobs:
           git commit -m "Latest data for Iowa" && git push || true
 ```
 
-Save the file and run the Action again.
+Save the file and rerun the Action.
 
 Once the workflow has been completed, you should see the `ia.csv` file in your repository's `data` folder.
 
@@ -266,9 +266,9 @@ Once the workflow has been completed, you should see the `ia.csv` file in your r
 
 ## User-defined inputs
 
-Github Actions allows you to specify `inputs` for manually triggered workflows, which we can use to allow users to specify what state to scrape.
+GitHub Actions allows you to specify `inputs` for manually triggered workflows, which we can enable users to specify what state to scrape.
 
-To add an input option to your workflow, go to your yaml file and add the following lines. Here, we are asking Actions to create an `input` called `state` (there can be more than one inputs in a given Action).
+To add an input option to your workflow, go to your YAML file and add the following lines. Here, we ask Actions to create an `input` called `state`. A given Action can have more than one input.
 
 If you need more control over your inputs, you can also add [choices](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#onworkflow_dispatchinputs).
 
@@ -287,7 +287,7 @@ on:
   - cron: "0 0 * * *"
 ```
 
-Once your input field has been configured, let's change our warn-scraper command so that whatever we input as `state` will reflect on the scrape command.
+Once your input field has been configured, let's change our warn-scraper command so that whatever we input as `state` will be reflected in the scrape command.
 
 ```yaml
       - name: Scrape
@@ -308,7 +308,7 @@ You can add these inputs anywhere! Add them to your commit message for accuracy.
 ```
 ### Add a datestamp
 
-Github may automatically [disable workflows](https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-workflow-runs/disabling-and-enabling-a-workflow) if there's period of inactivity.
+GitHub may automatically [disable workflows](https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-workflow-runs/disabling-and-enabling-a-workflow) if there's a period of inactivity.
 To get around this you can can have your workflow commit an updated text file every time your Action runs.
 
 ```yaml
@@ -366,10 +366,10 @@ jobs:
           git commit -m "Latest data for ${{ inputs.state }}" && git push || true
 ```
 
-Let's run the Action again. Now when you go to run your Action, you will see an input field. This will allow you to specify what which state to scrape for. Here I'm choosing CA.
+Let's rerun the Action. Now when you go to run your Action, you will see an input field. This will allow you to specify which state to scrape for. Here I'm choosing CA.
 
 ![final action](_static/scraper-5.png)
 
-Upon completion you will see that steps that reference `inputs.state` have been run with the correctly value.
+Upon completion, you will see that steps that reference `inputs.state` have been run with the correct value.
 
 ![final result](_static/scraper-6.png)
