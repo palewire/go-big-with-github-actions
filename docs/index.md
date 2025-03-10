@@ -16,7 +16,7 @@ It will teach you how to:
 
 ## Who can take it
 
-This course is free. Previous experience working with GitHub will be useful, but anyone with good attitude is qualified to take the class.
+This course is free. Previous experience working with GitHub will be useful, but anyone with a good attitude is qualified to take the class.
 
 ## Table of contents
 
