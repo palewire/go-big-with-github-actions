@@ -81,10 +81,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Install Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
@@ -102,7 +102,7 @@ jobs:
           git commit -m "Latest data" && git push || true
 
       - name: upload-artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: data
           path: ./data/
@@ -120,10 +120,10 @@ We can start with the standard step of checking out the code. Notice that the st
     needs: scrape
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 ```
 
-Unlike our WARN notice scraper, Observable Framework uses the Node.js programming language. So we need to install that instead of Python to run the build. We'll do that using pre-packaged [actions/setup-node](https://github.com/actions/setup-node) shortcut offered by GitHub and the `npm` package manager, which amount to the Node.js equivalent of the tools we used for Python in our scraping step.
+Unlike our WARN notice scraper, Observable Framework uses the Node.js programming language. So we need to install that instead of Python to run the build. We'll do that using pre-packaged [actions/setup-node](https://github.com/actions/setup-node) shortcut offered by GitHub and the `npm` package manager, which amount to the Node.js equivactions/upload-pages-artifact@v4alent of the tools we used for Python in our scraping step.
 
 {emphasize-lines="9-15"}
 ```yaml
@@ -133,10 +133,10 @@ Unlike our WARN notice scraper, Observable Framework uses the Node.js programmin
     needs: scrape
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "20.11"
 
@@ -154,10 +154,10 @@ Add a step to download the data we scraped in the previous step. This is done us
     needs: scrape
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "20.11"
 
@@ -165,7 +165,7 @@ Add a step to download the data we scraped in the previous step. This is done us
         run: npm install --prefix site
 
       - name: Download data
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: data
           path: site/src/data/
@@ -181,10 +181,10 @@ Add another step that will run Observable Framework's custom command for buildin
     needs: scrape
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "20.11"
 
@@ -192,7 +192,7 @@ Add another step that will run Observable Framework's custom command for buildin
         run: npm install --prefix site
 
       - name: Download data
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: data
           path: site/src/data/
@@ -211,10 +211,10 @@ Finally, we need to add a step that will upload the built files to the Action so
     needs: scrape
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "20.11"
 
@@ -222,7 +222,7 @@ Finally, we need to add a step that will upload the built files to the Action so
         run: npm install --prefix site
 
       - name: Download data
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: data
           path: site/src/data/
@@ -231,7 +231,7 @@ Finally, we need to add a step that will upload the built files to the Action so
         run: npm run build --prefix site
 
       - name: Upload release candidate
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: "site/dist"
 ```
@@ -275,10 +275,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Install Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
@@ -296,7 +296,7 @@ jobs:
           git commit -m "Latest data" && git push || true
 
       - name: upload-artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: data
           path: ./data/
@@ -307,10 +307,10 @@ jobs:
     needs: scrape
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: "20.11"
 
@@ -318,7 +318,7 @@ jobs:
         run: npm install --prefix site
 
       - name: Download data
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: data
           path: site/src/data/
@@ -327,7 +327,7 @@ jobs:
         run: npm run build --prefix site
 
       - name: Upload release candidate
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: "site/dist"
 

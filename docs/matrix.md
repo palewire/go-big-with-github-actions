@@ -36,10 +36,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Install Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
@@ -78,10 +78,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Install Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
@@ -126,10 +126,10 @@ jobs:
         state: [ca, ia, ny]
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Install Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
@@ -220,10 +220,10 @@ jobs:
         state: [ca, ia, ny]
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Install Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
@@ -261,10 +261,10 @@ jobs:
         state: [ca, ia, ny]
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Install Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
@@ -275,7 +275,7 @@ jobs:
         run: warn-scraper ${{ matrix.state }} --data-dir ./data/
 
       - name: upload-artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: ${{ matrix.state }}
           path: ./data/${{ matrix.state }}.csv
@@ -294,7 +294,7 @@ Next, let's create a second step for our Action: the commit step. We'll start wi
       needs: scrape
       steps:
         - name: Checkout
-          uses: actions/checkout@v4
+          uses: actions/checkout@v6
 ```
 
 The next step is to download the artifacts we previously stored for use in this step. This is done using the `actions/download-artifact` companion to the uploader.
@@ -308,10 +308,10 @@ The next step is to download the artifacts we previously stored for use in this 
     needs: scrape
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Download artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           pattern: '*'
           path: artifacts/
@@ -327,10 +327,10 @@ To keep our repo clean, we can add a `Move` step to unpack the artifacts—which
     needs: scrape
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Download artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           pattern: '*'
           path: artifacts/
@@ -351,10 +351,10 @@ We can add a logging step here to save the current date and time to a file. This
     needs: scrape
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Download artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           pattern: '*'
           path: artifacts/
@@ -378,10 +378,10 @@ Finally, we can add the same commit and push step as before. This time, we don't
     needs: scrape
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Download artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           pattern: '*'
           path: artifacts/
@@ -424,10 +424,10 @@ jobs:
         state: [ca, ia, ny]
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Install Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
@@ -438,7 +438,7 @@ jobs:
         run: warn-scraper ${{ matrix.state }} --data-dir ./data/
 
       - name: upload-artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: ${{ matrix.state }}
           path: ./data/${{ matrix.state }}.csv
@@ -449,10 +449,10 @@ jobs:
     needs: scrape
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Download artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           pattern: '*'
           path: artifacts/

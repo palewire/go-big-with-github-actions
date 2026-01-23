@@ -15,11 +15,11 @@ jobs:
     steps:
       - id: checkout
         name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - id: install-uv
         name: Install uv
-        uses: astral-sh/setup-uv@v5
+        uses: astral-sh/setup-uv@v7
         with:
           version: "latest"
           enable-cache: true
@@ -39,7 +39,7 @@ jobs:
 
       - id: upload-release-candidate
         name: Upload release candidate
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: release-candidate
           path: ./_build/html/
@@ -51,7 +51,7 @@ jobs:
     if: ${{ github.ref_name == 'main' }}
     steps:
       - name: Download release candidate
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           name: release-candidate
           path: ./docs/

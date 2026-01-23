@@ -20,10 +20,10 @@ jobs:
         run: echo "Hello world"
 
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Install Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: '3.12'
 
@@ -34,7 +34,7 @@ jobs:
         run: warn-scraper ${{ matrix.state }} --data-dir ./data/
 
       - name: upload-artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: ${{ matrix.state }}
           path: ./data/${{ matrix.state }}.csv
@@ -45,10 +45,10 @@ jobs:
     needs: scrape
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: Download artifact
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v7
         with:
           pattern: '*'
           path: artifacts/
