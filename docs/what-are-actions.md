@@ -18,9 +18,13 @@ These routines are common in the software industry, where they strengthen qualit
 
 However, Actions tasks are not limited to arcane, back-office work. Because they can run any kind of script, computer programmers, including journalists, have found ways to use Actions creatively.
 
-A simple example is the [@ReutersJobs](https://mastodon.palewi.re/@ReutersJobs) social media bot. The project scrapes the job listings from the Reuters website, identifies new openings, generates promotional images and posts notices on social media.
+A simple example is the [@ReutersJobs](https://mastodon.palewi.re/@ReutersJobs) social media bot. The project was created to scrape the job listings from the Reuters website, identify new openings, generate promotional images and post notices on social media.
 
 [![@ReutersJobs post](_static/reuters-jobs-post.png)](https://mastodon.palewi.re/@ReutersJobs/113823961066565728)
+
+```{note}
+The @ReutersJobs project was decommissioned in January 2026 due to changes to the job posting website's structure that made scraping impractical. Regardless, it remains a useful case study for understanding how anyone can leverage GitHub Actions for automation.
+```
 
 The bot's code is [hosted on GitHub](https://github.com/palewire/reuters-jobs) where Actions linked to the repository are configured to run a series of Python scripts every six hours. This process is logged and monitored via [the repository's Actions tab](https://github.com/palewire/reuters-jobs/actions).
 
