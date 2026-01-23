@@ -48,7 +48,7 @@ You will notice a red squiggly underline beneath your code. This means that GitH
 
 ![title](_static/first-action-4.png)
 
-Let's take the hint add another line under `name`.
+Let's take the hint and add another line under `name`.
 
 ```yaml
 on:
@@ -75,7 +75,7 @@ jobs:
       run: echo "Hello world"
 ```
 
-Be mindful of indentation and uneven syntax. The red squiggly marks will give you hints is there's anything wrong with your file.
+Be mindful of indentation and uneven syntax. The red squiggly marks will give you hints if there's anything wrong with your file.
 
 Your workflow file should now look something like this:
 
@@ -153,7 +153,7 @@ jobs:
 ```
 
 
-Now save you file to the repository by clicking on the green "Commit changes" button in the top-right corner.
+Now save your file to the repository by clicking on the green "Commit changes" button in the top-right corner.
 
 ![commit](_static/first-action-10.png)
 
