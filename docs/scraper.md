@@ -217,7 +217,7 @@ Once the task has been completed, click its list item for a summary report. You 
 
 ![no-commit](_static/scraper-3a.png)
 
-Let's go ahead and add the line below between on and jobs so that we can provide write permission to all jobs.
+Let's go ahead and add the line so that we can provide write permission to all jobs.
 
 {emphasize-lines="8-9"}
 ```yaml
@@ -309,7 +309,7 @@ You can add these inputs anywhere! Add them to your commit message for accuracy.
 ### Add a datestamp
 
 GitHub may automatically [disable workflows](https://docs.github.com/en/actions/managing-workflow-runs-and-deployments/managing-workflow-runs/disabling-and-enabling-a-workflow) if there's a period of inactivity.
-To get around this you can can have your workflow commit an updated text file every time your Action runs.
+To get around this you can have your workflow commit an updated text file every time your Action runs.
 
 ```yaml
       - name: Save datestamp
