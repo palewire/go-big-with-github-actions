@@ -34,7 +34,7 @@ jobs:
         run: warn-scraper ${{ matrix.state }} --data-dir ./data/
 
       - name: upload-artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v6
         with:
           name: ${{ matrix.state }}
           path: ./data/${{ matrix.state }}.csv
