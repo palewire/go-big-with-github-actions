@@ -115,16 +115,16 @@ docs/_static/
 
 ## Embedding in Documentation
 
-When embedding screenshots in Sphinx/MyST markdown documentation, use standard image syntax:
+When embedding screenshots in the documentation, use standard Markdown image syntax with relative paths:
 
 ```markdown
-![GitHub new repository form](/_static/github-new-repo.png)
+![GitHub new repository form](_static/github-new-repo.png)
 ```
 
-Or with additional attributes:
+For more complex figures with captions, use MyST syntax:
 
 ```markdown
-```{figure} /_static/github-new-repo.png
+```{figure} _static/github-new-repo.png
 :alt: GitHub new repository form
 :width: 80%
 
