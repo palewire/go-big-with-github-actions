@@ -42,6 +42,56 @@ Changes to avoid unless explicitly requested:
   - Build output: `site/dist/` (generated)
 - `data/`: Scraper outputs committed by workflows (CSV files).
 
+## Skills
+
+This repo includes reusable skills in the `skills/` directory that agents can use to accomplish tasks more efficiently.
+
+### Browser Screenshots (`skills/browser-screenshots/`)
+
+Use this skill to capture screenshots for the tutorial documentation. Screenshots are stored in `docs/_static/` and can be embedded in the Sphinx documentation.
+
+**Installation (one-time):**
+
+```bash
+npm install playwright
+npx playwright install chromium
+```
+
+**Common use cases for this project:**
+
+```bash
+# Capture GitHub Actions pages for tutorials
+node skills/browser-screenshots/scripts/capture.cjs \
+  --url https://github.com/palewire/go-big-with-github-actions/actions \
+  --output docs/_static/actions-homepage.png
+
+# Capture workflow runs with highlighting
+node skills/browser-screenshots/scripts/capture.cjs \
+  --url https://github.com/palewire/go-big-with-github-actions/actions/workflows/scrape-and-deploy.yaml \
+  --highlight ".workflow-run-status" \
+  --output docs/_static/workflow-status.png
+
+# Capture GitHub Pages settings
+node skills/browser-screenshots/scripts/capture.cjs \
+  --url https://github.com/palewire/go-big-with-github-actions/settings/pages \
+  --output docs/_static/pages-settings.png
+
+# Capture local Observable dashboard during development
+node skills/browser-screenshots/scripts/capture.cjs \
+  --url http://localhost:3000 \
+  --output docs/_static/dashboard-preview.png
+```
+
+**Embedding in docs:**
+
+After capturing, embed in MyST markdown:
+
+```markdown
+![GitHub Actions homepage](/_static/actions-homepage.png)
+```
+
+See `skills/browser-screenshots/SKILL.md` for full documentation including options for dark mode, full-page captures, element selection, and JavaScript execution.
+
 ## Tooling
 
 ### Python (docs)
