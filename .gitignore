@@ -1,4 +1,10 @@
+node_modules
 .DS_Store
+
+# Playwright authentication state files
+*.playwright-auth.json
+*-auth.json
+auth/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

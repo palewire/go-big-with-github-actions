@@ -18,6 +18,39 @@ npx playwright install chromium
 
 This only needs to be done once per environment.
 
+## Authentication
+
+To capture screenshots of authenticated pages (e.g., logged-in GitHub views), you need to save your authentication state first.
+
+### Save Authentication State
+
+Use the `save-auth.cjs` script to log in and save your session:
+
+```bash
+node skills/browser-screenshots/scripts/save-auth.cjs \
+  --url https://github.com/login \
+  --output ~/.playwright/github-auth.json
+```
+
+This will:
+1. Open a browser window
+2. Allow you to log in manually
+3. Wait for you to press ENTER in the terminal
+4. Save your authentication state (cookies, localStorage, etc.) to the specified file
+
+### Use Saved Authentication
+
+Once saved, use the authentication state with the `--storageState` option:
+
+```bash
+node skills/browser-screenshots/scripts/capture.cjs \
+  --url https://github.com/new \
+  --storageState ~/.playwright/github-auth.json \
+  --output docs/_static/github-new-repo.png
+```
+
+The authentication state file can be reused for multiple screenshots until your session expires.
+
 ## When to Use
 
 Use this skill when the user asks you to:
@@ -94,6 +127,51 @@ node skills/browser-screenshots/scripts/capture.cjs \
   --url https://example.com \
   --fullpage \
   --output docs/_static/full-page.png
+```
+
+## Adding Highlight Boxes
+
+After capturing a screenshot, you can add red highlight boxes to draw attention to specific UI elements using the `add-highlights.cjs` script.
+
+### Finding Coordinates
+
+Use browser developer tools to find element coordinates:
+1. Right-click the element and select "Inspect"
+2. In the dev tools, hover over the element
+3. Note the dimensions shown (e.g., "320 × 48" and position)
+4. Calculate: x (left offset), y (top offset), width, height
+
+### Adding Highlights
+
+```bash
+node skills/browser-screenshots/scripts/add-highlights.cjs \
+  --input docs/_static/screenshot.png \
+  --output docs/_static/screenshot-highlighted.png \
+  --boxes "295,90,880,90"
+```
+
+### Multiple Highlight Boxes
+
+Add multiple `--boxes` parameters to highlight several areas:
+
+```bash
+node skills/browser-screenshots/scripts/add-highlights.cjs \
+  --input docs/_static/screenshot.png \
+  --output docs/_static/screenshot-highlighted.png \
+  --boxes "295,90,880,90" \
+  --boxes "295,327,880,120"
+```
+
+### Custom Styling
+
+```bash
+node skills/browser-screenshots/scripts/add-highlights.cjs \
+  --input docs/_static/screenshot.png \
+  --output docs/_static/screenshot-highlighted.png \
+  --boxes "295,90,880,90" \
+  --color "#00FF00" \
+  --lineWidth 5 \
+  --padding 5
 ```
 
 ## Saving Screenshots

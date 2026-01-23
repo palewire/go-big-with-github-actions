@@ -20,6 +20,7 @@
  *   --format        Output format: png or jpeg (default: png)
  *   --quality       JPEG quality 0-100 (default: 90)
  *   --deviceScale   Device scale factor (default: 2 for retina)
+ *   --storageState  Path to authentication state file
  */
 
 const { chromium } = require('playwright');
@@ -42,6 +43,7 @@ function parseArgs(args) {
     format: 'png',
     quality: 90,
     deviceScale: 2,
+    storageState: null,
   };
 
   for (let i = 0; i < args.length; i++) {
@@ -86,6 +88,9 @@ function parseArgs(args) {
       case '--deviceScale':
         options.deviceScale = parseFloat(args[++i]);
         break;
+      case '--storageState':
+        options.storageState = args[++i];
+        break;
     }
   }
 
@@ -116,23 +121,34 @@ async function captureScreenshot(options) {
 
   try {
     // Create context with viewport settings
-    const context = await browser.newContext({
+    const contextOptions = {
       viewport: {
         width: options.width,
         height: options.height,
       },
       deviceScaleFactor: options.deviceScale,
       colorScheme: options.dark ? 'dark' : 'light',
-    });
+    };
+
+    // Load authentication state if provided
+    if (options.storageState && fs.existsSync(options.storageState)) {
+      console.log(`Loading authentication state from: ${options.storageState}`);
+      contextOptions.storageState = options.storageState;
+    }
+
+    const context = await browser.newContext(contextOptions);
 
     const page = await context.newPage();
 
     // Navigate to URL
     console.log(`Navigating to: ${options.url}`);
     await page.goto(options.url, {
-      waitUntil: 'networkidle',
+      waitUntil: 'domcontentloaded',
       timeout: 30000,
     });
+
+    // Wait for page to be ready
+    await page.waitForLoadState('load');
 
     // Execute custom JavaScript if provided
     if (options.execute) {
@@ -221,6 +237,7 @@ Options:
   --format        Output format: png or jpeg (default: png)
   --quality       JPEG quality 0-100 (default: 90)
   --deviceScale   Device scale factor for retina (default: 2)
+  --storageState  Path to saved authentication state file
 
 Examples:
   # Basic screenshot
@@ -237,6 +254,9 @@ Examples:
 
   # Execute script before capture
   node capture.js --url http://localhost:5173 --execute "document.querySelector('button').click()" --wait 1000 --output after-click.png
+
+  # Use saved authentication
+  node capture.js --url https://github.com/new --storageState ~/.playwright/github-auth.json --output github-new.png
 `);
   process.exit(0);
 }
