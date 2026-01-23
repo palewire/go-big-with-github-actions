@@ -238,7 +238,7 @@ jobs:
 
 Now that we've scraped our data, we need a place to store it before we commit it to the repo. To do this, we are using Actions Artifacts. Artifacts allow you to persist data after a job has completed and share that data with another job in the same workflow. An artifact is a file or collection of files produced during a workflow run.
 
-Here, we are using the shortcut [actions/upload-artifact](https://github.com/actions/upload-artifact) created by GitHub, which allows us to temporarily store our data within our task. 
+Here, we are using the shortcut [actions/upload-artifact](https://github.com/actions/upload-artifact) created by GitHub, which allows us to temporarily store our data within our task.
 
 {emphasize-lines="33-37"}
 ```yaml
