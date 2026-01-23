@@ -22,10 +22,6 @@ A simple example is the [@ReutersJobs](https://mastodon.palewi.re/@ReutersJobs) 
 
 [![@ReutersJobs post](_static/reuters-jobs-post.png)](https://mastodon.palewi.re/@ReutersJobs/113823961066565728)
 
-```{note}
-The @ReutersJobs project was decommissioned in January 2026 due to changes to the job posting website's structure that made scraping impractical. Regardless, it remains a useful case study for understanding how anyone can leverage GitHub Actions for automation.
-```
-
 The bot's code is [hosted on GitHub](https://github.com/palewire/reuters-jobs) where Actions linked to the repository are configured to run a series of Python scripts every six hours. This process is logged and monitored via [the repository's Actions tab](https://github.com/palewire/reuters-jobs/actions).
 
 [![@ReutersJobs actions](_static/reuters-jobs-actions.png)](https://github.com/palewire/reuters-jobs/actions)
@@ -34,4 +30,10 @@ This panel allows you to see the progress of tasks as they execute and review th
 
 [![@ReutersJobs tasks](_static/reuters-jobs-task.png)](https://github.com/palewire/reuters-jobs/actions/runs/13483141005/job/37670903830)
 
-In this way, reporters at top news organizations routinely use Actions to automate data collection, processing, analysis and publication. This class will teach you some of their techniques. We’ll start with a simple example and then build up to more complex and powerful configurations.
+In this way, reporters at top news organizations routinely use Actions to automate data collection, processing, analysis and publication.
+
+This class will teach you some of their techniques. We’ll start with a simple example and then build up to more complex and powerful configurations.
+
+```{note}
+The @ReutersJobs project was decommissioned in January 2026 due to changes to the job posting website's structure that made scraping impractical. Regardless, it remains a useful case study for understanding how anyone can leverage GitHub Actions for automation.
+```
