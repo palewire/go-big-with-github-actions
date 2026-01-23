@@ -18,9 +18,13 @@ Let's begin by starting a new workflow file. Go to your repository's homepage in
 
 ![new](_static/scraper-1.png)
 
+Click the "set up a workflow yourself" link again.
+
+![blank](_static/scraper-1b.png)
+
 This time let's call this file `scraper.yml`.
 
-![blank](_static/scraper-2.png)
+![name](_static/scraper-2.png)
 
 ## Write your workflow file
 
@@ -210,8 +214,6 @@ jobs:
 ```
 
 Save this workflow to our repo. Go to the `Actions` tab, choose your scraper workflow, and click `Run workflow`, as we did in the previous chapter.
-
-![first run](_static/scraper-3.png)
 
 Once the task has been completed, click its list item for a summary report. You will see that Action was unable to access the repository. This is because GitHub Actions requires that you provide [permissions](https://docs.github.com/en/actions/writing-workflows/workflow-syntax-for-github-actions#permissions).
 
