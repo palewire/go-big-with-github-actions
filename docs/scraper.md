@@ -375,3 +375,9 @@ Let's rerun the Action. Now when you go to run your Action, you will see an inpu
 Upon completion, you will see that steps that reference `inputs.state` have been run with the correct value.
 
 ![final result](_static/scraper-6.png)
+
+:::{note}
+You are not limited to third-party packages like `warn-scraper`. You can run any script you include in your repository.
+
+If you'd like an example to try out, check out the [scrape.ipynb](https://github.com/palewire/go-big-with-github-actions/blob/main/scrape.ipynb) Jupyter notebook in this project's repository, which is run as part of [this workflow](https://github.com/palewire/go-big-with-github-actions/blob/main/.github/workflows/second-scraper.yaml#L25-L29).
+:::
