@@ -8,6 +8,9 @@ description = "Learn how to scale up your data pipelines using GitHub’s powerf
 version = "1.0.0"
 requires-python = "==3.12.*"
 dependencies = [
+    "bs4",
+    "requests",
+    "jupyterlab",
     "sphinx",
     "sphinx-autobuild",
     "myst-parser",
