@@ -55,7 +55,7 @@ jobs:
         run: npm install --prefix site
 
       - name: Download data
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: data
           path: site/src/data/
