@@ -156,7 +156,7 @@ There are a number of different ways to connect outside servers to Actions. We a
 
 I've worked through his documentation and created a template for your start with. It's available in this tutorial's repository as [reusable-ec2-job.yaml](https://github.com/palewire/go-big-with-github-actions/blob/main/.github/workflows/reusable-ec2-job.yaml).
 
-This form of workflow is what GitHub called a "composite" action. That means that other actions can call on it without having to reproduce all of its code. This is a great way to reduce redundancy when you doing the same thing in more than one workflow.
+This form of workflow is what GitHub calls a "composite" action. That means that other actions can call on it without having to reproduce all of its code. This is a great way to reduce redundancy when you are doing the same thing in more than one workflow.
 
 ```yaml
 name: 'Reusable workflow: Custom EC2 runner'
@@ -290,13 +290,13 @@ The `aws_region` is the unique identifier of the Amazon data center where you wa
 
 You can see that I've created options for our Amazon VPC and security group, as well as a few other things you may not recognize.
 
-The `ec2_image_id` will expect the unique indentifier of the operating system that Amazon will install on the server, which is commonly known as the AMI.
+The `ec2_image_id` will expect the unique identifier of the operating system that Amazon will install on the server, which is commonly known as the AMI.
 
-The `ec2_instance_type` expects you to specific the size of the server to start up. You can find the menu of available hardware [on the Amazon site](https://aws.amazon.com/ec2/instance-types/).
+The `ec2_instance_type` expects you to specify the size of the server to start up. You can find the menu of available hardware [on the Amazon site](https://aws.amazon.com/ec2/instance-types/).
 
 The `timeout_minutes` option is how long you want to give the job to run before it times out.
 
-After that, the workflow is essentially a three step process. The first step is to use a traditional Actions server to connect with Amazon and fire up a new EC2 instance with your specificed configuration. This example assumes you are using a machine image based on Amazon Linux 2023. If you end up using an image on another operating system, you will need to change the `pre-runner-script` to install the dependencies necesary to communicate with GitHub and run Actions.
+After that, the workflow is essentially a three step process. The first step is to use a traditional Actions server to connect with Amazon and fire up a new EC2 instance with your specified configuration. This example assumes you are using a machine image based on Amazon Linux 2023. If you end up using an image on another operating system, you will need to change the `pre-runner-script` to install the dependencies necessary to communicate with GitHub and run Actions.
 
 ```yaml
   start-runner:
@@ -347,9 +347,9 @@ The second step is to run the command you want. But unlike the first, it will be
         run: ${{ inputs.command }}
 ```
 
-If you wanted to take on more sophisticated tasks in your custom server, you could additional steps there that could do things like install Python or another programming language, fire up a database or run a series of scripts.
+If you wanted to take on more sophisticated tasks in your custom server, you could add additional steps there that could do things like install Python or another programming language, fire up a database or run a series of scripts.
 
-And then third step is to shut down the server when you're finished. It will run whether the job succeeds or not.
+And then the third step is to shut down the server when you're finished. It will run whether the job succeeds or not.
 
 ```yaml
   stop-runner:
