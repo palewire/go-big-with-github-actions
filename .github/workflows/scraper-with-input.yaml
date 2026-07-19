@@ -22,16 +22,17 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v6
 
-      - name: Install Python
-        uses: actions/setup-python@v6
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
         with:
-          python-version: '3.12'
+          version: "latest"
+          enable-cache: true
 
-      - name: Install scraper
-        run: pip install warn-scraper
+      - name: Install Python
+        run: uv python install 3.13
 
       - name: Scrape
-        run: warn-scraper ${{ inputs.state }} --data-dir ./data/
+        run: uvx warn-scraper ${{ inputs.state }} --data-dir ./data/
 
       - name: Commit and push
         run: |

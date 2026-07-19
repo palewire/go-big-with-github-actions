@@ -1,28 +1,34 @@
 [build-system]
-requires = ["setuptools >= 61.0",]
+requires = ["setuptools >= 61.0"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "go-big-with-github-actions"
-description = "Learn how to scale up your data pipelines using GitHub’s powerful Actions framework"
 version = "1.0.0"
-requires-python = "==3.12.*"
+description = "Learn how to scale up your data pipelines using GitHub’s powerful Actions framework"
+readme = "README.md"
+requires-python = "==3.13.*"
+license = "MIT"
 dependencies = [
     "bs4",
     "requests",
     "jupyterlab",
+    "warn-scraper",
     "sphinx",
     "sphinx-autobuild",
     "myst-parser",
     "sphinx-palewire-theme",
-    "warn-scraper",
-    "pre-commit",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.13",
 ]
 
-[project.optional-dependencies]
-mypy = [
+[dependency-groups]
+dev = [
+    "pre-commit",
     "mypy",
 ]
 
 [tool.setuptools]
-packages = ["docs",]
+packages = []
