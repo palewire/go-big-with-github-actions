@@ -123,7 +123,7 @@ We can start with the standard step of checking out the code. Notice that the st
         uses: actions/checkout@v6
 ```
 
-Unlike our WARN notice scraper, Observable Framework uses the Node.js programming language. So we need to install that instead of Python to run the build. We'll do that using pre-packaged [actions/setup-node](https://github.com/actions/setup-node) shortcut offered by GitHub and the `npm` package manager, which amount to the Node.js equivactions/upload-pages-artifact@v4alent of the tools we used for Python in our scraping step.
+Unlike our WARN notice scraper, Observable Framework uses the Node.js programming language. So we need to install that instead of Python to run the build. We'll do that using pre-packaged [actions/setup-node](https://github.com/actions/setup-node) shortcut offered by GitHub and the `npm` package manager, which amount to the Node.js equivalent of the tools we used for Python in our scraping step.
 
 {emphasize-lines="9-15"}
 ```yaml
