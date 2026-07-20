@@ -20,21 +20,22 @@ jobs:
         run: echo "Hello world"
 
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v8.3.2
+        with:
+          version: "0.11.29"
+          enable-cache: true
 
       - name: Install Python
-        uses: actions/setup-python@v6
-        with:
-          python-version: '3.12'
-
-      - name: Install scraper
-        run: pip install warn-scraper
+        run: uv python install 3.13
 
       - name: Scrape
-        run: warn-scraper ${{ matrix.state }} --data-dir ./data/
+        run: uvx warn-scraper ${{ matrix.state }} --data-dir ./data/
 
       - name: upload-artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: ${{ matrix.state }}
           path: ./data/${{ matrix.state }}.csv
@@ -45,10 +46,10 @@ jobs:
     needs: scrape
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Download artifact
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           pattern: '*'
           path: artifacts/

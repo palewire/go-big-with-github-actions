@@ -3,6 +3,10 @@ name: "EC2 custom runner"
 on:
   workflow_dispatch:
 
+
+permissions:
+  contents: read
+
 jobs:
   pipeline:
     uses: palewire/go-big-with-github-actions/.github/workflows/reusable-ec2-job.yaml@main

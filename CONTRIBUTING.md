@@ -19,7 +19,7 @@ cd go-big-with-github-actions
 Install the dependencies using uv:
 
 ```bash
-uv install
+uv sync --all-groups
 ```
 
 ## Contributing

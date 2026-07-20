@@ -12,18 +12,19 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v8.3.2
+        with:
+          version: "0.11.29"
+          enable-cache: true
 
       - name: Install Python
-        uses: actions/setup-python@v6
-        with:
-          python-version: '3.12'
-
-      - name: Install scraper
-        run: pip install warn-scraper
+        run: uv python install 3.13
 
       - name: Scrape
-        run: warn-scraper ia --data-dir ./data/
+        run: uvx warn-scraper ia --data-dir ./data/
 
       - name: Commit and push
         run: |
@@ -33,7 +34,7 @@ jobs:
           git commit -m "Latest data" && git push || true
 
       - name: upload-artifact
-        uses: actions/upload-artifact@v6
+        uses: actions/upload-artifact@v7
         with:
           name: data
           path: ./data/
@@ -44,10 +45,10 @@ jobs:
     needs: scrape
     steps:
       - name: Checkout
-        uses: actions/checkout@v6
+        uses: actions/checkout@v7
 
       - name: Setup Node.js
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
           node-version: "20.11"
 
@@ -55,7 +56,7 @@ jobs:
         run: npm install --prefix site
 
       - name: Download data
-        uses: actions/download-artifact@v7
+        uses: actions/download-artifact@v8
         with:
           name: data
           path: site/src/data/
@@ -64,7 +65,7 @@ jobs:
         run: npm run build --prefix site
 
       - name: Upload release candidate
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: "site/dist"
 
@@ -81,4 +82,4 @@ jobs:
     steps:
       - id: deploy
         name: Deploy to GitHub Pages
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
