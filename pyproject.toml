@@ -17,7 +17,7 @@ dependencies = [
     "sphinx",
     "sphinx-autobuild",
     "myst-parser",
-    "sphinx-palewire-theme",
+    "sphinx-palewire-theme>=0.1.10",
 ]
 classifiers = [
     "Programming Language :: Python :: 3",
